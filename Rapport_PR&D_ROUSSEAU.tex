@@ -1,24 +1,25 @@
 \documentclass{polytech/polytech}
-\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
 
+\typereport{prddi5}
 
-\typereport{stagedi5}
-
-\reportyear{2017-2018}
-\title{Réalisation d'un outil de cartographie sur le progiciel Amplitude}
-\student{Romain}{ROUSSEAU}{romain.rousseau@etu.univ-tours.fr}
+\reportyear{2018-2019}
+\title{Outil de gestion de parcours patient dans un hôpital de jour}
+\student[di5]{Romain}{ROUSSEAU}{romain.rousseau@etu.univ-tours.fr}
 \academicsupervisor{Yannick}{KERGOSIEN}{yannick.kergosien@univ-tours.fr}
-\industrialsupervisor[Responsable Cellule Architecture]{Alexandre}{DURAND}{alexandre.durand@soprabanking.com}
 
-\company{Sopra Banking}{47 rue Christiaan Huygens \\ 37073 Tours Cedex 2 - France}{www.soprabanking.com}
+\resume{}
 
-\resume{Le stage de cinquième année d'école d'ingénieur est la dernière expérience avant l'entrée dans la vie active. Mon stage consiste en la mise en place d'un outil de cartographie pour le progiciel bancaire \textit{Amplitude} développé par l'entreprise \textit{Sopra Banking Software}. Le progiciel étant très vaste et complexe à manipuler, la mise en place d'une cartographie permettrait d'améliorer considérablement le quotidien des architectes fonctionnels. L'outil sera une plateforme interne à l'entreprise développée avec des technologies récentes comme \textit{Spring Boot}, \textit{Spring Data} ou encore \textit{Angular}.}
+\motcle{}
 
-\motcle{stage, outil, cartographie, spring boot, spring data, angular}
+\abstract{}
 
-\abstract{The internship of the fifth year in engineering school is the last experience before the entrance in the working life. My internship consists in the built of a tool designed for mapping the software package \textit{Amplitude} designed by \textit{Sopra Banking Software}. The software has a very wide range of different fiels, making a map of it would improve the everyday life of the developpers. The tool will be a intern platform for the company developped with new technologies like \textit{Spring Boot}, \textit{Spring Data} or \textit{Angular}.}
+\keyword{}
 
-\keyword{internship, tool, mapping, spring boot, spring data, angular}
+\posterblock{}{}{images/LOGO_APHP}{}
+
+\posterblock{}{}{images/LOGO_APHP}{}
+
+\posterblock{}{}{images/LOGO_APHP}{}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -27,5 +28,13 @@
 \begin{document}
 
 \chapter*{Introduction}
+
+%TODO Supprimer ce chapitre une fois le contenu temporaire utilisé
+\chapter*{TEMPO}
+
+Ce projet rentre dans le cadre d’un projet visant à développer un outil de gestion temps réel de parcours de patients pour l’AP-HP (Assistance publique - Hôpitaux de Paris).  L’objectif de cet outil est de gérer un ensemble de patients nécessitant plusieurs activités de soins planifiées sur une journée dans un hôpital de jour. Chaque patient doit suivre un « parcours de soins » défini par un ensemble d’activités de soins. Certaines doivent être réalisées avant d’autres (contraintes de précédences) alors que pour d’autres l’ordre n’a pas d’importance. Il peut exister des délais min et/ou max à respecter entre les activités. Chaque activité de soin est caractérisée par une durée et un ensemble de ressources nécessaires pour la réaliser. Les ressources peuvent représenter le personnel, le matériel, les salles ou encore une combinaison de ces derniers. Elles sont caractérisées par une quantité et un horaire où elles sont disponibles. L’idée de cet outil est de pouvoir changer l’horaire des activités de soins des patients en fonction des aléas (retard, patient absent, etc.) pour diminuer le temps d’attente des patients.
+
+Plusieurs projets ont abouti à une première version simple d’un outil (plateformeweb). L’objectif de ce projet est d’ajouter quelques fonctionnalités à l’outil afin d’obtenir une version finale pour l’hôpital concerné. Ces nouvelles fonctionnalités dépendront des compétences étudiants (visualisation, RO, etc.), des priorités de l’hôpital, de nouvelles idées, etc.
+
 
 \end{document}
