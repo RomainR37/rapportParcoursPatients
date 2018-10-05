@@ -82,6 +82,7 @@
     </requires>
     <requires type="editable">
       <file>polytech/dummy.bib</file>
+      <file>PRD2.bib</file>
     </requires>
   </external>
 </requests>
