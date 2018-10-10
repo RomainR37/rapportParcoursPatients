@@ -28,15 +28,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {6}Bilan et conclusion}{10}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{TEMPO}{11}{chapter*.6}
+\contentsline {part}{Annexes}{11}{part*.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{Annexes}{12}{part*.7}
+\contentsline {chapter}{\numberline {A}Chiffrage du projet}{12}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Chiffrage du projet}{13}{appendix.A}
+\contentsline {chapter}{\numberline {B}Diagramme de Gantt}{13}{appendix.B}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Diagramme de Gantt}{14}{appendix.B}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {C}Manuel d\IeC {\'e}veloppeur}{15}{appendix.C}
+\contentsline {chapter}{\numberline {C}Manuel d\IeC {\'e}veloppeur}{14}{appendix.C}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
