@@ -75,6 +75,9 @@ La première partie de ce rapport sera consacrée à l'analyse préliminaire de 
 \chapter{État de l'art}
 
 
+\section{Planification automatique}
+
+
 \chapter{Analyse et conception}
 
 
@@ -94,6 +97,23 @@ La première partie de ce rapport sera consacrée à l'analyse préliminaire de 
 \chapter{Diagramme de Gantt}
 
 \chapter{Manuel développeur}
+
+
+%TODO Supprimer le chapitre une fois terminé
+\chapter{TEMPO}
+
+\section*{Suppression}
+
+La fonctionnalité "Supprimer" a été ajoutée lors du dernier PR\&D réalisé par Yang Jing. Elle est implémentée dans les onglets de Gestion de la plateforme pour avoir la possibilité de supprimer les ressources qui ne sont pas nécessaires ou qui sont devenues obsolètes.  
+
+Cette fonctionnalité a des risques importants. En effet, la suppression d'un élément peut entraîner des répercussions sur l'intégralité de la plateforme (exemple ...). 
+
+À l'heure actuelle, les boutons "Supprimer" ne disposent d'aucune sécurité, ce qui peut se révéler très dangereux. Un simple clic sur le bouton entraîne la disparition de la ressource sélectionnée. Compte tenu de la dangerosité de la manœuvre sur le bon fonctionnement de la plateforme, il est nécessaire de corriger ce problème. 
+
+À minima, l'apparition d'un message de confirmation lors du clic sur le bouton permettrait d'éviter les mauvaises manipulations. 
+
+
+Pour afficher un message de confirmation, il suffit d'ajouter \javacode{onclick="return confirm('Etes vous sur ?');"} sur le lien de l'action ...
 
 
 \end{document}
