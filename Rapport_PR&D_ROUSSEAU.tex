@@ -39,25 +39,54 @@ Le sujet de ce travail rentre dans le cadre d’un projet visant à développer 
 
 Ce projet est la suite de plusieurs travaux effectués à l'école ces dernières années et qui ont abouti à une première version simple d'un outil sous forme de plateforme web. L'objectif est d'améliorer l'outil actuel en corrigeant certaines problèmes et en ajoutant des fonctionnalités afin de se rapprocher d'une version finale exploitable à l'avenir. Parmi les fonctionnalités qui seront ajoutées, on peut notamment penser à la planification automatique des activités de soin sur le calendrier ou encore l'ajout de notions de temps réel sur les éléments du calendrier.
 
-La première partie de ce rapport sera consacrée à l'analyse préliminaire de la plateforme et à la détermination des tâches à réaliser. Elle comprend des éléments sur le contexte de la réalisation, la description de la plateforme telle qu'elle se trouvait au début du projet, un état de l'art sur les outils existant et sur la gestion de la planification des activités, et la présentation des tâches qui seront effectuées durant les semaines de projet. La seconde partie sera dédiée aux détails des développements de la plateforme. Des documents complémentaires sont disponibles en annexe de ce rapport comme les diagrammes de Gantt, les diagrammes UML, des éléments de gestion de projet, etc. Un guide développeur destiné aux personnes qui récupèreront le projet est également présent en complément.
+La première partie de ce rapport sera consacrée à l'analyse préliminaire de la plateforme et à la détermination des tâches à réaliser. Elle comprend des éléments sur le contexte de la réalisation, la description de la plateforme telle qu'elle se trouvait au début du projet, un état de l'art sur les outils existant et sur la gestion de la planification des activités, et la présentation des tâches qui seront effectuées durant les semaines de projet. La seconde partie sera dédiée aux détails des développements de la plateforme. Des documents complémentaires sont disponibles en annexe de ce rapport comme les diagrammes de Gantt, les diagrammes UML, des éléments de gestion de projet, etc. Un guide développeur destiné aux personnes qui désireront reprendre le projet à l'avenir est également présent en complément.
 
 
 \part{Analyse préliminaire et détermination des objectifs}
 
 
-\chapter{Contexte de la réalisation}
+Cette partie correspond à la première phase du Projet Recherche et Développement, la partie Recherche. Dans le cadre de ce projet, cette partie sera une analyse générale de la plateforme existante afin de déterminer quels objectifs nous devrons atteindre à l'issue de ce projet. Le premier chapitre sera consacré au contexte de la réalisation, la raison de l'initiation du projet ainsi que les acteurs concernés. Le chapitre suivant décrira la plateforme telle qu'elle se trouvait à la reprise du sujet, en détaillant la structure et les fonctionnalités qu'elle contient. Enfin le dernier chapitre évoquera des éléments de recherche opérationnelle dans le domaine de la gestion des patients dans un hôpital. 
 
+
+\chapter{Contexte de la réalisation et objectifs}
+
+Ce chapitre présente le contexte du sujet et les objectifs à atteindre à l'issue du projet.
 
 \section{Contexte, enjeux et acteurs}
 
 
-\section{Enjeux}
+
+L'Assistance Publique – Hôpitaux de Paris (AP-HP) envisage un regroupement de différents services à l'hôpital Antoine Béclère (Clamart dans le département des Hauts-de-Seine) dans le cadre de son plan stratégique 2015-2019. Le regroupement de ces différents services permettra une optimisation des ressources et de l'espace sur le site.
+
+Ce regroupement nécessite le développement d'un système d'informations permettant la gestion des parcours patients (succession d'activités médicales) mais également le développement d'algorithmes permettant la planification des différents parcours.
 
 
-\section{Hypothèses}
+La question des dépenses de santé dans le monde est un sujet prédominant. D'un côté, les États cherchent à réduire les charges de fonctionnement. D'autre part, ils essayent de maintenir une qualité de vie supérieure. Le vieillissement démographique accru - dans les pays occidentaux principalement - accentue un besoin nécessaire et croissant du monde médical. Dans les hôpitaux, la problématique est identique : il est nécessaire de réduire le gaspillage budgétaire, tout en cherchant à maximiser la satisfaction des patients, avec des moyens – au mieux – stagnants. Afin d'améliorer l'organisation des prises de rendez-vous, des outils numériques intégrant des techniques de la Recherche Opérationnelle peuvent être mis en place. Ces derniers permettent de gérer de meilleure façon l'utilisation des ressources médicales. Ils prennent en compte également les imprévus et aléas du système. L'usage de ces outils conduisent à des temps d'attente moins longs pour les patients, qui en tireront satisfaction.
+
+Pour désengorger les services hospitaliers écrasés sous la charge des patients venant pour des besoins différents avec des priorités différentes, les centres de soins mettent en place de plus en plus des services dédiés à l'accueil de patients pour une matinée, un après-midi ou même durant une journée complète. Ces services, principalement accessibles par rendez-vous, vont également permettre au patient de ne pas rester hospitalisé sur plusieurs jours, ce qui impliquerait pour lui de rester une ou plusieurs nuits sans que cela s'avère nécessaire pour lui, et consommera presque inutilement des ressources (chambre, lits, personnel de nuit de surveillance, etc.). Lorsqu'un établissement, ou partie de cet établissement, propose un tel service diurne, celui-ci est nommé « hôpital de jour ». Dans la littérature anglo-saxonne, on retrouve le terme de « outpatient clinic ».
+
+Les parcours cliniques (en anglais Clinical pathways, CP) sont des plans de soins pluridisciplinaires structurés exposant en détail les étapes essentielles que doivent suivre les patients présentant un problème clinique spécifique (Kinsman et al. (2010)). Ceux-ci se décomposent en plusieurs activités prédéfinies, certaines devant être effectuées avant d'autres (contraintes de précédence), nécessitant des ressources multiples et diverses au sein d'un même service ou de plusieurs (contraintes de ressources), dans des délais et créneaux horaires journaliers (contraintes de délais, contraintes temporelles). Il n'existe que peu d'exemples où les parcours patients (tels qu'on les a définis ci-dessus) sont mis en œuvre, étant donné la rigidité certaine entre les services d'un même établissement, et la difficulté d'avoir un outil central permettant le bon fonctionnement de cette communication pluridisciplinaire. Or, ce type d'organisation devrait permettre une meilleure utilisation des ressources matérielles, médicales et humaines. De plus, l'utilisation de parcours cliniques est susceptible d'avoir un effet favorable sur les résultats des patients, la durée d'hospitalisation, les coûts hospitaliers et les pratiques professionnelles (Kinsman et al. (2010)).
+
+L'Assistance Publique - Hôpitaux de Paris (AP-HP), dans son plan stratégique 2015 - 2019, a lancé une réflexion sur la mise en place d'une clinique ambulatoire. Avec la mutualisation de certains services au sein de différents hôpitaux de la région, le site de l'hôpital Béclère à Clamart obtiendra un gain de place suffisant pour proposer une telle solution. Il regroupera tous les hôpitaux de jour existants du site, avec un management centralisé et transversal à l’aide de parcours patients comme décrit ci-dessus. Les équipes médicales et administratives ont pris le soin de définir d’ors et déjà une vingtaine de parcours patients en adéquation avec les ressources déjà en place, et présenté une répartition type des prises en charge hebdomadaire. Celle-ci devrait en théorie permettre d'accueillir 179 patients chaque semaine, et à terme environ 1000 par mois. On comprend donc aisément que la centralisation organisationnelle complexe va nécessiter la conception d'un système d'aide à la décision pour la prise de rendez-vous, prenant en compte les disponibilités des patients, des ressources et du personnel médical.
+
+Le nouveau procédé de prise de rendez-vous et d'organisation de rendez-vous devrait s'articuler en trois étapes distinctes. La première étape est l'affectation des patients à une journée définie, en essayant de répartir au mieux les consommations en ressources et de respecter les journées types (définies lors des travaux préparatoires, réalisés dans le cadre du plan stratégique de l'AP-HP). Puis, environ un mois avant ce jour J, l'infirmière de coordination déclenchera le processus d'ordonnancement, permettant de définir à quelle heure chaque patient devra arriver le jour considéré pour leur première activité médicale.
+
+Cette première solution d'ordonnancement est dite hors-ligne (offline). Dès lors que la solution que nous proposons est validée, les patients seront appelés afin de confirmer leur horaire de première activité. S'ensuit la deuxième phase de ré-ordonnancement, ou ordonnancement en-ligne (online). Pour des raisons d'urgence principalement, il est possible que certains patients se rajoutent pour la date considérée, bien que le premier ordonnancement ait été effectué et que certaines activités soient considérées comme immuables dans le temps. La phase temps-réel, troisième et dernière étape, s'effectuera le jour-même via une interface de visualisation des ressources, où l'agent chargé de la coordination pourra dynamiquement réajuster la planification.
+
+
+\section{Objectifs}
+
+
+Corriger les bugs actuels, planification automatique, planification temps réel
 
 
 \section{Bases méthodologiques}
+
+
+Gestion de projet
+
+
+La plateforme est déjà en MVC.
 
 
 \chapter{Description générale}
@@ -69,6 +98,11 @@ La première partie de ce rapport sera consacrée à l'analyse préliminaire de 
 
 \section{Fonctionnalités du système}
 
+
+Les fonctionnalités existantes sont dispo en annexe.
+
+
+
 \section{Structure générale du système}
 
 
@@ -78,10 +112,10 @@ La première partie de ce rapport sera consacrée à l'analyse préliminaire de 
 \section{Planification automatique}
 
 
-\chapter{Analyse et conception}
-
-
 \part{Développement}
+
+
+\chapter{Analyse et conception}
 
 
 \chapter{Mise en œuvre}
@@ -92,9 +126,14 @@ La première partie de ce rapport sera consacrée à l'analyse préliminaire de 
 
 \appendix
 
+\chapter{Fonctionnalités existantes}
+
 \chapter{Chiffrage du projet}
 
+
 \chapter{Diagramme de Gantt}
+
+\chapter{Gestion de projet}
 
 \chapter{Manuel développeur}
 
@@ -111,7 +150,6 @@ Cette fonctionnalité a des risques importants. En effet, la suppression d'un é
 À l'heure actuelle, les boutons "Supprimer" ne disposent d'aucune sécurité, ce qui peut se révéler très dangereux. Un simple clic sur le bouton entraîne la disparition de la ressource sélectionnée. Compte tenu de la dangerosité de la manœuvre sur le bon fonctionnement de la plateforme, il est nécessaire de corriger ce problème. 
 
 À minima, l'apparition d'un message de confirmation lors du clic sur le bouton permettrait d'éviter les mauvaises manipulations. 
-
 
 Pour afficher un message de confirmation, il suffit d'ajouter \javacode{onclick="return confirm('Etes vous sur ?');"} sur le lien de l'action ...
 
