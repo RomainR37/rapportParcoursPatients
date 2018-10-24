@@ -1,0 +1,70 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{nyt/global/WWW}
+    \entry{noauthor_chu_nodate}{misc}{}
+      \list{language}{1}{%
+        {fr}%
+      }
+      \field{sortinit}{L}
+      \field{sortinithash}{7bba64db83423e3c29ad597f3b682cf3}
+      \field{labelprefix}{WWW}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Certains patients peuvent y dormir pour éviter une nuit dans un lit d'hôpital.}
+      \field{journaltitle}{Info Tours.fr}
+      \field{title}{Le {CHU} de {Tours} a lancé son service d'hôtel hospitalier}
+      \field{urlday}{17}
+      \field{urlmonth}{10}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:C\:\\Users\\Romain\\Zotero\\storage\\SDBYQ3MD\\le-chu-de-tours-a-lance-son-service-d-hotel-hospitalier.html:text/html
+      \endverb
+      \verb{url}
+      \verb http://www.info-tours.fr/articles/tours/2018/07/30/9333/le-chu-de-tours-a-lance-son-service-d-hotel-hospitalier/
+      \endverb
+    \endentry
+  \endsortlist
+  \sortlist[entry]{nyt/global/}
+    \entry{noauthor_chu_nodate}{misc}{}
+      \list{language}{1}{%
+        {fr}%
+      }
+      \field{sortinit}{L}
+      \field{sortinithash}{7bba64db83423e3c29ad597f3b682cf3}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Certains patients peuvent y dormir pour éviter une nuit dans un lit d'hôpital.}
+      \field{journaltitle}{Info Tours.fr}
+      \field{title}{Le {CHU} de {Tours} a lancé son service d'hôtel hospitalier}
+      \field{urlday}{17}
+      \field{urlmonth}{10}
+      \field{urlyear}{2018}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:C\:\\Users\\Romain\\Zotero\\storage\\SDBYQ3MD\\le-chu-de-tours-a-lance-son-service-d-hotel-hospitalier.html:text/html
+      \endverb
+      \verb{url}
+      \verb http://www.info-tours.fr/articles/tours/2018/07/30/9333/le-chu-de-tours-a-lance-son-service-d-hotel-hospitalier/
+      \endverb
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

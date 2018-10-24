@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.1.12)  17 OCT 2018 17:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.1.12)  24 OCT 2018 17:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2693,8 +2693,8 @@ Package biblatex Info: Data encoding 'utf8' specified.
 \openout4 = `Rapport_PR&D_ROUSSEAU.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'Rapport_PR&D_ROUSSEAU.bbl' not found.
-No file Rapport_PR&D_ROUSSEAU.bbl.
+Package biblatex Info: ... file 'Rapport_PR&D_ROUSSEAU.bbl' found.
+(./Rapport_PR&D_ROUSSEAU.bbl)
 Package biblatex Info: Reference section=0 on input line 30.
 Package biblatex Info: Reference segment=0 on input line 30.
 LaTeX Info: Redefining \microtypecontext on input line 30.
@@ -2713,6 +2713,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 \c@lstlisting=\count466
+
 (c:/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count467
@@ -2937,6 +2938,9 @@ Chapitre 1.
 [4
 
 ]
+Underfull \vbox (badness 1082) has occurred while \output is active []
+
+
 Underfull \hbox (badness 10000) has occurred while \output is active
  [][][][]\T1/jkpf/b/sc/12 Chapitre 1.  Contexte de la réa-li-sa-tion et ob-jec-
 tifs
@@ -2953,54 +2957,74 @@ Chapitre 2.
 [7
 
 ]
-Chapitre 3.
-[8
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][][][]\T1/jkpf/b/sc/12 Chapitre 2.  Des-crip-tion gé-né-rale
+ []
 
-] [9
+[8]
+Chapitre 3.
+[9
+
+] [10
 
 ]
 Chapitre 4.
-[10
-
-]
-Chapitre 5.
 [11
 
 ]
-Chapitre 6.
+Chapitre 5.
 [12
 
-] [13
+]
+Chapitre 6.
+[13
+
+] [14
 
 ]
 Annexe A.
-[14
-
-]
-Annexe B.
 [15
 
 ]
+Annexe B.
+
+Underfull \vbox (badness 4582) has occurred while \output is active []
+
+ [16
+
+]
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][][][]\T1/jkpf/b/sc/12 Annexe B.  Ex-pli-ca-tions des tables du mo-dèle
+ []
+
+[17]
 Annexe C.
-[16
-
-]
-Annexe D.
-[17
-
-]
-Annexe E.
 [18
 
 ]
+Annexe D.
+[19
+
+]
+Annexe E.
+[20
+
+]
 Annexe F.
+[21
 
-Package biblatex Warning: Type 'online' not found on input line 157.
+]
+Annexe G.
 
+Package biblatex Warning: Type 'online' not found on input line 245.
+
+[22
+
+]
 No file Rapport_PR&D_ROUSSEAU.gls.
 No file Rapport_PR&D_ROUSSEAU.acr.
 No file Rapport_PR&D_ROUSSEAU.ind.
-[19
+[23
 
 ]
 *geometry* verbose mode - [ newgeometry ] result:
@@ -3036,93 +3060,93 @@ No file Rapport_PR&D_ROUSSEAU.ind.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--157
+Underfull \hbox (badness 10000) in paragraph at lines 245--245
  []\T1/jkpf/b/n/10 Département In-for-ma-tique
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--157
+Underfull \hbox (badness 10000) in paragraph at lines 245--245
  []\T1/jkpf/b/n/10 64 ave-nue Jean Por-ta-lis, 37200 Tours, France
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--157
+Underfull \hbox (badness 10000) in paragraph at lines 245--245
  [][][][][]$\T1/jkptt/b/n/10 p o l y t e c h \OML/jkp/m/it/10 : \T1/jkptt/b/n/1
 0 u n i v -[] t o u r s\OML/jkp/m/it/10 : \T1/jkptt/b/n/10 f r$[][][][]
  []
 
 File: polytech/polytech.pdf Graphic file (type pdf)
 <use polytech/polytech.pdf>
-Package pdftex.def Info: polytech/polytech.pdf used on input line 157.
+Package pdftex.def Info: polytech/polytech.pdf used on input line 245.
 (pdftex.def)             Requested size: 306.2564pt x 95.25526pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--157
+Underfull \hbox (badness 10000) in paragraph at lines 245--245
  [][][][]\T1/jkpf/b/n/12 Informatique
  []
 
-<images/LOGO_APHP.png, id=206, 404.2302pt x 89.6148pt>
+<images/LOGO_APHP.png, id=231, 404.2302pt x 89.6148pt>
 File: images/LOGO_APHP.png Graphic file (type png)
 
 <use images/LOGO_APHP.png>
-Package pdftex.def Info: images/LOGO_APHP.png used on input line 157.
+Package pdftex.def Info: images/LOGO_APHP.png used on input line 245.
 (pdftex.def)             Requested size: 404.2292pt x 89.61458pt.
 File: images/LOGO_APHP.png Graphic file (type png)
  <use images/LOGO_APHP.png>
-Package pdftex.def Info: images/LOGO_APHP.png used on input line 157.
+Package pdftex.def Info: images/LOGO_APHP.png used on input line 245.
 (pdftex.def)             Requested size: 404.2292pt x 89.61458pt.
 File: images/LOGO_APHP.png Graphic file (type png)
 
 <use images/LOGO_APHP.png>
-Package pdftex.def Info: images/LOGO_APHP.png used on input line 157.
+Package pdftex.def Info: images/LOGO_APHP.png used on input line 245.
 (pdftex.def)             Requested size: 404.2292pt x 89.61458pt.
- [20
+ [24
 
 
  <./images/LOGO_APHP.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 157--157
+Underfull \hbox (badness 10000) in paragraph at lines 245--245
  [][][][]\T1/jkpf/b/sc/10.95 Ecole Po-ly-tech-nique de l'Uni-ver-sité Fran-çois
  Ra-be-lais de Tours
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--157
+Underfull \hbox (badness 10000) in paragraph at lines 245--245
  []\T1/jkpf/b/n/10 Département In-for-ma-tique
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--157
+Underfull \hbox (badness 10000) in paragraph at lines 245--245
  []\T1/jkpf/b/n/10 64 ave-nue Jean Por-ta-lis, 37200 Tours, France
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--157
+Underfull \hbox (badness 10000) in paragraph at lines 245--245
  [][][][][]$\T1/jkptt/b/n/10 p o l y t e c h \OML/jkp/m/it/10 : \T1/jkptt/b/n/1
 0 u n i v -[] t o u r s\OML/jkp/m/it/10 : \T1/jkptt/b/n/10 f r$[][][][]
  []
 
 File: polytech/polytech.pdf Graphic file (type pdf)
 <use polytech/polytech.pdf>
-Package pdftex.def Info: polytech/polytech.pdf used on input line 157.
+Package pdftex.def Info: polytech/polytech.pdf used on input line 245.
 (pdftex.def)             Requested size: 306.2564pt x 95.25526pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--157
+Underfull \hbox (badness 10000) in paragraph at lines 245--245
  [][][][]\T1/jkpf/b/n/12 Informatique
  []
 
 File: images/LOGO_APHP.png Graphic file (type png)
 <use images/LOGO_APHP.png>
-Package pdftex.def Info: images/LOGO_APHP.png used on input line 157.
+Package pdftex.def Info: images/LOGO_APHP.png used on input line 245.
 (pdftex.def)             Requested size: 404.2292pt x 89.61458pt.
 File: images/LOGO_APHP.png Graphic file (type png)
  <use images/LOGO_APHP.png>
-Package pdftex.def Info: images/LOGO_APHP.png used on input line 157.
+Package pdftex.def Info: images/LOGO_APHP.png used on input line 245.
 (pdftex.def)             Requested size: 404.2292pt x 89.61458pt.
 File: images/LOGO_APHP.png Graphic file (type png)
 
 <use images/LOGO_APHP.png>
-Package pdftex.def Info: images/LOGO_APHP.png used on input line 157.
+Package pdftex.def Info: images/LOGO_APHP.png used on input line 245.
 (pdftex.def)             Requested size: 404.2292pt x 89.61458pt.
- [21
+ [25
 
 
 ]
@@ -3158,7 +3182,7 @@ Package pdftex.def Info: images/LOGO_APHP.png used on input line 157.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [22
+ [26
 
 
 
@@ -3166,8 +3190,8 @@ Package pdftex.def Info: images/LOGO_APHP.png used on input line 157.
 
 ] 
 AED: pageslts setting LastPage 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 157.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 157.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 245.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 245.
 \c@pagesLTS.arabic.1.local.count=\count489
 
 AED: pageslts setting VeryLastPage via AfterLastShipout 
@@ -3179,23 +3203,23 @@ Package pageslts Info: Total number of pages is even.
 
 
 (./Rapport_PR&D_ROUSSEAU.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 157.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 157.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 245.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 245.
 Package logreq Info: Writing requests to 'Rapport_PR&D_ROUSSEAU.run.xml'.
 \openout1 = `Rapport_PR&D_ROUSSEAU.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 157.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 245.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 54070 strings out of 493013
- 968477 string characters out of 6136993
- 1581862 words of memory out of 5000000
- 56412 multiletter control sequences out of 15000+600000
- 151216 words of font info for 255 fonts, out of 8000000 for 9000
+ 54296 strings out of 493013
+ 972659 string characters out of 6136993
+ 1580935 words of memory out of 5000000
+ 56603 multiletter control sequences out of 15000+600000
+ 153936 words of font info for 275 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,16n,94p,10399b,21749s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}{c:/tex
@@ -3209,10 +3233,10 @@ ve/2016/texmf-dist/fonts/type1/public/kpfonts/jkpmne.pfb><c:/texlive/2016/texmf
 -dist/fonts/type1/public/kpfonts/jkpmsc8a.pfb><c:/texlive/2016/texmf-dist/fonts
 /type1/public/kpfonts/jkpttbn8a.pfb><c:/texlive/2016/texmf-dist/fonts/type1/pub
 lic/kpfonts/jkpttmn8a.pfb>
-Output written on Rapport_PR&D_ROUSSEAU.pdf (28 pages, 216763 bytes).
+Output written on Rapport_PR&D_ROUSSEAU.pdf (32 pages, 234123 bytes).
 PDF statistics:
- 381 PDF objects out of 1000 (max. 8388607)
- 324 compressed objects within 4 object streams
- 65 named destinations out of 1000 (max. 500000)
- 46364 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 414 PDF objects out of 1000 (max. 8388607)
+ 353 compressed objects within 4 object streams
+ 72 named destinations out of 1000 (max. 500000)
+ 46380 words of extra memory for PDF output out of 51595 (max. 10000000)
 
