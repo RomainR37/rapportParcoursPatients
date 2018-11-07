@@ -65,13 +65,29 @@ L'Assistance Publique - Hôpitaux de Paris (AP-HP), dans son plan stratégique 2
 
 Le sujet a été proposé en 2015 par Lucie ROUSSEL, ingénieur en ordonnancement à l'AP-HP et a été suivi lors de plusieurs projets à Polytech: tout d'abord, lors d'un projet collectif (réalisé par Benjamin COLMART, Jean COQUELET, Anaëlle HAMON, Jiang MING, Yan LI et Minghui ZHANG) qui a posé les bases de la modélisation et des premières fonctionnalités, un projet R\&D par Jean COQUELET en 2016 également basé davantage sur l'aspect gestion et optimisation des parcours, un projet R\&D par Guillaume POCHET en 2017 qui a ajouté des éléments sur la gestion de calendrier et enfin un autre projet R\&D réalisé par Jing YANG qui ajoute des améliorations générales. Le projet tel qu'il est développé à Polytech servira dans un premier temps en tant que \textit{proof of concept}, et si celui-ci satisfait l'administration, il pourra entrer en production à plus grande échelle dans le futur.
 
-La plateforme, à la reprise du projet, fonctionne. Il est possible d'ajouter des patients et de leur associer un parcours-patient avec des heures de rendez-vous et des activités à suivre lors d'une journée. Cependant, de nombreux éléments sont à améliorer, des bugs à corriger dans un premier temps mais aussi des améliorations d'un point de vue graphique. Des fonctionnalités importantes restent à implémenter: d'un côté, l'ajout d'une notion de temps réel sur les activités et les rendez-vous, et de l'autre, la possibilité de faire une planification automatique tenant compte des patients et des ressources disponibles. Compte-tenu du temps alloué pour le projet, il sera difficile d'ajouter ces deux fonctionnalités importantes. Nous verrons par la suite vers quels éléments nous allons nous pencher en priorité. 
+La plateforme, une fois installée sur mon poste à la reprise du projet, fonctionne. Il est possible d'ajouter des patients et de leur associer un parcours-patient avec des heures de rendez-vous et des activités à suivre lors d'une journée. Cependant, de nombreux éléments sont à améliorer, des bugs à corriger dans un premier temps mais aussi des améliorations d'un point de vue graphique. Des fonctionnalités importantes restent à implémenter: d'un côté, l'ajout d'une notion de temps réel sur les activités et les rendez-vous, et de l'autre, la possibilité de faire une planification automatique tenant compte des patients et des ressources disponibles. Compte-tenu du temps alloué pour le projet, il sera difficile d'ajouter ces deux fonctionnalités importantes. Nous verrons par la suite vers quels éléments nous allons nous pencher en priorité. 
 
 
 \section{Objectifs}
 
 
-Corriger les bugs actuels, planification automatique, planification temps réel
+Suite à l'affectation du sujet, les premières rencontres avec M. KERGOSIEN ont permis de fixer des objectifs principaux pour mener à bien le projet. Trois axes de développement ont été définis pour la finalisation de la plateforme : la correction de certains problèmes sur les fonctionnalités existantes, l'ajout de fonctions de planification automatique et l'implémentation de fonctionnalités permettant de planifier en temps réel. 
+
+Les trois objectifs présentés par la suite sont conséquents en terme de temps. Il sera sans doute très compliquer de réaliser les trois objectifs dans la limite de temps alloué au projet. Nous nous focaliserons ainsi sur deux des trois objectifs à suivre. 
+
+
+\subsection{Corrections des bugs et améliorations sur les fonctionnalités existantes}
+
+Le premier objectif consiste à corriger certaines erreurs que l'on peut trouver sur la plateforme. À la première analyse du projet, plusieurs problèmes sont apparus, que ce soit des erreurs d'affichage, des soucis d'ergonomie par exemple. Ainsi, le but est d'améliorer les éléments déjà existants de la plateforme afin de la rendre plus stable et de meilleur qualité. Parmi les corrections et améliorations à apporter, on retrouve la révision de la suppression de données, de l'onglet "Plan de parcours", du formulaire de création de patient, de certains éléments de la page d'accueil. 
+
+Plusieurs fonctionnalités qui n'ont pas encore été implémentées sont aussi à rajouter pour enrichir les possibilités offertes à l'utilisateur, comme l'affichage du planning pour un patient donné, l'ajout de fonctions de tri pour l'affichage des ressources, ou encore, la création de jeux de données permettant de tester plus facilement la planification. 
+
+
+\subsection{Implémentation de la planification automatique}
+
+
+\subsection{Implémentation de la planification temps réel}
+
 
 
 \section{Bases méthodologiques}
@@ -94,7 +110,7 @@ Ce projet est la reprise de trois projets existants, un projet de la gestion com
 
 L'application existante est exécutée sur un serveur qui communiquera avec une base de données pour pouvoir récupérer les différentes informations de l'application. Un ordinateur ou smartphone (pour les patients) avec un navigateur sera demandé pour l'implémentation de cette application. Voici le diagramme de déploiement Figure 1. 
 
-Cette application existante a réalisé des fonctionnalités pour la gestion des ressources, des patients et des parcours, elle nous permet de planifier des parcours aux patients et de visualiser le planning d'un patient ou d'un personnel. Les fonctionnalités détaillées seront décrites dans la partie fonctionnalités déjà implémentées (voir Annexe).
+Cette application existante a réalisé des fonctionnalités pour la gestion des ressources, des patients et des parcours, elle nous permet de planifier des parcours aux patients et de visualiser le planning d'un patient ou d'un personnel. Les fonctionnalités détaillées seront décrites dans la partie fonctionnalités déjà implémentées (voir Annexes).
 
 Les pages webs avec des interfaces existent déjà. Ces interfaces utilisent tous les modules définis dans le diagramme de classe Figure 1(Annexe D). Dans mon PRD, je vais rajouter des éléments basés sur les interfaces existantes et modifier ce que n’a pas été bien développé. 
 
