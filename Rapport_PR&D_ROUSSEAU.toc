@@ -10,11 +10,17 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Table des mati\`eres\markboth {Table des mati\`eres}{Table des mati\`eres}}{i}{chapter*.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Introduction}{1}{chapter*.5}
+\contentsline {chapter}{Table des figures}{iii}{chapter*.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Introduction}{1}{chapter*.6}
 \defcounter {refsection}{0}\relax 
 \contentsline {part}{I\hspace {1em}Analyse pr\IeC {\'e}liminaire et d\IeC {\'e}termination des objectifs}{3}{part.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Contexte de la r\IeC {\'e}alisation et objectifs}{4}{chapter.1}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1}Contexte, enjeux et acteurs}{4}{section.1.1}
 \defcounter {refsection}{0}\relax 
@@ -48,53 +54,65 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1}Environnement du projet}{8}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Caract\IeC {\'e}ristiques des utilisateurs}{8}{section.2.2}
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Caract\IeC {\'e}ristiques des utilisateurs}{9}{section.2.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Fonctionnalit\IeC {\'e}s du syst\IeC {\`e}me}{9}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Structure g\IeC {\'e}n\IeC {\'e}rale du syst\IeC {\`e}me}{9}{section.2.4}
+\contentsline {section}{\numberline {4}Structure g\IeC {\'e}n\IeC {\'e}rale du syst\IeC {\`e}me}{10}{section.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}\IeC {\'E}tat de l'art}{10}{chapter.3}
+\contentsline {chapter}{\numberline {3}\IeC {\'E}tat de l'art}{11}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Planification automatique}{10}{section.3.1}
+\contentsline {section}{\numberline {1}Planification automatique}{11}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{II\hspace {1em}D\IeC {\'e}veloppement}{11}{part.2}
+\contentsline {part}{II\hspace {1em}D\IeC {\'e}veloppement}{12}{part.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Analyse et conception}{12}{chapter.4}
+\contentsline {chapter}{\numberline {4}Analyse et conception}{13}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Mise en \IeC {\oe }uvre}{13}{chapter.5}
+\contentsline {chapter}{\numberline {5}Mise en \IeC {\oe }uvre}{14}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Bilan et conclusion}{14}{chapter.6}
+\contentsline {chapter}{\numberline {6}Bilan et conclusion}{15}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{Annexes}{15}{part*.6}
+\contentsline {part}{Annexes}{16}{part*.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Fonctionnalit\IeC {\'e}s existantes}{16}{appendix.A}
+\contentsline {chapter}{\numberline {A}Fonctionnalit\IeC {\'e}s existantes}{17}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Explications des tables du mod\IeC {\`e}le}{17}{appendix.B}
+\contentsline {chapter}{\numberline {B}Explications des tables du mod\IeC {\`e}le}{18}{appendix.B}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {C}Chiffrage du projet}{19}{appendix.C}
-\defcounter {refsection}{0}\relax 
-\select@language {english}
-\defcounter {refsection}{0}\relax 
-\select@language {french}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {D}Diagramme de Gantt}{20}{appendix.D}
+\contentsline {chapter}{\numberline {C}Chiffrage du projet}{20}{appendix.C}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
 \select@language {french}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {E}Gestion de projet}{21}{appendix.E}
+\contentsline {chapter}{\numberline {D}Diagramme de Gantt}{21}{appendix.D}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
 \select@language {french}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {F}Manuel d\IeC {\'e}veloppeur}{22}{appendix.F}
+\contentsline {chapter}{\numberline {E}Gestion de projet}{22}{appendix.E}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {G}TEMPO}{23}{appendix.G}
+\select@language {english}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliographie}{24}{appendix*.7}
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {F}Manuel d\IeC {\'e}veloppeur}{23}{appendix.F}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {G}TEMPO}{24}{appendix.G}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliographie}{25}{appendix*.8}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 

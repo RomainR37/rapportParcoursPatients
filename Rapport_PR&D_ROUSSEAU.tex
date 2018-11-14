@@ -49,6 +49,7 @@ Cette partie correspond à la première phase du Projet Recherche et Développem
 
 
 \chapter{Contexte de la réalisation et objectifs}
+\label{chap:contexte}
 
 Ce chapitre présente le contexte du sujet et les objectifs à atteindre à l'issue du projet.
 
@@ -105,30 +106,47 @@ En ce qui concerne l'organisation des tâches, j'utilise l'outil de gestion de p
 
 Concernant la méthodologie de développement, la plateforme a été réalisée en suivant un pattern MVC. Je vais donc reprendre le code en respectant l'organisation déjà établie.
 
+
 \chapter{Description générale}
 
+
+Ce chapitre est consacré à la description générale de la plateforme. Nous évoquerons l'environnement autour du projet, les caractéristiques des futurs utilisateurs, les fonctionnalités du système ainsi que sa structure générale.
 
 \section{Environnement du projet}
 
 
-%% PRD Jing 
-Ce projet est la reprise de trois projets existants, un projet de la gestion commencé par un groupe de 6 étudiants lors de leur 5ème année à l'école polytechnique de Tours de l'année 2015-2016 dont Jean Coquelet fait chef de projet, un projet de l'optimisation réalisé aussi par Jean Coquelet dans le cadre de son PRD de l'année 2015-2016 et un projet de développement fait par Pochet Guillaume de son PRD de l'année 2016-2017.
+Comme évoqué dans le \autoref{chap:contexte}, ce projet est la reprise de plusieurs projets successifs effectués par les étudiants de Polytech. Il a été initié lors de l'année scolaire 2015-2016 avec un projet R\&D et un projet collectif en simultané. Par la suite, plusieurs projets R\&D se sont imbriqués chaque année de façon successive. La première modélisation et les premières briques de code datent donc de plusieurs années maintenant. 
 
-L'application existante est exécutée sur un serveur qui communiquera avec une base de données pour pouvoir récupérer les différentes informations de l'application. Un ordinateur ou smartphone (pour les patients) avec un navigateur sera demandé pour l'implémentation de cette application. Voici le diagramme de déploiement Figure 1. 
+L'application existante fonctionne sur une machine locale et est déployée via la plateforme de développement Web WAMP. Cette plateforme permet de faire fonctionner localement des scripts PHP sur machine Windows. WAMP fait le lien entre 4 composantes comme indiqué dans son acronyme : 
 
-Cette application existante a réalisé des fonctionnalités pour la gestion des ressources, des patients et des parcours, elle nous permet de planifier des parcours aux patients et de visualiser le planning d'un patient ou d'un personnel. Les fonctionnalités détaillées seront décrites dans la partie fonctionnalités déjà implémentées (voir Annexes).
+\begin{description}
+	\item[Windows] comme le nom du système d'exploitation qui assurera la distribution des ressources entre les composants;
+	\item[Apache] comme le serveur Web qui va déployer l'application et répondre aux requêtes Web du navigateur;
+	\item[MySQL] comme le nom de la base de données utilisée pour l'application;
+	\item[PHP] comme le langage de script utilisé. 
+\end{description}
 
-Les pages webs avec des interfaces existent déjà. Ces interfaces utilisent tous les modules définis dans le diagramme de classe Figure 1(Annexe D). Dans mon PRD, je vais rajouter des éléments basés sur les interfaces existantes et modifier ce que n’a pas été bien développé. 
+Les développements lors de ce projet ont été effectués sur ma machine personnelle, sous Windows 10, et en utilisant le navigateur \textit{Mozilla Firefox}. Le diagramme de déploiement de la \autoref{fig:deploiement} représente les liens entre le serveur, la base de données et l'application. 
 
-Je vais revoir la suppression des éléments qui n'est pas bien résolu pendant l'ancien projet en restructurant une partie de la base de données. Pour la gestion de patient, je vais rajouter de nouvelles fonctionnalités et modifier les actions sur un patient cherché sur l'interface « gérer patient ». À part de ça, l'interface suivante qui est « dossier parcours » sera modifiée et les onglets et champs seront ajoutés ici. Selon l'interface « nouveau parcours », je vais retravailler sur la partie disponibilité qui ne changera pas l'interface.
+\begin{figure}
+	\includegraphics[scale=0.8]{images/deploiement}
+	\caption{Diagramme de déploiement}
+	\label{fig:deploiement}
+\end{figure}
+
+L'application si elle est mise en production sera disponible dans un premier temps sur une machine à la disposition de la personne chargée de la coordination du planning au sein du service. Les évolutions sur la plateforme pourront amener à déployer l'application sur plusieurs machines en parallèle au sein de l'hôpital. Par exemple, si l'on souhaite implémenter un système de pointage en temps réel des activités, il serait intéressant d'avoir plusieurs postes à disposition pour faciliter la tâche. Ici, nous nous focaliserons sur un déploiement sur une unique machine. 
 
 
 \section{Caractéristiques des utilisateurs}
 
 
+La plateforme a pour 
+
+Nous pouvons distinguer 3 types d'utilisateurs pour la plateforme
+
 %% PRD Jing
 
-Dans notre projet, on peut différencier 3 types d’utilisateurs de l’application web :
+Dans notre projet, on peut différencier 3 types d’utilisateurs de l'application web :
 
 \begin{itemize}
 	\item Les Patients : Accès limité à l'application, ils pourront uniquement visualiser leur planning et suivre l'avancement dans leur parcours (sans indications horaires excepté sur la prochaine activité).
@@ -136,8 +154,7 @@ Dans notre projet, on peut différencier 3 types d’utilisateurs de l’applica
 	\item Administrateurs et infirmières de coordination : C'est l'utilisateur qui a tous les droits sur l'application. Il peut visualiser/modifier les plannings de toutes les ressources, ajouter / modifier une activité, gérer les ressources (humaines ou matérielles), ajouter/modifier un parcours patient.
 \end{itemize}
 
-Les différents utilisateurs de l'application devront s'authentifier pour pouvoir accéder aux
-différentes fonctionnalités.
+Les différents utilisateurs de l'application devront s'authentifier pour pouvoir accéder aux différentes fonctionnalités.
 
 
 \section{Fonctionnalités du système}
