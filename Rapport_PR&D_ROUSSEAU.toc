@@ -68,9 +68,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2}Caract\IeC {\'e}ristiques des utilisateurs}{9}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Fonctionnalit\IeC {\'e}s du syst\IeC {\`e}me}{9}{section.2.3}
+\contentsline {section}{\numberline {3}Contraintes de d\IeC {\'e}veloppement}{9}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Structure g\IeC {\'e}n\IeC {\'e}rale du syst\IeC {\`e}me}{10}{section.2.4}
+\contentsline {section}{\numberline {4}Fonctionnalit\IeC {\'e}s du syst\IeC {\`e}me}{10}{section.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Structure g\IeC {\'e}n\IeC {\'e}rale du syst\IeC {\`e}me}{10}{section.2.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}\IeC {\'E}tat de l'art}{11}{chapter.3}
 \defcounter {refsection}{0}\relax 

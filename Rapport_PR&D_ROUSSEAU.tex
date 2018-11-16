@@ -139,22 +139,21 @@ L'application si elle est mise en production sera disponible dans un premier tem
 
 \section{Caractéristiques des utilisateurs}
 
-
-La plateforme a pour 
-
-Nous pouvons distinguer 3 types d'utilisateurs pour la plateforme
-
-%% PRD Jing
-
-Dans notre projet, on peut différencier 3 types d’utilisateurs de l'application web :
+La plateforme incorpore un système de gestion de compte afin de garantir la sécurité des données. Nous pouvons définir 2 types d'utilisateurs pour l'application.
 
 \begin{itemize}
-	\item Les Patients : Accès limité à l'application, ils pourront uniquement visualiser leur planning et suivre l'avancement dans leur parcours (sans indications horaires excepté sur la prochaine activité).
-	\item Le personnel de soins : Ils auront accès à l'ajout / la recherche de patients, l'accès à leur planning et à la visualisation d'un planning d'un patient.
-	\item Administrateurs et infirmières de coordination : C'est l'utilisateur qui a tous les droits sur l'application. Il peut visualiser/modifier les plannings de toutes les ressources, ajouter / modifier une activité, gérer les ressources (humaines ou matérielles), ajouter/modifier un parcours patient.
+	\item Le personnel de soins : ils auront accès à la majorité des fonctionnalités de la plateforme (l'ajout et la recherche de patients, l'accès à leur planning personnel et au planning des patients). Ils ne pourront pas effectuer de modification sur les rendez-vous ou sur le planning en général.
+	\item Administrateurs et infirmières de coordination : ils disposeront de tous les droits sur l'application. Ils pourront réaliser les mêmes opérations que le personnel de soins et auront la possibilité de gérer les ressources, gérer les activités, créer et modifier les plannings, ajouter et modifier un parcours-patient, etc.
 \end{itemize}
 
-Les différents utilisateurs de l'application devront s'authentifier pour pouvoir accéder aux différentes fonctionnalités.
+Les utilisateurs de l'application devront s'authentifier pour pouvoir accéder aux différentes fonctionnalités et selon leur grade, ils auront accès aux éléments avec lesquels ils pourront interagir. 
+
+
+\section{Contraintes de développement}
+
+\'{E}tant donné que ce projet fait suite à plusieurs projets consécutifs et que la base de la plateforme a déjà été développée, il faudra utiliser les mêmes langages de programmes ainsi que les mêmes frameworks que lors des projets passés. Ainsi, les contraintes concernent les langages \textit{HTML}, \textit{CSS}, \textit{Javascript}, \textit{PHP}. La structure de l'application sera la même, à savoir une architecture MVC (Modèle - Vue - Contrôleur), mise en place à l'aide du framework PHP \textit{CodeIgniter}. En ce qui concerne la mise en page (\textit{CSS}), nous devrons utiliser \textit{Bootstrap}.
+
+Guillaume POCHET, qui a effectué son PR\&D sur le sujet lors de l'année scolaire 2016-2017, avait réalisé un état de l'art sur les bibliothèques utilisables pour réaliser interactif \cite{pochet_outil_nodate}. À la suite de cela, il avait décidé d'utiliser la bibliothèque \textit{FullCalendar} pour constituer les planning sur la plateforme. Nous poursuivrons avec l'utilisation de cette même bibliothèque.
 
 
 \section{Fonctionnalités du système}

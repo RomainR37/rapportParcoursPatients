@@ -41,6 +41,34 @@
       \verb http://www.info-tours.fr/articles/tours/2018/07/30/9333/le-chu-de-tours-a-lance-son-service-d-hotel-hospitalier/
       \endverb
     \endentry
+    \entry{pochet_outil_nodate}{report}{}
+      \name{author}{1}{}{%
+        {{hash=a01577b9d907e09c8d2b3ecb7b17d51a}{%
+           family={Pochet},
+           familyi={P\bibinitperiod},
+           given={Guillaume},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {fr}%
+      }
+      \strng{namehash}{a01577b9d907e09c8d2b3ecb7b17d51a}
+      \strng{fullhash}{a01577b9d907e09c8d2b3ecb7b17d51a}
+      \strng{authornamehash}{a01577b9d907e09c8d2b3ecb7b17d51a}
+      \strng{authorfullhash}{a01577b9d907e09c8d2b3ecb7b17d51a}
+      \field{sortinit}{P}
+      \field{sortinithash}{24100cef455d7974167575052c29146e}
+      \field{labelprefix}{WWW}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Outil de gestion de parcours patients dans un hôpital de jour}
+      \field{type}{techreport}
+      \field{pages}{62}
+      \range{pages}{1}
+      \verb{file}
+      \verb rapport_prd_pochet_guillaume.pdf:C\:\\Users\\Romain\\Documents\\Projet_R&D_2\\PRD_Livrables_pochet_guillaume\\rapport_prd_pochet_guillaume.pdf:application/pdf
+      \endverb
+    \endentry
   \endsortlist
   \sortlist[entry]{nyt/global/}
     \entry{noauthor_chu_nodate}{misc}{}
@@ -62,6 +90,33 @@
       \endverb
       \verb{url}
       \verb http://www.info-tours.fr/articles/tours/2018/07/30/9333/le-chu-de-tours-a-lance-son-service-d-hotel-hospitalier/
+      \endverb
+    \endentry
+    \entry{pochet_outil_nodate}{report}{}
+      \name{author}{1}{}{%
+        {{hash=a01577b9d907e09c8d2b3ecb7b17d51a}{%
+           family={Pochet},
+           familyi={P\bibinitperiod},
+           given={Guillaume},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {fr}%
+      }
+      \strng{namehash}{a01577b9d907e09c8d2b3ecb7b17d51a}
+      \strng{fullhash}{a01577b9d907e09c8d2b3ecb7b17d51a}
+      \strng{authornamehash}{a01577b9d907e09c8d2b3ecb7b17d51a}
+      \strng{authorfullhash}{a01577b9d907e09c8d2b3ecb7b17d51a}
+      \field{sortinit}{P}
+      \field{sortinithash}{24100cef455d7974167575052c29146e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Outil de gestion de parcours patients dans un hôpital de jour}
+      \field{type}{techreport}
+      \field{pages}{62}
+      \range{pages}{1}
+      \verb{file}
+      \verb rapport_prd_pochet_guillaume.pdf:C\:\\Users\\Romain\\Documents\\Projet_R&D_2\\PRD_Livrables_pochet_guillaume\\rapport_prd_pochet_guillaume.pdf:application/pdf
       \endverb
     \endentry
   \endsortlist
