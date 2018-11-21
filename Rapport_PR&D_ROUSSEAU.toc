@@ -30,6 +30,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2}Impl\IeC {\'e}mentation de la planification automatique}{6}{subsection.1.2.2}
 \defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3}Impl\IeC {\'e}mentation de la planification temps r\IeC {\'e}el}{6}{subsection.1.2.3}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
@@ -70,51 +74,113 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}Contraintes de d\IeC {\'e}veloppement}{9}{section.2.3}
 \defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Fonctionnalit\IeC {\'e}s du syst\IeC {\`e}me}{10}{section.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Structure g\IeC {\'e}n\IeC {\'e}rale du syst\IeC {\`e}me}{10}{section.2.5}
+\select@language {english}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}\IeC {\'E}tat de l'art}{11}{chapter.3}
+\select@language {french}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Planification automatique}{11}{section.3.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {part}{II\hspace {1em}D\IeC {\'e}veloppement}{12}{part.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Analyse et conception}{13}{chapter.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Mise en \IeC {\oe }uvre}{14}{chapter.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Bilan et conclusion}{15}{chapter.6}
-\defcounter {refsection}{0}\relax 
-\contentsline {part}{Annexes}{16}{part*.7}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Fonctionnalit\IeC {\'e}s existantes}{17}{appendix.A}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Explications des tables du mod\IeC {\`e}le}{18}{appendix.B}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {C}Chiffrage du projet}{20}{appendix.C}
+\contentsline {subsection}{\numberline {4.1}Ajout de fonctions de tri lors de l'affichage des ressources}{10}{subsection.2.4.1}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
 \select@language {french}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {D}Diagramme de Gantt}{21}{appendix.D}
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2}Ajustement du planning selon les ressources s\IeC {\'e}lectionn\IeC {\'e}es}{11}{subsection.2.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3}Planification automatique}{11}{subsection.2.4.3}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
 \select@language {french}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {E}Gestion de projet}{22}{appendix.E}
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
 \select@language {french}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {F}Manuel d\IeC {\'e}veloppeur}{23}{appendix.F}
+\select@language {english}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {G}TEMPO}{24}{appendix.G}
+\select@language {french}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliographie}{25}{appendix*.8}
+\contentsline {section}{\numberline {5}Structure g\IeC {\'e}n\IeC {\'e}rale du syst\IeC {\`e}me}{12}{section.2.5}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}\IeC {\'E}tat de l'art}{13}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Planification automatique}{13}{section.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{II\hspace {1em}D\IeC {\'e}veloppement}{14}{part.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Analyse et conception}{15}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Mise en \IeC {\oe }uvre}{16}{chapter.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Bilan et conclusion}{17}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{Annexes}{18}{part*.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Fonctionnalit\IeC {\'e}s existantes}{19}{appendix.A}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}G\IeC {\'e}rer les personnels}{19}{section.A.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}G\IeC {\'e}rer les ressources mat\IeC {\'e}rielles}{19}{section.A.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}G\IeC {\'e}rer les activit\IeC {\'e}s}{19}{section.A.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}G\IeC {\'e}rer les parcours}{20}{section.A.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}G\IeC {\'e}rer les plans de parcours}{20}{section.A.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Visualiser du planning}{20}{section.A.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7}Affecter un patient \IeC {\`a} un parcours}{20}{section.A.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8}Visualiser et modifier le planning de toutes les ressources}{20}{section.A.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {B}Explications des tables du mod\IeC {\`e}le}{21}{appendix.B}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {C}Chiffrage du projet}{23}{appendix.C}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {D}Diagramme de Gantt}{24}{appendix.D}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {E}Gestion de projet}{25}{appendix.E}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {F}Manuel d\IeC {\'e}veloppeur}{26}{appendix.F}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {G}TEMPO}{27}{appendix.G}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliographie}{28}{appendix*.8}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 

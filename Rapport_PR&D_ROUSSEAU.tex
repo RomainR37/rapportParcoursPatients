@@ -83,6 +83,8 @@ Plusieurs fonctionnalités qui n'ont pas encore été implémentées sont aussi 
 
 
 \subsection{Implémentation de la planification automatique}
+\label{subsec:planAuto}
+
 
 L'une des parties principales du projet consiste à l'élaboration de la planification automatique les rendez-vous médicaux. À l'heure actuelle, la planification des rendez-vous se fait de façon manuelle. Une fois les patients définis pour une journée, un calendrier et la liste des activités à réaliser sont à disposition. Par un système de "glisser-déposer", l'administrateur peut agencer les activités selon les ressources disponibles (en terme de personnels ou de matériels). Cependant, l'agencement manuel des activités peut prendre un temps considérable, car pour chaque activité, il faut prendre en compte les activités qui peuvent la précéder ou la suivre, voir si le personnel est disponible, si les salles le sont également, etc. Lorsque le nombre de patients commence à se multiplier, la planification manuelle des activités devient un véritable casse-tête.
 
@@ -151,19 +153,72 @@ Les utilisateurs de l'application devront s'authentifier pour pouvoir accéder a
 
 \section{Contraintes de développement}
 
-\'{E}tant donné que ce projet fait suite à plusieurs projets consécutifs et que la base de la plateforme a déjà été développée, il faudra utiliser les mêmes langages de programmes ainsi que les mêmes frameworks que lors des projets passés. Ainsi, les contraintes concernent les langages \textit{HTML}, \textit{CSS}, \textit{Javascript}, \textit{PHP}. La structure de l'application sera la même, à savoir une architecture MVC (Modèle - Vue - Contrôleur), mise en place à l'aide du framework PHP \textit{CodeIgniter}. En ce qui concerne la mise en page (\textit{CSS}), nous devrons utiliser \textit{Bootstrap}.
+\'{E}tant donné que ce projet fait suite à plusieurs projets consécutifs et que la base de la plateforme a déjà été développée, il faudra utiliser les mêmes langages de programmes ainsi que les mêmes frameworks que lors des projets passés. Ainsi, les contraintes concernent les langages \textit{HTML}, \textit{CSS}, \textit{Javascript}, \textit{PHP}. La structure de l'application sera la même, à savoir une architecture MVC (Modèle - Vue - Contrôleur) mise en place à l'aide du framework PHP \textit{CodeIgniter}. En ce qui concerne la mise en page (\textit{CSS}), nous utiliserons \textit{Bootstrap}.
 
-Guillaume POCHET, qui a effectué son PR\&D sur le sujet lors de l'année scolaire 2016-2017, avait réalisé un état de l'art sur les bibliothèques utilisables pour réaliser interactif \cite{pochet_outil_nodate}. À la suite de cela, il avait décidé d'utiliser la bibliothèque \textit{FullCalendar} pour constituer les planning sur la plateforme. Nous poursuivrons avec l'utilisation de cette même bibliothèque.
+Guillaume POCHET, qui a effectué son PR\&D sur le sujet lors de l'année scolaire 2016-2017, avait réalisé un état de l'art sur les bibliothèques utilisables pour mettre en place un planning interactif \cite{pochet_outil_nodate}. À la suite de cela, il avait décidé d'utiliser la bibliothèque \textit{FullCalendar} pour constituer les plannings sur la plateforme. Nous poursuivrons avec l'utilisation de cette même bibliothèque.
+
+De la même façon que pour les langages, il faudra reprendre la structure de la plateforme et le modèle de la base de données. Les détails concernant les structures seront dans la section suivante \autoref{sec:structure}.
 
 
 \section{Fonctionnalités du système}
 
+Cette section regroupe les fonctionnalités qui vont être implémentées lors de ce projet. Les fonctionnalités déjà existantes se trouvent en \autoref{ann:foncExist}. La suite présentera les fonctionnalités qui seront ajoutées lors de ce projet. 
 
-Les fonctionnalités existantes sont dispo en annexe.
 
+\subsection{Ajout de fonctions de tri lors de l'affichage des ressources}
+
+Lors de la reprise du projet, sur les premiers tests, nous avons pu observer plusieurs corrections à apporter à la plateforme. L'une d'entre elles qui m'a semblé intéressante est l'ajout de fonctions de tri lors de l'affichage des ressources. Lorsque l'on souhaite consulter le personnel, les salles ou les activités par exemple, l'affichage se fait sous forme de liste comme on peut le voir sur la \autoref{fig:affPersonnel}.
+
+\begin{figure}
+	\includegraphics[scale=0.45]{images/affichage_personnel}
+	\caption{Affichage du personnel sur la plateforme}
+	\label{fig:affPersonnel}
+\end{figure}
+
+Cependant, dès que le nombre d'éléments dans la liste est conséquent, il devient vite difficile de trouver l'élément que l'on souhaite, d'autant plus que ces onglets n'ont pas de fonctions de recherche d'éléments.
+
+Réaliser des fonctions de recherche peut prendre beaucoup de temps et n'est pas une priorité majeure dans notre projet. Ainsi, le compromis pour retrouver plus facilement les éléments et ne pas perdre du temps sur des fonctionnalités non prioritaires est d'ajouter des fonctions de tris sur les onglets. L'idée serait d'avoir la possibilité de trier les éléments par nom et par spécificité selon l'onglet (tri par poste pour le personnel, tri par spécialité pour les salles, etc.).
+
+
+\subsection{Ajustement du planning selon les ressources sélectionnées}
+
+Selon le même principe que l'ajout de fonctions de tri sur les onglets de gestion, une des améliorations possibles qui améliorerait l'expérience utilisateur sur la plateforme est la possibilité d'ajuster le planning selon les ressources que l'on souhaite faire apparaître.
+
+La mise en place du planning fait partie des fonctionnalités les plus importantes mais aussi des plus complexes de la plateforme. Sur l'onglet Planification, à la reprise du projet, toutes les ressources existantes sont affichées dans le calendrier, et ainsi on peut glisser-déposer les activités non attribuées sur la ressource que l'on souhaite. Or, le nombre de ressources présentes dans l'hôpital peut vite se multiplier, et la gestion du planning devient alors très vite difficile dans ce cas.
+
+Rendre l'affichage plus lisible et plus facile d'utilisation pour l'utilisateur n'est néanmoins pas une mince affaire car chaque information présente sur la page est importante pour faire le planning. Là où les améliorations peuvent se faire, c'est au niveau de la disposition des informations à l'écran. L'une des idées pour améliorer l'affichage est d'afficher uniquement les ressources que l'on souhaite faire apparaître à l'écran, c'est-à-dire afficher uniquement un type de personnel ou un type de salle précis. Cela permettrait de limiter les affichages à l'écran et de voir plus facilement les problèmes d'ordonnancement liés à un certain type de ressources. Par exemple, s'il y a un problème de gestion de salle (si une salle est réservée pour deux rendez-vous au même moment), en affichant uniquement les salles de l'hôpital, on peut voir directement où est le problème sans avoir à chercher parmi le flot d'informations que peut contenir la page principale. 
+
+
+\subsection{Planification automatique}
+
+Comme évoquée dans les parties précédentes de ce rapport (notamment dans la \autoref{subsec:planAuto}), l'élaboration du planning manuellement peut s'avérer très chronophage, car il faut glisser-déposer chaque activité du parcours pour chaque patient ce qui peut vite représenter plusieurs dizaines d'activités à agencer tout en prenant en compte chacune de leurs contraintes, et redondant, car trouver un planning qui respecte les contraintes peut être long mais de plus ré-itérer cela tous les jours peut être éprouvant pour la personne en charge des plannings. La planification automatique va par conséquent être une fonctionnalité majeure de la plateforme. 
+
+La planification automatique peut se matérialiser de plusieurs manières sur l'application. Un bouton a déjà été ajouté sur la page de planification que l'on peut voir sur la \autoref{fig:boutonPlanAuto} mais celui-ci est inactif. L'idée derrière cette implémentation dans les projets précédents est d'agencer automatiquement les activités non-attribuées sur le calendrier d'un clic sur le bouton à l'écran. 
+
+\begin{figure}
+	\includegraphics[scale=0.4]{images/bouton_plan_auto}
+	\caption{Aperçu de la page de Planification}
+	\label{fig:boutonPlanAuto}
+\end{figure}
+
+Toute la complexité de la fonctionnalité réside dans la notion que l'on souhaite donner à l'automatisme. Est-ce que l'on préfère trouver un planning qui minimise les temps d'attente des patients ? Ou alors, est-il préférable de minimiser les temps d'attente entre chaque rendez-vous pour les médecins ? Faut-il surcharger les salles quittent à \textit{over-booker} comme on peut le trouver dans les aéroports ? De nombreuses autres questions peuvent se poser à partir de ce problème.
+
+Pour éviter les problèmes majeurs de complexité, nous allons commencer au plus simple: l'agencement patient par patient. L'idée derrière cela est d'avoir la liste des patients pris en charge le jour que l'on souhaite (comme on peut le voir pour les activités sur la \autoref{fig:boutonPlanAuto}), de sélectionner un patient et de cliquer sur un bouton qui placera chacune de ses activités du jour sur le calendrier. Le placement se fera au plus simple dans un premier temps, c'est-à-dire ajuster sur l'heure d'arrivée du patient et placer sur la première ressource disponible pour les activités. Même s'il peut y avoir des problèmes d'ordonnancement liés à cette méthode, la personne en charge pourra tout à fait ajuster l'agencement de la manière qui lui convient.
+
+Mis en place de la sorte, même si la méthode ne donne pas un résultat parfait du premier coup, la fonctionnalité permettrait de gagner beaucoup de temps à l'utilisateur et de se débarrasser du coté redondant de l'agencement manuel. Selon l'avancement du projet, cette fonctionnalité pourra être étoffée et proposer de nouvelles options à l'utilisateur.
 
 
 \section{Structure générale du système}
+\label{sec:structure}
+
+%PRD Jing
+
+La structure du logiciel est basée sur l'architecture MVC (modèle vue contrôleur). Le modèle représente toutes les données de l'application (patient, ressources humaines, ressources matérielles, parcours, activités, etc.). Le contrôleur est utilisé pour faire le lien entre les données et les différentes vues. Ce dernier permet également de gérer la cohérence et l'intégrité des données. Les vues représentent les pages web de l'application. Les tables de la base de données sont identiques aux projets réalisés précédemment mais certains colonnes des tables seront modifiées (voir Figure 1(Annexe D)).
+
+La fonctionnalité « suppression » et « PURGE » s'appuient sur les classes « patient », « ressource », « parcours », « dossierparcours », « personnel » et « activité » dans l'architecture dessus. La fonctionnalité « amélioration de gestion des patients » sera développée en utilisant les classes « dossierparcours », « parcours » et « patient».
+
+Pour la fonctionnalité « validation d’une activité » et la fonctionnalité « consultation de dossier parcours », les tables « onglet », « champ », « dossierparcours », « parcours », « patient », « dossiergenerique » et « activité » sont utilisées. En plus, pour la correspondance entre le plan parcours (le nombre de ce parcours pouvant être effectué dans un jour) et l’objectif de patients (le nombre de patients pouvant être affectés au certain parcours), on utilise les tables « planparcours » et « parcours ».
+
 
 
 \chapter{État de l'art}
@@ -187,6 +242,73 @@ Les fonctionnalités existantes sont dispo en annexe.
 \appendix
 
 \chapter{Fonctionnalités existantes}
+\label{ann:foncExist}
+
+
+L'application web a été produite par les étudiants au cours de l'année 2015-2016 de leur projet collectif et deux étudiants de son PRD. Ils ont développé une plate-forme permettant les fonctionnalités suivantes : gérer les personnels, gérer les ressources matérielles, gérer les activités, gérer les parcours et gérer le plan de parcours. Hors cela, la plate-forme peut aussi créer et rechercher des patients, puis leur affecter des parcours et planifier les activités.
+
+\section{Gérer les personnels}
+
+Chaque personnel a une fonctionnalité dans l'hôpital, l'administrateur peut les modifier, supprimer et les mettre en indisponibilité.
+
+\begin{itemize}
+	\item Modifier un personnel
+	\item Supprimer un personnel
+	\item Mettre un personnel en indisponibilité
+\end{itemize}
+
+\section{Gérer les ressources matérielles}
+
+Chaque ressource matérielle a un nom et une spécialité.
+
+\begin{itemize}
+	\item Modifier une ressource matérielle Cette fonctionnalité est implémentée mais elle ne fonctionne pas bien car elle pose le problème de la base de données, il faut une amélioration.
+	\item Supprimer une ressource matérielle Cette fonctionnalité a été implémentée mais elle ne fonctionne pas donc on a besoin de la faire fonctionner.
+	\item Mettre un personnel en indisponibilité
+\end{itemize}
+
+\section{Gérer les activités}
+
+Chaque activité doit avoir un nom et une durée, elle sera faite dans une certaine salle et par un type de personnel.
+
+\begin{itemize}
+	\item Ajouter une nouvelle activité
+	\item Modifier les activités existantes
+	\item Supprimer les activités qui n’existent plus
+\end{itemize}
+
+
+\section{Gérer les parcours}
+
+Un parcours se compose par plusieurs activités dont il y a un ordre entre tous les activités, donc il faut faire attention aux activités qui doivent être en précédentes des autres.
+
+\begin{itemize}
+	\item Ajouter un nouveau parcours
+	\item Modifier un parcours
+	\item Supprimer un parcours
+	\item Visualiser un parcours
+\end{itemize}
+
+\section{Gérer les plans de parcours}
+
+Dans un hôpital de jour, la capacité de recueillir les patients est limite, donc dans une journée il peut affecter un certain nombre de patients au même parcours.
+
+\section{Visualiser du planning}
+
+Une fonctionnalité « afficher planning du patient » est disponible et permet de visualiser l’heure de début et de fin de la prochaine activité du patient dans son parcours. Cette visualisation est visible par l’administrateur, le personnel de soins et également par le patient.
+
+\section{Affecter un patient à un parcours}
+
+
+Le patient peut être affecté à un parcours en précisant les disponibilités de ce dernier. Les disponibilités du patient seront demandées sous formes d’horaires (exemple : 8h-17h). Cette fonctionnalité est disponible à l'administrateur et aux personnels de soins. 
+
+L'administrateur ou infirmière de coordination peuvent affecter un patient à un parcours pour une journée donnée et pouvoir visualiser également le nombre de patients déjà affecté sur cette dernière.
+
+Lors d'un clic sur le bouton affecter, l'administrateur sera redirigé vers une page où il pourra choisir le patient à affecter pour la date choisie précédemment.
+
+\section{Visualiser et modifier le planning de toutes les ressources}
+
+L'administrateur peut visualiser et modifier en temps réel le planning de toutes les ressources et également d'une ressource en particulier. La modification peut s'effectuer de façon manuelle (en déplaçant les activités). L'administrateur doit pouvoir planifier automatiquement le planning de ses ressources pour une journée donnée. La planification automatique ne sera pas incluse dans le cadre de mon projet de recherche et développement. Ces fonctionnalités ne sont disponibles qu’à l’administrateur. Les différentes interfaces ont été étudié dans la partie veille technologique sur \textit{fullCalendar}.
 
 
 
@@ -217,7 +339,7 @@ Voici l'explication sur les tables créées dans l'ancien projet [2]que je vais 
 	\item[Typecompte] : Table utilisée pour la gestion des droits.
 	\item[Typeressource] : Table contenant les types de ressource d'un point de vue activité. En effet, une activité peut avoir besoin d'un type de ressource bien caractéristique (ex : IDE obésité). C'est pourquoi nous avons un double niveau de type de ressource. Un concernant les activités (typeressource) et un second plus d’un point de vue logique générale (personnel, matériel).
 	\item[Ordonnancer] : Table de fait de notre système. C'est la table la plus importante. Chaque ligne veut dire : « Pour le patient P qui fait le parcours Pa à la date D, il a besoin de la ressource R pour faire l’activité A de start à end. Cette table contient la planification réalisée de manière manuelle ou automatique (pas implémenté pour le moment).
-	\item[Evènement] : Table identique à la table Ordonnancer. Elle a le même but que la table ordonnancer mais cette table contient la planification en cours. Cette table permet de donc de pouvoir sauvegarder ou restaurer la planification en fonction des modifications que l’utilisateur a effectuées.
+	\item[Evènement] : Table identique à la table Ordonnancer. Elle a le même but que la table ordonnancer mais cette table contient la planification en cours. Cette table permet de pouvoir sauvegarder ou restaurer la planification en fonction des modifications que l’utilisateur a effectuées.
 \end{description}
 
 
