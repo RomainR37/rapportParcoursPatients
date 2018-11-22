@@ -140,6 +140,7 @@ L'application si elle est mise en production sera disponible dans un premier tem
 
 
 \section{Caractéristiques des utilisateurs}
+\label{sec:caracUtili}
 
 La plateforme incorpore un système de gestion de compte afin de garantir la sécurité des données. Nous pouvons définir 2 types d'utilisateurs pour l'application.
 
@@ -158,6 +159,27 @@ Les utilisateurs de l'application devront s'authentifier pour pouvoir accéder a
 Guillaume POCHET, qui a effectué son PR\&D sur le sujet lors de l'année scolaire 2016-2017, avait réalisé un état de l'art sur les bibliothèques utilisables pour mettre en place un planning interactif \cite{pochet_outil_nodate}. À la suite de cela, il avait décidé d'utiliser la bibliothèque \textit{FullCalendar} pour constituer les plannings sur la plateforme. Nous poursuivrons avec l'utilisation de cette même bibliothèque.
 
 De la même façon que pour les langages, il faudra reprendre la structure de la plateforme et le modèle de la base de données. Les détails concernant les structures seront dans la section suivante \autoref{sec:structure}.
+
+
+\section{Description des interfaces externes du système}
+
+\subsection{Interface matériel/logiciel}
+
+L'application est une interface web qui fonctionne au travers d'un navigateur. Il faut donc disposer d'un ordinateur avec un navigateur web qui intègre \textit{Javascript} pour pouvoir utiliser l'application. La présence de \textit{Javascript} est nécessaire pour la visualisation du calendrier. Pour le moment, la plateforme est reliée une base de données qui doit être installée sur la machine et qui récupèrera les différentes informations nécessaires au fonctionnement de l'application. 
+
+
+\subsection{Interface homme/machine}
+
+Les utilisateurs accéderont à l'application par le biais d'un compte. L'authentification se fait à l'aide d'un nom d'utilisateur et d'un mot de passe. La création de compte est gérée par l'administrateur qui définira un type au nouveau compte créé.
+
+On peut distinguer deux types d'utilisateurs qui ont été définis dans la \autoref{sec:caracUtili}. Par conséquent, le type d'utilisateur définira les différents onglets à afficher ou non. 
+
+Les pages web et les onglets déjà présentes seront réutilisés lors de ce projet. Il n'y aura pas de nouvelles pages qui seront créées durant ce travail, néanmoins des modifications seront apportées aux pages actuelles, le tout en conservant l'aspect général et la charte graphique de l'application d'origine. 
+
+
+\subsection{Interface logiciel/logiciel}
+
+Comme évoqué auparavant, l'application web est liée à une base de données via \textit{MySQL}. La connexion à la base se fait au travers des classes de configurations du framework \textit{CodeIgniter}. Les contrôleurs de notre modèle MVC vont faire la liaison entre la base et l'affichage des informations. 
 
 
 \section{Fonctionnalités du système}
@@ -182,7 +204,7 @@ Réaliser des fonctions de recherche peut prendre beaucoup de temps et n'est pas
 
 \subsection{Ajustement du planning selon les ressources sélectionnées}
 
-Selon le même principe que l'ajout de fonctions de tri sur les onglets de gestion, une des améliorations possibles qui améliorerait l'expérience utilisateur sur la plateforme est la possibilité d'ajuster le planning selon les ressources que l'on souhaite faire apparaître.
+Selon le même principe que l'ajout de fonctions de tri sur les onglets de gestion, un des ajustements possibles qui améliorerait l'expérience utilisateur sur la plateforme est la possibilité d'ajuster le planning selon les ressources que l'on souhaite faire apparaître.
 
 La mise en place du planning fait partie des fonctionnalités les plus importantes mais aussi des plus complexes de la plateforme. Sur l'onglet Planification, à la reprise du projet, toutes les ressources existantes sont affichées dans le calendrier, et ainsi on peut glisser-déposer les activités non attribuées sur la ressource que l'on souhaite. Or, le nombre de ressources présentes dans l'hôpital peut vite se multiplier, et la gestion du planning devient alors très vite difficile dans ce cas.
 
@@ -191,9 +213,9 @@ Rendre l'affichage plus lisible et plus facile d'utilisation pour l'utilisateur 
 
 \subsection{Planification automatique}
 
-Comme évoquée dans les parties précédentes de ce rapport (notamment dans la \autoref{subsec:planAuto}), l'élaboration du planning manuellement peut s'avérer très chronophage, car il faut glisser-déposer chaque activité du parcours pour chaque patient ce qui peut vite représenter plusieurs dizaines d'activités à agencer tout en prenant en compte chacune de leurs contraintes, et redondant, car trouver un planning qui respecte les contraintes peut être long mais de plus ré-itérer cela tous les jours peut être éprouvant pour la personne en charge des plannings. La planification automatique va par conséquent être une fonctionnalité majeure de la plateforme. 
+Comme évoquée dans les parties précédentes de ce rapport (notamment dans la \autoref{subsec:planAuto}), l'élaboration du planning manuellement peut s'avérer très chronophage d'une part, car il faut glisser-déposer chaque activité du parcours pour chaque patient ce qui peut vite représenter plusieurs dizaines d'activités à agencer tout en prenant en compte chacune de leurs contraintes, et redondant d'autre part, car trouver un planning qui respecte les contraintes peut être long mais de plus ré-itérer cela tous les jours peut être éprouvant pour la personne en charge des plannings. La planification automatique va par conséquent être une fonctionnalité majeure de la plateforme. 
 
-La planification automatique peut se matérialiser de plusieurs manières sur l'application. Un bouton a déjà été ajouté sur la page de planification que l'on peut voir sur la \autoref{fig:boutonPlanAuto} mais celui-ci est inactif. L'idée derrière cette implémentation dans les projets précédents est d'agencer automatiquement les activités non-attribuées sur le calendrier d'un clic sur le bouton à l'écran. 
+La planification automatique peut se matérialiser de plusieurs manières sur l'application. Un bouton a déjà été ajouté sur la page de planification que l'on peut voir sur la \autoref{fig:boutonPlanAuto} mais celui-ci est inactif. L'idée derrière cette implémentation réalisée lors des projets précédents est d'agencer automatiquement les activités non-attribuées sur le calendrier d'un clic sur le bouton à l'écran. 
 
 \begin{figure}
 	\includegraphics[scale=0.4]{images/bouton_plan_auto}
@@ -211,14 +233,17 @@ Mis en place de la sorte, même si la méthode ne donne pas un résultat parfait
 \section{Structure générale du système}
 \label{sec:structure}
 
-%PRD Jing
+La structure générale du système est basée sur l'architecture MVC (Modèle - Vue - Contrôleur) par le biais du framework PHP \textit{CodeIgniter}. On peut voir un aperçu de l'arborescence du projet sur la \autoref{fig:arboMVC}. 
 
-La structure du logiciel est basée sur l'architecture MVC (modèle vue contrôleur). Le modèle représente toutes les données de l'application (patient, ressources humaines, ressources matérielles, parcours, activités, etc.). Le contrôleur est utilisé pour faire le lien entre les données et les différentes vues. Ce dernier permet également de gérer la cohérence et l'intégrité des données. Les vues représentent les pages web de l'application. Les tables de la base de données sont identiques aux projets réalisés précédemment mais certains colonnes des tables seront modifiées (voir Figure 1(Annexe D)).
+\begin{figure}
+	\includegraphics[scale=1]{images/arboMVC}
+	\caption{Arborescence du projet}
+	\label{fig:arboMVC}
+\end{figure}
 
-La fonctionnalité « suppression » et « PURGE » s'appuient sur les classes « patient », « ressource », « parcours », « dossierparcours », « personnel » et « activité » dans l'architecture dessus. La fonctionnalité « amélioration de gestion des patients » sera développée en utilisant les classes « dossierparcours », « parcours » et « patient».
+Sur l'arborescence, les 3 parties du MVC sont présentes ainsi qu'un dossier \textit{config} qui regroupe les classes de configuration du framework et le dossier \textit{logs} avec les classes de logger de l'application. La partie Modèle représente les données de la plateforme (patient, ressources humaines, ressources matérielles, parcours, activités, etc.). La partie Contrôleur est utilisée pour faire le lien entre les données et les différentes vues. Elle va également permettre de gérer la cohérence et l'intégrité des données. La partie Vue regroupent les pages web de l'application. 
 
-Pour la fonctionnalité « validation d’une activité » et la fonctionnalité « consultation de dossier parcours », les tables « onglet », « champ », « dossierparcours », « parcours », « patient », « dossiergenerique » et « activité » sont utilisées. En plus, pour la correspondance entre le plan parcours (le nombre de ce parcours pouvant être effectué dans un jour) et l’objectif de patients (le nombre de patients pouvant être affectés au certain parcours), on utilise les tables « planparcours » et « parcours ».
-
+Concernant la base de données, nous reprendrons le modèle tel qu'il a été pensé lors des projets précédents. Les explications sur l'utilité des tables et le diagramme de Gantt se trouvent en annexe (\autoref{ann:expModele} pour les explications sur les tables et \autoref{ann:modeleBDD} pour le diagramme). Des ajustements sur certains champs de la base seront apportées, notamment lors de la modification du formulaire de création de patient. 
 
 
 \chapter{État de l'art}
@@ -233,6 +258,7 @@ Pour la fonctionnalité « validation d’une activité » et la fonctionnalité
 \chapter{Analyse et conception}
 
 
+
 \chapter{Mise en œuvre}
 
 
@@ -244,8 +270,8 @@ Pour la fonctionnalité « validation d’une activité » et la fonctionnalité
 \chapter{Fonctionnalités existantes}
 \label{ann:foncExist}
 
-
 L'application web a été produite par les étudiants au cours de l'année 2015-2016 de leur projet collectif et deux étudiants de son PRD. Ils ont développé une plate-forme permettant les fonctionnalités suivantes : gérer les personnels, gérer les ressources matérielles, gérer les activités, gérer les parcours et gérer le plan de parcours. Hors cela, la plate-forme peut aussi créer et rechercher des patients, puis leur affecter des parcours et planifier les activités.
+
 
 \section{Gérer les personnels}
 
@@ -310,10 +336,17 @@ Lors d'un clic sur le bouton affecter, l'administrateur sera redirigé vers une 
 
 L'administrateur peut visualiser et modifier en temps réel le planning de toutes les ressources et également d'une ressource en particulier. La modification peut s'effectuer de façon manuelle (en déplaçant les activités). L'administrateur doit pouvoir planifier automatiquement le planning de ses ressources pour une journée donnée. La planification automatique ne sera pas incluse dans le cadre de mon projet de recherche et développement. Ces fonctionnalités ne sont disponibles qu’à l’administrateur. Les différentes interfaces ont été étudié dans la partie veille technologique sur \textit{fullCalendar}.
 
+\chapter{Modèle conceptuel de données}
+\label{ann:modeleBDD}
 
+\begin{figure}
+	\includegraphics[scale=0.5]{images/tablesBD}
+	\caption{Diagramme de classe}
+	\label{fig:modeleBDD}
+\end{figure}
 
 \chapter{Explications des tables du modèle}
-
+\label{ann:expModele}
 
 %%PRD Jing
 
@@ -358,9 +391,6 @@ Planification automatique : 20 j
 Jeux de données : 3 j
 Rapport : 15 j
 Préparation soutenance : 3 j
-
-\chapter{Diagramme de Gantt}
-\label{ann:gantt}
 
 \chapter{Gestion de projet}
 \label{ann:gestion}
