@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.1.12)  22 NOV 2018 11:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.1.12)  28 NOV 2018 15:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2993,13 +2993,13 @@ Chapitre 2.
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \caption with sig. 'om' on line 133.
+. Redefining command \caption with sig. 'om' on line 132.
 .................................................
-<images/deploiement.png, id=224, 533.5935pt x 403.5075pt>
+<images/deploiement.png, id=240, 533.5935pt x 403.5075pt>
 File: images/deploiement.png Graphic file (type png)
 
 <use images/deploiement.png>
-Package pdftex.def Info: images/deploiement.png used on input line 134.
+Package pdftex.def Info: images/deploiement.png used on input line 133.
 (pdftex.def)             Requested size: 426.87538pt x 322.80644pt.
 
 * Missing: images/deploiement.pax
@@ -3019,13 +3019,13 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \caption with sig. 'om' on line 195.
+. Redefining command \caption with sig. 'om' on line 193.
 .................................................
- <images/affichage_personnel.png, id=245, 948.54375pt x 495.0495pt>
+ <images/affichage_personnel.png, id=261, 948.54375pt x 495.0495pt>
 File: images/affichage_personnel.png Graphic file (type png)
 
 <use images/affichage_personnel.png>
-Package pdftex.def Info: images/affichage_personnel.png used on input line 196.
+Package pdftex.def Info: images/affichage_personnel.png used on input line 194.
 
 (pdftex.def)             Requested size: 426.84074pt x 222.7702pt.
 
@@ -3039,14 +3039,14 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \caption with sig. 'om' on line 221.
+. Redefining command \caption with sig. 'om' on line 219.
 .................................................
 
-<images/bouton_plan_auto.png, id=254, 1059.96pt x 426.393pt>
+<images/bouton_plan_auto.png, id=270, 1059.96pt x 426.393pt>
 File: images/bouton_plan_auto.png Graphic file (type png)
 
 <use images/bouton_plan_auto.png>
-Package pdftex.def Info: images/bouton_plan_auto.png used on input line 222.
+Package pdftex.def Info: images/bouton_plan_auto.png used on input line 220.
 (pdftex.def)             Requested size: 423.97649pt x 170.55417pt.
 
 * Missing: images/bouton_plan_auto.pax
@@ -3059,13 +3059,13 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \caption with sig. 'om' on line 239.
+. Redefining command \caption with sig. 'om' on line 237.
 .................................................
 
-<images/arboMVC.png, id=262, 75.8835pt x 64.44075pt>
+<images/arboMVC.png, id=278, 75.8835pt x 64.44075pt>
 File: images/arboMVC.png Graphic file (type png)
  <use images/arboMVC.png>
-Package pdftex.def Info: images/arboMVC.png used on input line 240.
+Package pdftex.def Info: images/arboMVC.png used on input line 238.
 (pdftex.def)             Requested size: 75.8833pt x 64.44058pt.
 
 * Missing: images/arboMVC.pax
@@ -3078,99 +3078,128 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 Chapitre 3.
 [14
 
-] [15
+]
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][][][]\T1/jkpf/b/sc/12 Chapitre 3.  État de l'art
+ []
+
+[15]
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][][][]\T1/jkpf/b/sc/12 Chapitre 3.  État de l'art
+ []
+
+[16]
+Underfull \vbox (badness 1189) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][][][]\T1/jkpf/b/sc/12 Chapitre 3.  État de l'art
+ []
+
+[17]
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][][][]\T1/jkpf/b/sc/12 Chapitre 3.  État de l'art
+ []
+
+[18] [19
 
 ]
 Chapitre 4.
-[16
+[20
 
 ]
 Chapitre 5.
-[17
+[21
 
 ]
 Chapitre 6.
-[18
+[22
 
-] [19
+] [23
 
 ]
 Annexe A.
-[20
+[24
 
 ]
 Underfull \hbox (badness 10000) has occurred while \output is active
  [][][][]\T1/jkpf/b/sc/12 Annexe A.  Fonc-tion-na-li-tés exis-tantes
  []
 
-[21]
+[25]
 Annexe B.
 
-Underfull \hbox (badness 3281) in paragraph at lines 340--340
+Underfull \hbox (badness 3281) in paragraph at lines 406--406
 [][][][]\T1/jkpf/b/n/24.88 Modèle concep-tuel de don-
  []
 
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \caption with sig. 'om' on line 343.
+. Redefining command \caption with sig. 'om' on line 409.
 .................................................
-<images/tablesBD.jpg, id=304, 1276.77pt x 880.28876pt>
+<images/tablesBD.jpg, id=341, 1276.77pt x 880.28876pt>
 File: images/tablesBD.jpg Graphic file (type jpg)
 
 <use images/tablesBD.jpg>
-Package pdftex.def Info: images/tablesBD.jpg used on input line 344.
+Package pdftex.def Info: images/tablesBD.jpg used on input line 410.
 (pdftex.def)             Requested size: 638.38344pt x 440.1433pt.
 
 * Missing: images/tablesBD.pax
 
-Overfull \hbox (183.13933pt too wide) in paragraph at lines 344--347
+Overfull \hbox (183.13933pt too wide) in paragraph at lines 410--413
  [][] |
  []
 
-[22
+[26
 
 ]
 Underfull \hbox (badness 10000) has occurred while \output is active
  [][][][]\T1/jkpf/b/sc/12 Annexe B.  Mo-dèle concep-tuel de don-nées
  []
 
-[23 <./images/tablesBD.jpg>]
+[27 <./images/tablesBD.jpg>]
 Annexe C.
 
 Underfull \vbox (badness 4582) has occurred while \output is active []
 
- [24
+ [28
 
 ]
 Underfull \hbox (badness 10000) has occurred while \output is active
  [][][][]\T1/jkpf/b/sc/12 Annexe C.  Ex-pli-ca-tions des tables du mo-dèle
  []
 
-[25]
+[29]
 Annexe D.
-[26
+[30
 
 ]
 Annexe E.
-[27
+[31
 
 ]
 Annexe F.
-[28
+[32
 
 ]
 Annexe G.
 
-Package biblatex Warning: Type 'online' not found on input line 418.
+Package biblatex Warning: Type 'online' not found on input line 484.
 
-[29
+[33
 
 ]
+Overfull \hbox (5.63431pt too wide) in paragraph at lines 484--484
+[]\T1/jkpf/m/n/10.95 (-20) Joren \T1/jkpf/m/sc/10.95 (-20) Ma-ry-nis-sen \T1/jk
+pf/m/n/10.95 (-20) et Erik \T1/jkpf/m/sc/10.95 (-20) De-meu-le-mees-ter\T1/jkpf
+/m/n/10.95 (-20) . ^^S   Li-te-ra-ture re-view on multi-appointment|
+ []
+
 No file Rapport_PR&D_ROUSSEAU.gls.
 No file Rapport_PR&D_ROUSSEAU.acr.
 No file Rapport_PR&D_ROUSSEAU.ind.
-[30
+[34
 
 ]
 *geometry* verbose mode - [ newgeometry ] result:
@@ -3206,93 +3235,93 @@ No file Rapport_PR&D_ROUSSEAU.ind.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 418--418
+Underfull \hbox (badness 10000) in paragraph at lines 484--484
  []\T1/jkpf/b/n/10 Département In-for-ma-tique
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 418--418
+Underfull \hbox (badness 10000) in paragraph at lines 484--484
  []\T1/jkpf/b/n/10 64 ave-nue Jean Por-ta-lis, 37200 Tours, France
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 418--418
+Underfull \hbox (badness 10000) in paragraph at lines 484--484
  [][][][][]$\T1/jkptt/b/n/10 p o l y t e c h \OML/jkp/m/it/10 : \T1/jkptt/b/n/1
 0 u n i v -[] t o u r s\OML/jkp/m/it/10 : \T1/jkptt/b/n/10 f r$[][][][]
  []
 
 File: polytech/polytech.pdf Graphic file (type pdf)
 <use polytech/polytech.pdf>
-Package pdftex.def Info: polytech/polytech.pdf used on input line 418.
+Package pdftex.def Info: polytech/polytech.pdf used on input line 484.
 (pdftex.def)             Requested size: 306.2564pt x 95.25526pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 418--418
+Underfull \hbox (badness 10000) in paragraph at lines 484--484
  [][][][]\T1/jkpf/b/n/12 Informatique
  []
 
-<images/LOGO_APHP.png, id=348, 404.2302pt x 89.6148pt>
+<images/LOGO_APHP.png, id=386, 404.2302pt x 89.6148pt>
 File: images/LOGO_APHP.png Graphic file (type png)
 
 <use images/LOGO_APHP.png>
-Package pdftex.def Info: images/LOGO_APHP.png used on input line 418.
+Package pdftex.def Info: images/LOGO_APHP.png used on input line 484.
 (pdftex.def)             Requested size: 404.2292pt x 89.61458pt.
 File: images/LOGO_APHP.png Graphic file (type png)
  <use images/LOGO_APHP.png>
-Package pdftex.def Info: images/LOGO_APHP.png used on input line 418.
+Package pdftex.def Info: images/LOGO_APHP.png used on input line 484.
 (pdftex.def)             Requested size: 404.2292pt x 89.61458pt.
 File: images/LOGO_APHP.png Graphic file (type png)
 
 <use images/LOGO_APHP.png>
-Package pdftex.def Info: images/LOGO_APHP.png used on input line 418.
+Package pdftex.def Info: images/LOGO_APHP.png used on input line 484.
 (pdftex.def)             Requested size: 404.2292pt x 89.61458pt.
- [31
+ [35
 
 
  <./images/LOGO_APHP.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 418--418
+Underfull \hbox (badness 10000) in paragraph at lines 484--484
  [][][][]\T1/jkpf/b/sc/10.95 Ecole Po-ly-tech-nique de l'Uni-ver-sité Fran-çois
  Ra-be-lais de Tours
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 418--418
+Underfull \hbox (badness 10000) in paragraph at lines 484--484
  []\T1/jkpf/b/n/10 Département In-for-ma-tique
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 418--418
+Underfull \hbox (badness 10000) in paragraph at lines 484--484
  []\T1/jkpf/b/n/10 64 ave-nue Jean Por-ta-lis, 37200 Tours, France
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 418--418
+Underfull \hbox (badness 10000) in paragraph at lines 484--484
  [][][][][]$\T1/jkptt/b/n/10 p o l y t e c h \OML/jkp/m/it/10 : \T1/jkptt/b/n/1
 0 u n i v -[] t o u r s\OML/jkp/m/it/10 : \T1/jkptt/b/n/10 f r$[][][][]
  []
 
 File: polytech/polytech.pdf Graphic file (type pdf)
 <use polytech/polytech.pdf>
-Package pdftex.def Info: polytech/polytech.pdf used on input line 418.
+Package pdftex.def Info: polytech/polytech.pdf used on input line 484.
 (pdftex.def)             Requested size: 306.2564pt x 95.25526pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 418--418
+Underfull \hbox (badness 10000) in paragraph at lines 484--484
  [][][][]\T1/jkpf/b/n/12 Informatique
  []
 
 File: images/LOGO_APHP.png Graphic file (type png)
 <use images/LOGO_APHP.png>
-Package pdftex.def Info: images/LOGO_APHP.png used on input line 418.
+Package pdftex.def Info: images/LOGO_APHP.png used on input line 484.
 (pdftex.def)             Requested size: 404.2292pt x 89.61458pt.
 File: images/LOGO_APHP.png Graphic file (type png)
  <use images/LOGO_APHP.png>
-Package pdftex.def Info: images/LOGO_APHP.png used on input line 418.
+Package pdftex.def Info: images/LOGO_APHP.png used on input line 484.
 (pdftex.def)             Requested size: 404.2292pt x 89.61458pt.
 File: images/LOGO_APHP.png Graphic file (type png)
 
 <use images/LOGO_APHP.png>
-Package pdftex.def Info: images/LOGO_APHP.png used on input line 418.
+Package pdftex.def Info: images/LOGO_APHP.png used on input line 484.
 (pdftex.def)             Requested size: 404.2292pt x 89.61458pt.
- [32
+ [36
 
 
 ]
@@ -3328,7 +3357,7 @@ Package pdftex.def Info: images/LOGO_APHP.png used on input line 418.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [33
+ [37
 
 
 
@@ -3338,26 +3367,26 @@ Package pdftex.def Info: images/LOGO_APHP.png used on input line 418.
 AED: pageslts setting LastPage 
 
 LaTeX Warning: Polytech : Label defined but unused : fig:modeleBDD on input lin
-e 418.
+e 484.
 
 
 LaTeX Warning: Polytech : Label defined but unused : fig:modeleBDD on input lin
-e 418.
+e 484.
 
 
 LaTeX Warning: Polytech : Label defined but unused : fig:modeleBDD on input lin
-e 418.
+e 484.
 
 
 LaTeX Warning: Polytech : Label defined but unused : fig:modeleBDD on input lin
-e 418.
+e 484.
 
 
 LaTeX Warning: Polytech : Label defined but unused : fig:modeleBDD on input lin
-e 418.
+e 484.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 418.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 418.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 484.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 484.
 \c@pagesLTS.arabic.1.local.count=\count489
 
 AED: pageslts setting VeryLastPage via AfterLastShipout 
@@ -3369,8 +3398,8 @@ Package pageslts Info: Total number of pages is odd.
 
 
 (./Rapport_PR&D_ROUSSEAU.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 418.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 418.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 484.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 484.
 
 
 LaTeX Warning: There were undefined references.
@@ -3378,20 +3407,20 @@ LaTeX Warning: There were undefined references.
 Package logreq Info: Writing requests to 'Rapport_PR&D_ROUSSEAU.run.xml'.
 \openout1 = `Rapport_PR&D_ROUSSEAU.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 418.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 484.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 54549 strings out of 493013
- 976865 string characters out of 6136993
- 1585258 words of memory out of 5000000
- 56755 multiletter control sequences out of 15000+600000
- 164892 words of font info for 316 fonts, out of 8000000 for 9000
+ 54594 strings out of 493013
+ 977675 string characters out of 6136993
+ 1585410 words of memory out of 5000000
+ 56772 multiletter control sequences out of 15000+600000
+ 166427 words of font info for 327 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,17n,94p,10399b,23263s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,17n,94p,10399b,23251s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}{c:/tex
 live/2016/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}<c:/texlive/201
 6/texmf-dist/fonts/type1/public/kpfonts/jkpbn8a.pfb><c:/texlive/2016/texmf-dist
@@ -3404,10 +3433,10 @@ f-dist/fonts/type1/public/kpfonts/jkpmne.pfb><c:/texlive/2016/texmf-dist/fonts/
 type1/public/kpfonts/jkpmsc8a.pfb><c:/texlive/2016/texmf-dist/fonts/type1/publi
 c/kpfonts/jkpttbn8a.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/kpfonts/
 jkpttmn8a.pfb>
-Output written on Rapport_PR&D_ROUSSEAU.pdf (41 pages, 530708 bytes).
+Output written on Rapport_PR&D_ROUSSEAU.pdf (45 pages, 555705 bytes).
 PDF statistics:
- 602 PDF objects out of 1000 (max. 8388607)
- 520 compressed objects within 6 object streams
- 107 named destinations out of 1000 (max. 500000)
- 52709 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 669 PDF objects out of 1000 (max. 8388607)
+ 583 compressed objects within 6 object streams
+ 121 named destinations out of 1000 (max. 500000)
+ 52773 words of extra memory for PDF output out of 61914 (max. 10000000)
 

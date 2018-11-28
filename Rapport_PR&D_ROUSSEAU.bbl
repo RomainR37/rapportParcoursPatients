@@ -19,6 +19,34 @@
 
 \refsection{0}
   \sortlist[entry]{nyt/global/WWW}
+    \entry{coquelet_gestion_nodate}{report}{}
+      \name{author}{1}{}{%
+        {{hash=168c1e94fd6b20f57798b3f85f5eacc3}{%
+           family={Coquelet},
+           familyi={C\bibinitperiod},
+           given={Jean},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {fr}%
+      }
+      \strng{namehash}{168c1e94fd6b20f57798b3f85f5eacc3}
+      \strng{fullhash}{168c1e94fd6b20f57798b3f85f5eacc3}
+      \strng{authornamehash}{168c1e94fd6b20f57798b3f85f5eacc3}
+      \strng{authorfullhash}{168c1e94fd6b20f57798b3f85f5eacc3}
+      \field{sortinit}{C}
+      \field{sortinithash}{095692fd22cc3c74d7fe223d02314dbd}
+      \field{labelprefix}{WWW}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Gestion et {Optimisation} des {Parcours} {Patient}}
+      \field{type}{techreport}
+      \field{pages}{62}
+      \range{pages}{1}
+      \verb{file}
+      \verb Rapport PRD - Jean Coquelet.pdf:C\:\\Users\\Romain\\Documents\\Projet_R&D_2\\PRD_Livrables_pochet_guillaume\\Rapport PRD - Jean Coquelet.pdf:application/pdf
+      \endverb
+    \endentry
     \entry{noauthor_chu_nodate}{misc}{}
       \list{language}{1}{%
         {fr}%
@@ -39,6 +67,55 @@
       \endverb
       \verb{url}
       \verb http://www.info-tours.fr/articles/tours/2018/07/30/9333/le-chu-de-tours-a-lance-son-service-d-hotel-hospitalier/
+      \endverb
+    \endentry
+    \entry{marynissen_literature_2019}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f24914bffe2472a96a23bbb9a836248c}{%
+           family={Marynissen},
+           familyi={M\bibinitperiod},
+           given={Joren},
+           giveni={J\bibinitperiod}}}%
+        {{hash=bafc3307ca493bc9cd04670ac182524e}{%
+           family={Demeulemeester},
+           familyi={D\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{724a6d14fd126faffd901db77da91339}
+      \strng{fullhash}{724a6d14fd126faffd901db77da91339}
+      \strng{authornamehash}{724a6d14fd126faffd901db77da91339}
+      \strng{authorfullhash}{724a6d14fd126faffd901db77da91339}
+      \field{sortinit}{M}
+      \field{sortinithash}{c26a05ef03e4429073ed5c825140fac3}
+      \field{labelprefix}{WWW}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper presents a review of the literature on multi-appointment scheduling problems in hospitals. In these problems, patients need to sequentially visit multiple resource types in a hospital setting so they can receive treatment or be diagnosed. Therefore, each patient is assigned a speciﬁc path over a subset of the considered resources and each step needs to be scheduled. The main aim of these problems is to let each patient visit the resources in his or her subset within the allotted time to receive timely care. This is important because a delayed diagnosis or treatment may result in adverse health effects. Additionally, with multi-appointment scheduling, hospitals have the opportunity to augment patient satisfaction, allowing the patient to visit the hospital less frequently. To structure the growing body of literature in this ﬁeld and aid researchers in the ﬁeld, a classiﬁcation scheme is proposed and used to classify the scientiﬁc work on multi-appointment scheduling in hospitals published before the end of 2017. The results show that multi-appointment scheduling problems are becoming increasingly popular. In fact, multi-appointment scheduling problems in hospitals are currently gaining progressively more momentum in the academic literature.}
+      \field{issn}{03772217}
+      \field{journaltitle}{European Journal of Operational Research}
+      \field{month}{1}
+      \field{number}{2}
+      \field{title}{Literature review on multi-appointment scheduling problems in hospitals}
+      \field{urlday}{22}
+      \field{urlmonth}{11}
+      \field{urlyear}{2018}
+      \field{volume}{272}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \field{pages}{407\bibrangedash 419}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1016/j.ejor.2018.03.001
+      \endverb
+      \verb{file}
+      \verb Marynissen et Demeulemeester - 2019 - Literature review on multi-appointment scheduling .pdf:C\:\\Users\\Romain\\Zotero\\storage\\HYZUCYKB\\Marynissen et Demeulemeester - 2019 - Literature review on multi-appointment scheduling .pdf:application/pdf
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0377221718302108
       \endverb
     \endentry
     \entry{pochet_outil_nodate}{report}{}
@@ -71,6 +148,33 @@
     \endentry
   \endsortlist
   \sortlist[entry]{nyt/global/}
+    \entry{coquelet_gestion_nodate}{report}{}
+      \name{author}{1}{}{%
+        {{hash=168c1e94fd6b20f57798b3f85f5eacc3}{%
+           family={Coquelet},
+           familyi={C\bibinitperiod},
+           given={Jean},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {fr}%
+      }
+      \strng{namehash}{168c1e94fd6b20f57798b3f85f5eacc3}
+      \strng{fullhash}{168c1e94fd6b20f57798b3f85f5eacc3}
+      \strng{authornamehash}{168c1e94fd6b20f57798b3f85f5eacc3}
+      \strng{authorfullhash}{168c1e94fd6b20f57798b3f85f5eacc3}
+      \field{sortinit}{C}
+      \field{sortinithash}{095692fd22cc3c74d7fe223d02314dbd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Gestion et {Optimisation} des {Parcours} {Patient}}
+      \field{type}{techreport}
+      \field{pages}{62}
+      \range{pages}{1}
+      \verb{file}
+      \verb Rapport PRD - Jean Coquelet.pdf:C\:\\Users\\Romain\\Documents\\Projet_R&D_2\\PRD_Livrables_pochet_guillaume\\Rapport PRD - Jean Coquelet.pdf:application/pdf
+      \endverb
+    \endentry
     \entry{noauthor_chu_nodate}{misc}{}
       \list{language}{1}{%
         {fr}%
@@ -90,6 +194,54 @@
       \endverb
       \verb{url}
       \verb http://www.info-tours.fr/articles/tours/2018/07/30/9333/le-chu-de-tours-a-lance-son-service-d-hotel-hospitalier/
+      \endverb
+    \endentry
+    \entry{marynissen_literature_2019}{article}{}
+      \name{author}{2}{}{%
+        {{hash=f24914bffe2472a96a23bbb9a836248c}{%
+           family={Marynissen},
+           familyi={M\bibinitperiod},
+           given={Joren},
+           giveni={J\bibinitperiod}}}%
+        {{hash=bafc3307ca493bc9cd04670ac182524e}{%
+           family={Demeulemeester},
+           familyi={D\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{724a6d14fd126faffd901db77da91339}
+      \strng{fullhash}{724a6d14fd126faffd901db77da91339}
+      \strng{authornamehash}{724a6d14fd126faffd901db77da91339}
+      \strng{authorfullhash}{724a6d14fd126faffd901db77da91339}
+      \field{sortinit}{M}
+      \field{sortinithash}{c26a05ef03e4429073ed5c825140fac3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper presents a review of the literature on multi-appointment scheduling problems in hospitals. In these problems, patients need to sequentially visit multiple resource types in a hospital setting so they can receive treatment or be diagnosed. Therefore, each patient is assigned a speciﬁc path over a subset of the considered resources and each step needs to be scheduled. The main aim of these problems is to let each patient visit the resources in his or her subset within the allotted time to receive timely care. This is important because a delayed diagnosis or treatment may result in adverse health effects. Additionally, with multi-appointment scheduling, hospitals have the opportunity to augment patient satisfaction, allowing the patient to visit the hospital less frequently. To structure the growing body of literature in this ﬁeld and aid researchers in the ﬁeld, a classiﬁcation scheme is proposed and used to classify the scientiﬁc work on multi-appointment scheduling in hospitals published before the end of 2017. The results show that multi-appointment scheduling problems are becoming increasingly popular. In fact, multi-appointment scheduling problems in hospitals are currently gaining progressively more momentum in the academic literature.}
+      \field{issn}{03772217}
+      \field{journaltitle}{European Journal of Operational Research}
+      \field{month}{1}
+      \field{number}{2}
+      \field{title}{Literature review on multi-appointment scheduling problems in hospitals}
+      \field{urlday}{22}
+      \field{urlmonth}{11}
+      \field{urlyear}{2018}
+      \field{volume}{272}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \field{pages}{407\bibrangedash 419}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1016/j.ejor.2018.03.001
+      \endverb
+      \verb{file}
+      \verb Marynissen et Demeulemeester - 2019 - Literature review on multi-appointment scheduling .pdf:C\:\\Users\\Romain\\Zotero\\storage\\HYZUCYKB\\Marynissen et Demeulemeester - 2019 - Literature review on multi-appointment scheduling .pdf:application/pdf
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0377221718302108
       \endverb
     \endentry
     \entry{pochet_outil_nodate}{report}{}

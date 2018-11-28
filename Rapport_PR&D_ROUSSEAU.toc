@@ -154,73 +154,89 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}\IeC {\'E}tat de l'art}{14}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Planification automatique}{14}{section.3.1}
+\contentsline {section}{\numberline {1}Pr\IeC {\'e}sentation des probl\IeC {\`e}mes multi-ressources dans un h\IeC {\^o}pital}{14}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{II\hspace {1em}D\IeC {\'e}veloppement}{15}{part.2}
+\contentsline {section}{\numberline {2}Les niveaux de d\IeC {\'e}cision dans la gestion des h\IeC {\^o}pitaux}{15}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Analyse et conception}{16}{chapter.4}
+\contentsline {section}{\numberline {3}Choisir la port\IeC {\'e}e du mod\IeC {\`e}le}{15}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Mise en \IeC {\oe }uvre}{17}{chapter.5}
+\contentsline {subsection}{\numberline {3.1}Le service hospitalier concern\IeC {\'e}}{15}{subsection.3.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Bilan et conclusion}{18}{chapter.6}
+\contentsline {subsection}{\numberline {3.2}Le type de patient}{16}{subsection.3.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{Annexes}{19}{part*.7}
+\contentsline {subsection}{\numberline {3.3}Les ressources}{17}{subsection.3.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Fonctionnalit\IeC {\'e}s existantes}{20}{appendix.A}
+\contentsline {section}{\numberline {4}Choisir ce qu'on veut optimiser}{17}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\select@language {english}
+\contentsline {section}{\numberline {5}Choisir comment optimiser}{18}{section.3.5}
 \defcounter {refsection}{0}\relax 
-\select@language {french}
+\contentsline {section}{\numberline {6}Appliquer et valider le mod\IeC {\`e}le}{18}{section.3.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}G\IeC {\'e}rer les personnels}{20}{section.A.1}
+\contentsline {part}{II\hspace {1em}D\IeC {\'e}veloppement}{19}{part.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}G\IeC {\'e}rer les ressources mat\IeC {\'e}rielles}{20}{section.A.2}
+\contentsline {chapter}{\numberline {4}Analyse et conception}{20}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}G\IeC {\'e}rer les activit\IeC {\'e}s}{20}{section.A.3}
+\contentsline {chapter}{\numberline {5}Mise en \IeC {\oe }uvre}{21}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}G\IeC {\'e}rer les parcours}{21}{section.A.4}
+\contentsline {chapter}{\numberline {6}Bilan et conclusion}{22}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}G\IeC {\'e}rer les plans de parcours}{21}{section.A.5}
+\contentsline {part}{Annexes}{23}{part*.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Visualiser du planning}{21}{section.A.6}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Affecter un patient \IeC {\`a} un parcours}{21}{section.A.7}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Visualiser et modifier le planning de toutes les ressources}{21}{section.A.8}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Mod\IeC {\`e}le conceptuel de donn\IeC {\'e}es}{22}{appendix.B}
+\contentsline {chapter}{\numberline {A}Fonctionnalit\IeC {\'e}s existantes}{24}{appendix.A}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
 \select@language {french}
 \defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}G\IeC {\'e}rer les personnels}{24}{section.A.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}G\IeC {\'e}rer les ressources mat\IeC {\'e}rielles}{24}{section.A.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}G\IeC {\'e}rer les activit\IeC {\'e}s}{24}{section.A.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}G\IeC {\'e}rer les parcours}{25}{section.A.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}G\IeC {\'e}rer les plans de parcours}{25}{section.A.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Visualiser du planning}{25}{section.A.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7}Affecter un patient \IeC {\`a} un parcours}{25}{section.A.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8}Visualiser et modifier le planning de toutes les ressources}{25}{section.A.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {B}Mod\IeC {\`e}le conceptuel de donn\IeC {\'e}es}{26}{appendix.B}
+\defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
 \select@language {french}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {C}Explications des tables du mod\IeC {\`e}le}{24}{appendix.C}
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {C}Explications des tables du mod\IeC {\`e}le}{28}{appendix.C}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
 \select@language {french}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {D}Chiffrage du projet}{26}{appendix.D}
+\contentsline {chapter}{\numberline {D}Chiffrage du projet}{30}{appendix.D}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
 \select@language {french}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {E}Gestion de projet}{27}{appendix.E}
+\contentsline {chapter}{\numberline {E}Gestion de projet}{31}{appendix.E}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
 \select@language {french}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {F}Manuel d\IeC {\'e}veloppeur}{28}{appendix.F}
+\contentsline {chapter}{\numberline {F}Manuel d\IeC {\'e}veloppeur}{32}{appendix.F}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {G}TEMPO}{29}{appendix.G}
+\contentsline {chapter}{\numberline {G}TEMPO}{33}{appendix.G}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliographie}{30}{appendix*.8}
+\contentsline {chapter}{Bibliographie}{34}{appendix*.8}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
