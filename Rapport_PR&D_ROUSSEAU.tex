@@ -318,15 +318,105 @@ Pour choisir une méthodologie de planification, plusieurs options se présenten
 Les dernières étapes consistent à valider le modèle pour vérifier s'il s'exécute comme prévu en utilisant des benchmarks ou des données réelles provenant d'un hôpital. Pour les résultats positifs, le modèle peut être appliqué dans la réalité. Cependant, il semble y avoir une contradiction dans les résultats de la recherche entre le nombre de modèles validés et le nombre de modèles implémentés en situation réelle. Bien qu'une partie significative de modèle dans la littérature est validée, seule une infime fraction est implémentée dans la réalité. Cela pourrait s'expliquer par une implémentation qui se fait après la date de publication par exemple. Toutefois, le fait que peu de publications ont des résultats appliqués dans la pratique a des implications sur le concept de MASPH en général. Comme peu de résultats sont disponibles, cela devient plus difficile prouver que les MASPH sont efficaces. Par conséquent, il devient plus difficile de convaincre les hôpitaux d'implémenter de nouvelles méthodes. Les études qui ont été implémentées en situation réelle ne reportent pas toujours les résultats de l'implémentation, car soit elle n'est pas complète, soit aucune donnée de performance n'est disponible avant l'implémentation. Des signes préliminaires positifs sont néanmoins apparus dans des travaux, comme dans les services d'oncologie par exemple. Peu d'études contrôlent les performances avant implémentation et rapportent les améliorations après coup. Néanmoins, afin d'appliquer une nouvelle méthodologie, il reste compliqué pour les autres chercheurs et praticiens de voir quelle méthode est meilleure qu'une autre en terme de performance. 
 
 
-
 \part{Développement}
+
+Cette partie est consacrée aux développements réalisés sur la plateforme. Nous allons dans un premier temps évoquer les éléments d'analyse et de conception des nouvelles fonctionnalités de l'application, puis nous détaillerons les aspects de la mise en œuvre des développements. 
 
 
 \chapter{Analyse et conception}
 
 
+Dans ce chapitre, nous verrons les éléments d'analyse sur les fonctionnalités de la plateforme. Ils sont séparés en plusieurs étapes correspondant au chiffrage réalisé lors des premières réunions. La gestion de projet en général ainsi que le chiffrage se trouvent en \autoref{ann:chiffrage}.
 
-\chapter{Mise en œuvre}
+Voici les phases d'analyse que nous allons voir par la suite : 
+
+\begin{itemize}
+	\item Révision de la suppression des ressources
+	\item Révision de l'onglet \textit{Plan de parcours}
+	\item Révision du formulaire de création de patient
+	\item Affichage du planning patient
+	\item Ajout des fonctions de tri
+	\item Correction des problèmes d'URL
+	\item Affichage des ressources sélectionnées dans le planning
+	\item Implémentation de la planification automatique
+	\item Génération de jeux de données pour les tests
+\end{itemize}
+
+
+\section{Révision de la suppression des ressources}
+
+Les fonctionnalités de suppression des ressources ont été ajoutées lors du projet R\&D précédent sur le sujet réalisé par Yang JING. Celles-ci sont implémentées dans les onglets de gestion de la plateforme (réunis sous l'onglet "Gérer") et permettent de supprimer de la base de données les ressources qui ne sont plus nécessaires ou qui sont devenues obsolètes au fil du temps. 
+
+L'implémentation de la suppression des ressources comporte des risques importants pour la plateforme. En effet, la suppression d'un élément peut entraîner des répercussions sur l'intégralité de l'application. Par exemple, si l'on souhaite supprimer une ressource mais que des activités sont planifiées avec cette même ressource, quelle conséquence y aura-t-il sur l'intégrité des données ? Ou encore, si on désire supprimer une activité, mais qu'un patient doit réaliser un parcours avec cette même activité, quel impact cela aura sur la planification ? Ce type de comportement sur la plateforme n'est pas souhaitable et serait même contraire au bon fonctionnement de l'application, mais une erreur de manipulation pourrait engendrer ce type d'action. 
+
+Le problème est que, à la reprise du sujet, les boutons "Supprimer" sur la plateforme ne disposent d'aucune sécurité, ce qui peut se révéler très dangereux en cas d'erreur de manipulation. Un simple clic sur le bouton, même involontaire, entraîne la disparition immédiate de la ressource sélectionnée. Compte tenu de la dangerosité de la manœuvre sur le bon fonctionnement de la plateforme, il est nécessaire de pallier à ce problème. 
+
+L'une des solutions à minima serait de faire apparaître un message d'avertissement lors du clic sur le bouton. Ainsi, ça permettrait déjà d'éviter les clics involontaires. Un message comme affiché sur la \autoref{fig:messSuppr} serait déjà une première étape. 
+
+\begin{figure}
+	\includegraphics[scale=1]{images/messSuppr}
+	\caption{Exemple de message d'avertissement en cas de suppression}
+	\label{fig:messSuppr}
+\end{figure}
+
+Une autre solution plus coûteuse à mettre en place serait de cacher davantage les options de suppression. En effet, la suppression de ressource devrait une fonctionnalité plutôt rare à utiliser, une ressource devenant obsolète qu'en cas de changement de parcours. L'idée serait de placer les options de suppression sur une page séparée disponible uniquement via les paramètres du compte de la personne. Bien sûr, les suppressions peuvent être réalisées uniquement par les personnes ayant les droits adéquates sur la plateforme.
+
+
+\section{Révision de l'onglet \textit{Plan de parcours}}
+
+L'onglet "Plan de parcours" permet d'ajuster la nombre de patients qu'un parcours-patient peut accueillir par jour. La \autoref{fig:planParcours} représente l'affichage tel qu'il était à la reprise du sujet. La première remarque que l'on peut faire est que la notion de "Plan de parcours" semble floue. On ne comprend pas vraiment quel est l'utilité de l'onglet. Ajouter un texte permettant de comprendre la notion de "Plan de parcours" serait intéressant pour commencer.
+
+\begin{figure}
+	\includegraphics[scale=0.45]{images/PlanParcours}
+	\caption{Aperçu de l'onglet "Plan de parcours" à la reprise du projet}
+	\label{fig:planParcours}
+\end{figure}
+
+Ensuite, l'affichage des parcours se fait sous forme de liste. Pour chaque parcours, nous avons cinq lignes disposées, chacune représentant un jour de la semaine. Les parcours sont d'abord tous affichés à la suite sur l'onglet. Une liste déroulante est disponible sur le côté de la liste des parcours pour sélectionner le parcours que l'on souhaite ajuster. À première vue, l'affichage ne semble pas très intuitif pour un non-initié. Un affichage plus clair, avec des aides pour l'utilisateur, permettrait de comprendre facilement les fonctionnalités de l'onglet. 
+
+Parmi les améliorations sur l'affichage, la mention des jours de la semaine serait intéressante. Pour le moment, comme on le voit sur la \autoref{fig:planParcours}, les jours sont symbolisés par des numéros de 1 à 5. Plutôt que d'assigner un numéro, la mention des jours en toute lettre permettrait de gagner en clarté. 
+
+Le nombre de patients par jour et par parcours est disposé à droite de la liste. Cependant, il existe ce qui semble être une erreur sur le décompte. Il est possible d'ajuster le nombre avec des flèches disposées à droite du champ. Toutefois, il est impossible de dépasser 10 patients avec ce compteur, ce qui n'est pas normal. Une correction est donc à apporter sur ce champ. 
+
+
+\section{Révision du formulaire de création de patient}
+
+L'ajout d'un patient dans la base de données se fait à partir de l'onglet "Création" dans le menu "Patient". À partir de l'onglet, on arrive sur un formulaire à remplir pour renseigner les données du patient. L'aspect du formulaire se trouve sur la \autoref{fig:formPatient}. 
+
+\begin{figure}
+	\includegraphics[scale=0.4]{images/formulairePatient}
+	\caption{Formulaire de patient}
+	\label{fig:formPatient}
+\end{figure}
+
+Plusieurs améliorations peuvent être effectuées sur ce formulaire, au niveau de l'affichage et des données à remplir notamment. Tout d'abord, les données à remplir vont dépendre des demandes de l'hôpital et seront quoiqu'il arrive modifiables. Néanmoins, modifier le formulaire implique de modifier la structure de la table "Patient" dans la base de données également. 
+
+Les champs du formulaire ne disposent pas de formatage pré-disposé pour le champ en question, c'est-à-dire qu'il est pour le moment possible de mettre des lettres sur le champ "Numéro de téléphone". Ainsi, à ce niveau, plusieurs corrections sont à apporter.
+
+
+\section{Affichage du planning patient}
+
+
+\section{Ajout des fonctions de tri}
+
+
+\section{Correction des problèmes d'URL}
+
+
+\section{Affichage des ressources sélectionnées dans le planning}
+
+
+\section{Implémentation de la planification automatique}
+
+
+\section{Génération de jeux de données pour les tests}
+
+
+% PRD 2
+%\chapter{Mise en œuvre}
+
+% Pour la partie Suppression
+%Pour afficher un message de confirmation, il suffit d'ajouter \javacode{onclick="return confirm('Etes vous sur ?');"} sur le lien de l'action ...
 
 
 \chapter{Bilan et conclusion}
@@ -417,7 +507,7 @@ L'administrateur peut visualiser et modifier en temps réel le planning de toute
 
 %%PRD Jing
 
-Voici l'explication sur les tables créées dans l'ancien projet [2]que je vais continuer à utiliser.
+Voici l'explication sur les tables créées dans l'ancien projet que je vais continuer à utiliser.
 
 \begin{description}
 	\item[Activité] : Table regroupant l'ensemble des informations concernant une activité. C'est cet élément qui constitue les parcours. Une activité peut obliger la réalisation de certaines autres activités avant d'être réalisable. Cette notion de dépendance dépend du parcours en cours. Cette notion de précédence est sera vue plus loin via la table composer. En plus de cela, une activité a besoin de ressources. Ce lien se fait par la table nécessiter.
@@ -462,23 +552,9 @@ Préparation soutenance : 3 j
 \chapter{Gestion de projet}
 \label{ann:gestion}
 
-\chapter{Manuel développeur}
-
-
 %TODO Supprimer le chapitre une fois terminé
-\chapter{TEMPO}
+%\chapter{TEMPO}
 
-\section*{Suppression}
-
-La fonctionnalité "Supprimer" a été ajoutée lors du dernier PR\&D réalisé par Yang Jing. Elle est implémentée dans les onglets de Gestion de la plateforme pour avoir la possibilité de supprimer les ressources qui ne sont pas nécessaires ou qui sont devenues obsolètes.  
-
-Cette fonctionnalité a des risques importants. En effet, la suppression d'un élément peut entraîner des répercussions sur l'intégralité de la plateforme (exemple ...). 
-
-À l'heure actuelle, les boutons "Supprimer" ne disposent d'aucune sécurité, ce qui peut se révéler très dangereux. Un simple clic sur le bouton entraîne la disparition de la ressource sélectionnée. Compte tenu de la dangerosité de la manœuvre sur le bon fonctionnement de la plateforme, il est nécessaire de corriger ce problème. 
-
-À minima, l'apparition d'un message de confirmation lors du clic sur le bouton permettrait d'éviter les mauvaises manipulations. 
-
-Pour afficher un message de confirmation, il suffit d'ajouter \javacode{onclick="return confirm('Etes vous sur ?');"} sur le lien de l'action ...
 
 
 \end{document}
