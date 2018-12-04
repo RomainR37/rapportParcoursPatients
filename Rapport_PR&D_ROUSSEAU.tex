@@ -187,6 +187,7 @@ Cette section regroupe les fonctionnalités qui vont être implémentées lors d
 
 
 \subsection{Ajout de fonctions de tri lors de l'affichage des ressources}
+\label{subsec:tri}
 
 Lors de la reprise du projet, sur les premiers tests, nous avons pu observer plusieurs corrections à apporter à la plateforme. L'une d'entre elles qui m'a semblé intéressante est l'ajout de fonctions de tri lors de l'affichage des ressources. Lorsque l'on souhaite consulter le personnel, les salles ou les activités par exemple, l'affichage se fait sous forme de liste comme on peut le voir sur la \autoref{fig:affPersonnel}.
 
@@ -391,25 +392,66 @@ L'ajout d'un patient dans la base de données se fait à partir de l'onglet "Cr�
 
 Plusieurs améliorations peuvent être effectuées sur ce formulaire, au niveau de l'affichage et des données à remplir notamment. Tout d'abord, les données à remplir vont dépendre des demandes de l'hôpital et seront quoiqu'il arrive modifiables. Néanmoins, modifier le formulaire implique de modifier la structure de la table "Patient" dans la base de données également. 
 
-Les champs du formulaire ne disposent pas de formatage pré-disposé pour le champ en question, c'est-à-dire qu'il est pour le moment possible de mettre des lettres sur le champ "Numéro de téléphone". Ainsi, à ce niveau, plusieurs corrections sont à apporter.
+Les champs du formulaire ne disposent pas de formatage pré-disposé pour le champ en question, c'est-à-dire qu'il est possible, par exemple, de mettre des lettres sur le champ "Numéro de téléphone". L'ajout d'un formatage par défaut sur certains champs permettraient d'éviter les erreurs d'entrées dans la base de données (par exemple, une syntaxe d'adresse mail, un nombre défini de chiffres pour le numéro de téléphone et de sécurité sociale, etc.). 
 
 
 \section{Affichage du planning patient}
 
+L'affichage du planning d'un patient est une fonctionnalité qui a été présentée dans les projets précédents. Cependant, lors du test initial de la plateforme, cette fonctionnalité ne fonctionnait pas. L'affichage de planning d'un patient consiste à afficher les activités prévues pour la journée d'un patient, avec quatre informations pour chaque activité : le nom, le personnel qui s'occupera de l'activité, l'heure de début et de fin prévue. La présentation du planning est visible par la suite sur la \autoref{fig:planPatient}.
+
+\begin{figure}
+	\includegraphics[scale=0.45]{images/planningPatient}
+	\caption{Affichage du planning patient}
+	\label{fig:planPatient}
+\end{figure}
+
+L'affichage sur le planning patient se fait à partir de la planification générale des activités. Une fois que les activités ont été positionnées sur le planning et que celui-ci a été enregistré, les activités doivent devenir visibles sur le planning du patient. 
+
+Des éléments supplémentaires pourrait compléter cet onglet et afficher ainsi plus d'informations à l'écran. L'idée de base est d'afficher uniquement les activités prévues pour le jour même de la consultation. Ajouter un historique des consultations passées et un aperçu des activités futures seraient intéressant, tout comme proposer un visuel sur les activités prévues pour le jour-même mais qui n'ont pas été placées dans le calendrier général. 
+
 
 \section{Ajout des fonctions de tri}
 
+L'affichage des différentes ressources se fait sous forme de liste. Cependant, il peut y avoir un nombre important de ressources présentées mais il n'existe aucun tri possible pour ordonner l'affichage des entrées comme évoqué dans la \autoref{subsec:tri}. 
 
-\section{Correction des problèmes d'URL}
+Par défaut, les ressources sont agencées selon leur \textit{id} dans la base de données, ce qui est une donnée invisible pour l'utilisateur. Le but serait d'ajouter une possibilité de tri pour chaque champ affiché sur la page, par exemple pour l'affichage du personnel, l'utilisateur pourra trier par \textit{Nom}, \textit{Prénom} et par \textit{Poste} en cliquant sur les titres des colonnes correspondantes comme cela se fait sur de nombreuses applications de gestion. 
 
 
-\section{Affichage des ressources sélectionnées dans le planning}
+\section{Correction des erreurs de redirection}
+
+Il existe une erreur concernant la gestion des URL sur la plateforme. L'application étant une plateforme accessible via un navigateur, le parcours du site se fait au travers d'URL. Toutefois, il existe un problème au niveau de ses URL lorsque certaines actions sont effectuées. Lors de la modification d'une ressource, on la sélectionne sur l'onglet correspondant, à l'adresse \javacode{/RessourcesMat} par exemple, puis on clique sur \textit{Modifier}. On arrive sur une page de modification avec l'URL \javacode{/modif/id} avec l'\textit{id} de la ressource. Une fois que l'on confirme la modification, en cliquant sur le bouton \textit{Confirmer} de la page, on est alors redirigé vers la page des ressources en question mais avec l'adresse \javacode{/RessourcesMat/confirmModif}, comme on peut le voir sur la \autoref{fig:erreurURL}. 
+
+\begin{figure}
+	\includegraphics[scale=0.45]{images/erreurURL}
+	\caption{Affichage d'une erreur de redirection}
+	\label{fig:erreurURL}
+\end{figure}
+
+Ce type d'erreur peut sembler anodin, mais il peut créer des dysfonctionnements sur la plateforme, notamment en cas d'actualisation de la page ou de retour arrière. La correction de ce bug peut se faire simplement dans le code en changeant les adresses de redirection des boutons de confirmation lors de la modification d'un élément. 
 
 
 \section{Implémentation de la planification automatique}
 
+L'implémentation de la planification automatique se fera en plusieurs étapes. Tout d'abord, une refonte de certains éléments graphiques sur la page de planification sera nécessaire. La \autoref{fig:boutonPlanAuto} montre la page telle qu'elle est à l'origine du projet. La première chose que l'on remarque sur la page est la tuile centrale \textit{Suppression}. Celle-ci permet de supprimer une activité placée sur le calendrier en faisant glisser cette activité sur la zone de la tuile. Bien que l'idée de base est intéressante, l'application est moins pratique. À première vue, un utilisateur ne peut pas savoir le fonctionnement de la tuile puisque rien n'est indiqué sur la page. Ensuite, la position centrale prépondérante de la tuile n'aide pas à rendre la page ergonomique. 
+
+Une des solutions serait de supprimer cette tuile et d'introduire un autre système de suppression. Une activité doit être placée quoiqu'il arrive, donc au lieu de faire glisser une activité que l'on souhaite enlever sur la tuile \textit{Suppression}, avoir la possibilité de la faire glisser directement sur la liste des activités qui ne sont pas placées permettrait de rendre la tuile \textit{Suppression} inutile, et ainsi elle pourrait être retirée de la page. 
+
+Ensuite, dans le cadre de la planification automatique, nous voulons placer les activités de la façon la plus simple possible dans un premier temps, à commencer par une affectation patient par patient. Pour ce type d'affectation, il faudra ajouter une liste de patients prévu pour la journée sur la page. Celle-ci peut être placée à côté de la liste des activités, et en cliquant sur un patient, la possibilité de l'affecter automatiquement sera affichée.
+
+Enfin, le bouton \textit{Planifier automatiquement} comme on le voit sur la \autoref{fig:boutonPlanAuto}, qui ne fonctionne pas à l'heure actuelle, resterait en place et permettrait d'affecter automatiquement tous les patients à toutes les ressources. Cette fonctionnalité sera implémentée une fois les autres éléments réalisées et sera étoffée selon le temps restant pour le projet.
+
 
 \section{Génération de jeux de données pour les tests}
+
+Sur la plateforme, on retrouve un onglet nommé \textit{Créer jeu de données}. Sur cette page, on retrouve un panneau proposant de choisir une date et un bouton avec pour intitulé \textit{Créer jeu de données} comme on le voit sur la \autoref{fig:creerJDD}. Cet onglet doit servir pour les tests de la planification. Rien n'a encore été implémenté pour le moment sur cette page.
+
+\begin{figure}
+	\includegraphics[scale=0.75]{images/creerJDD}
+	\caption{Affichage de la page de création de jeu de données}
+	\label{fig:creerJDD}
+\end{figure}
+
+La création de jeu de données va permettre de générer des patients avec des activités prévues pour la journée sélectionnée sur l'onglet. Sans ces jeux de données, le test de la planification est fastidieux puisqu'il faut créer manuellement plusieurs patients, puis leur attribuer des parcours à chacun, ce qui peut prendre plusieurs minutes. Ainsi, ce bouton ferait office de macro pour les tests. Rendre ces tâches automatiques ferait gagner ainsi beaucoup de temps lors des tests sur la plateforme. Bien sûr, cet onglet ne doit pas être accessible à tous les utilisateurs d'une part, mais aussi ne doit pas être fonctionnel en cas de mise en production.  
 
 
 % PRD 2
