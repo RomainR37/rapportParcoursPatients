@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.1.12)  4 DEC 2018 11:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.1.12)  5 DEC 2018 17:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2597,61 +2597,61 @@ File: english.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
 )
 \openout1 = `Rapport_PR&D_ROUSSEAU.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/jkp/m/it on input line 30.
-LaTeX Font Info:    Try loading font information for OML+jkp on input line 30.
+LaTeX Font Info:    Checking defaults for OML/jkp/m/it on input line 36.
+LaTeX Font Info:    Try loading font information for OML+jkp on input line 36.
 
 (c:/texlive/2016/texmf-dist/tex/latex/kpfonts/omljkp.fd
 File: omljkp.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/jkp/m/n on input line 30.
-LaTeX Font Info:    Try loading font information for OMS+jkp on input line 30.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/jkp/m/n on input line 36.
+LaTeX Font Info:    Try loading font information for OMS+jkp on input line 36.
 
 (c:/texlive/2016/texmf-dist/tex/latex/kpfonts/omsjkp.fd
 File: omsjkp.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/jkp/m/n on input line 30.
-LaTeX Font Info:    Try loading font information for OMX+jkp on input line 30.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/jkp/m/n on input line 36.
+LaTeX Font Info:    Try loading font information for OMX+jkp on input line 36.
 
 (c:/texlive/2016/texmf-dist/tex/latex/kpfonts/omxjkp.fd
 File: omxjkp.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/jkpexa/m/n on input line 30.
-LaTeX Font Info:    Try loading font information for U+jkpexa on input line 30.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/jkpexa/m/n on input line 36.
+LaTeX Font Info:    Try loading font information for U+jkpexa on input line 36.
 
 
 (c:/texlive/2016/texmf-dist/tex/latex/kpfonts/ujkpexa.fd
 File: ujkpexa.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 30.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 36.
 
 (c:/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Try loading font information for T1+jkpf on input line 30.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Try loading font information for T1+jkpf on input line 36.
 
 (c:/texlive/2016/texmf-dist/tex/latex/kpfonts/t1jkpf.fd
 File: t1jkpf.fd 2007/01/24 Fontinst v1.928 font definitions for T1/jkpf.
 )
-LaTeX Info: Redefining \degres on input line 30.
-LaTeX Info: Redefining \dots on input line 30.
+LaTeX Info: Redefining \degres on input line 36.
+LaTeX Info: Redefining \dots on input line 36.
 Package frenchb.ldf Info: Setting StandardItemizeEnv=true for
 (frenchb.ldf)             compatibility with enumitem package,
-(frenchb.ldf)              on input line 30.
-LaTeX Info: Redefining \up on input line 30.
+(frenchb.ldf)              on input line 36.
+LaTeX Info: Redefining \up on input line 36.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -2695,9 +2695,9 @@ Package biblatex Info: Data encoding 'utf8' specified.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Rapport_PR&D_ROUSSEAU.bbl' found.
 (./Rapport_PR&D_ROUSSEAU.bbl)
-Package biblatex Info: Reference section=0 on input line 30.
-Package biblatex Info: Reference segment=0 on input line 30.
-LaTeX Info: Redefining \microtypecontext on input line 30.
+Package biblatex Info: Reference section=0 on input line 36.
+Package biblatex Info: Reference segment=0 on input line 36.
+LaTeX Info: Redefining \microtypecontext on input line 36.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -2751,7 +2751,7 @@ ABD: EveryShipout initializing macros
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-Package hyperref Info: Link coloring ON on input line 30.
+Package hyperref Info: Link coloring ON on input line 36.
 
 (c:/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -2761,9 +2761,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count473
 )
-LaTeX Info: Redefining \ref on input line 30.
-LaTeX Info: Redefining \pageref on input line 30.
-LaTeX Info: Redefining \nameref on input line 30.
+LaTeX Info: Redefining \ref on input line 36.
+LaTeX Info: Redefining \pageref on input line 36.
+LaTeX Info: Redefining \nameref on input line 36.
 
 
 Package pageslts Warning: Package pdfpages detected.
@@ -2813,18 +2813,18 @@ Package caption Info: End \AtBeginDocument code.
 File: polytech/polytech.pdf Graphic file (type pdf)
 
 <use polytech/polytech.pdf>
-Package pdftex.def Info: polytech/polytech.pdf used on input line 30.
+Package pdftex.def Info: polytech/polytech.pdf used on input line 36.
 (pdftex.def)             Requested size: 306.2564pt x 95.25526pt.
  <polytech/univ.pdf, id=8, 133.3289pt x 99.73561pt>
 File: polytech/univ.pdf Graphic file (type pdf)
 
 <use polytech/univ.pdf>
-Package pdftex.def Info: polytech/univ.pdf used on input line 30.
+Package pdftex.def Info: polytech/univ.pdf used on input line 36.
 (pdftex.def)             Requested size: 133.32857pt x 99.73535pt.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/jkpf/b/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Try loading font information for T1+jkptt on input line 30.
+LaTeX Font Info:    Try loading font information for T1+jkptt on input line 36.
 
 
 (c:/texlive/2016/texmf-dist/tex/latex/kpfonts/t1jkptt.fd
@@ -2834,7 +2834,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `jkptt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for OT1+jkpf on input line 30.
+LaTeX Font Info:    Try loading font information for OT1+jkpf on input line 36.
 
 
 (c:/texlive/2016/texmf-dist/tex/latex/kpfonts/ot1jkpf.fd
@@ -2844,13 +2844,13 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `jkpf' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for U+jkpmia on input line 30.
+LaTeX Font Info:    Try loading font information for U+jkpmia on input line 36.
 
 
 (c:/texlive/2016/texmf-dist/tex/latex/kpfonts/ujkpmia.fd
 File: ujkpmia.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 30.
+LaTeX Font Info:    Try loading font information for U+msa on input line 36.
 
 (c:/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -2858,7 +2858,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (c:/texlive/2016/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 30.
+LaTeX Font Info:    Try loading font information for U+msb on input line 36.
 
 (c:/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -2866,13 +2866,13 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (c:/texlive/2016/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+jkpsyc on input line 30.
+LaTeX Font Info:    Try loading font information for U+jkpsyc on input line 36.
 
 
 (c:/texlive/2016/texmf-dist/tex/latex/kpfonts/ujkpsyc.fd
 File: ujkpsyc.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    Try loading font information for U+stmry on input line 30.
+LaTeX Font Info:    Try loading font information for U+stmry on input line 36.
 
 (c:/texlive/2016/texmf-dist/tex/latex/stmaryrd/ustmry.fd)
 Package microtype Info: Character `029' is missing
@@ -2929,12 +2929,19 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
  [4
 
+] (./Rapport_PR&D_ROUSSEAU.lot)
+\tf@lot=\write15
+\openout15 = `Rapport_PR&D_ROUSSEAU.lot'.
+
+ [5
+
 ]
 \c@pagesLTS.roman.1.local.count=\count485
 \c@pagesLTS.pnc.arabic=\count486
 \c@pagesLTS.double.arabic=\count487
 \c@pagesLTS.current.local.arabic=\count488
- [1
+
+[1
 
 
 ]
@@ -2961,28 +2968,6 @@ tifs
  []
 
 [6]
-
-LaTeX Warning: Reference `ann:gantt' on page 7 undefined on input line 105.
-
-
-LaTeX Warning: Reference `ann:gantt' on page 7 undefined on input line 105.
-
-
-LaTeX Warning: Reference `ann:gantt' on page 7 undefined on input line 105.
-
-
-LaTeX Warning: Reference `ann:gantt' on page 7 undefined on input line 105.
-
-
-LaTeX Warning: Reference `ann:gantt' on page 7 undefined on input line 105.
-
-
-LaTeX Warning: Reference `ann:gantt' on page 7 undefined on input line 105.
-
-
-LaTeX Warning: Reference `ann:gantt' on page 7 undefined on input line 105.
-
-
 Underfull \hbox (badness 10000) has occurred while \output is active
  [][][][]\T1/jkpf/b/sc/12 Chapitre 1.  Contexte de la réa-li-sa-tion et ob-jec-
 tifs
@@ -2993,13 +2978,13 @@ Chapitre 2.
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \caption with sig. 'om' on line 132.
+. Redefining command \caption with sig. 'om' on line 141.
 .................................................
-<images/deploiement.png, id=262, 533.5935pt x 403.5075pt>
+<images/deploiement.png, id=279, 533.5935pt x 403.5075pt>
 File: images/deploiement.png Graphic file (type png)
 
 <use images/deploiement.png>
-Package pdftex.def Info: images/deploiement.png used on input line 133.
+Package pdftex.def Info: images/deploiement.png used on input line 142.
 (pdftex.def)             Requested size: 426.87538pt x 322.80644pt.
 
 * Missing: images/deploiement.pax
@@ -3019,13 +3004,13 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \caption with sig. 'om' on line 194.
+. Redefining command \caption with sig. 'om' on line 203.
 .................................................
- <images/affichage_personnel.png, id=283, 948.54375pt x 495.0495pt>
+ <images/affichage_personnel.png, id=301, 948.54375pt x 495.0495pt>
 File: images/affichage_personnel.png Graphic file (type png)
 
 <use images/affichage_personnel.png>
-Package pdftex.def Info: images/affichage_personnel.png used on input line 195.
+Package pdftex.def Info: images/affichage_personnel.png used on input line 204.
 
 (pdftex.def)             Requested size: 426.84074pt x 222.7702pt.
 
@@ -3039,14 +3024,14 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \caption with sig. 'om' on line 220.
+. Redefining command \caption with sig. 'om' on line 229.
 .................................................
 
-<images/bouton_plan_auto.png, id=292, 1059.96pt x 426.393pt>
+<images/bouton_plan_auto.png, id=309, 1059.96pt x 426.393pt>
 File: images/bouton_plan_auto.png Graphic file (type png)
 
 <use images/bouton_plan_auto.png>
-Package pdftex.def Info: images/bouton_plan_auto.png used on input line 221.
+Package pdftex.def Info: images/bouton_plan_auto.png used on input line 230.
 (pdftex.def)             Requested size: 423.97649pt x 170.55417pt.
 
 * Missing: images/bouton_plan_auto.pax
@@ -3059,13 +3044,13 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \caption with sig. 'om' on line 238.
+. Redefining command \caption with sig. 'om' on line 247.
 .................................................
 
-<images/arboMVC.png, id=300, 75.8835pt x 64.44075pt>
+<images/arboMVC.png, id=318, 75.8835pt x 64.44075pt>
 File: images/arboMVC.png Graphic file (type png)
  <use images/arboMVC.png>
-Package pdftex.def Info: images/arboMVC.png used on input line 239.
+Package pdftex.def Info: images/arboMVC.png used on input line 248.
 (pdftex.def)             Requested size: 75.8833pt x 64.44058pt.
 
 * Missing: images/arboMVC.pax
@@ -3111,26 +3096,26 @@ Chapitre 4.
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \caption with sig. 'om' on line 357.
+. Redefining command \caption with sig. 'om' on line 367.
 .................................................
- <images/messSuppr.png, id=344, 422.7795pt x 110.814pt>
+ <images/messSuppr.png, id=361, 422.7795pt x 110.814pt>
 File: images/messSuppr.png Graphic file (type png)
 
 <use images/messSuppr.png>
-Package pdftex.def Info: images/messSuppr.png used on input line 358.
+Package pdftex.def Info: images/messSuppr.png used on input line 368.
 (pdftex.def)             Requested size: 422.77846pt x 110.8137pt.
 
 * Missing: images/messSuppr.pax
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \caption with sig. 'om' on line 370.
+. Redefining command \caption with sig. 'om' on line 380.
 .................................................
-<images/PlanParcours.png, id=346, 941.31676pt x 349.90726pt>
+<images/PlanParcours.png, id=363, 941.31676pt x 349.90726pt>
 File: images/PlanParcours.png Graphic file (type png)
 
 <use images/PlanParcours.png>
-Package pdftex.def Info: images/PlanParcours.png used on input line 371.
+Package pdftex.def Info: images/PlanParcours.png used on input line 381.
 (pdftex.def)             Requested size: 423.58862pt x 157.4568pt.
 
 * Missing: images/PlanParcours.pax
@@ -3143,27 +3128,27 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \caption with sig. 'om' on line 387.
+. Redefining command \caption with sig. 'om' on line 397.
 .................................................
 
-<images/formulairePatient.png, id=356, 1028.643pt x 352.9185pt>
+<images/formulairePatient.png, id=373, 1028.643pt x 352.9185pt>
 File: images/formulairePatient.png Graphic file (type png)
 
 <use images/formulairePatient.png>
-Package pdftex.def Info: images/formulairePatient.png used on input line 388.
+Package pdftex.def Info: images/formulairePatient.png used on input line 398.
 (pdftex.def)             Requested size: 411.44992pt x 141.16489pt.
 
 * Missing: images/formulairePatient.pax
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \caption with sig. 'om' on line 402.
+. Redefining command \caption with sig. 'om' on line 413.
 .................................................
-<images/planningPatient.png, id=358, 977.45175pt x 248.72925pt>
+<images/planningPatient.png, id=375, 977.45175pt x 248.72925pt>
 File: images/planningPatient.png Graphic file (type png)
 
 <use images/planningPatient.png>
-Package pdftex.def Info: images/planningPatient.png used on input line 403.
+Package pdftex.def Info: images/planningPatient.png used on input line 414.
 (pdftex.def)             Requested size: 439.84923pt x 111.92712pt.
 
 * Missing: images/planningPatient.pax
@@ -3176,14 +3161,14 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \caption with sig. 'om' on line 424.
+. Redefining command \caption with sig. 'om' on line 435.
 .................................................
 
-<images/erreurURL.png, id=366, 990.099pt x 308.95425pt>
+<images/erreurURL.png, id=384, 990.099pt x 308.95425pt>
 File: images/erreurURL.png Graphic file (type png)
 
 <use images/erreurURL.png>
-Package pdftex.def Info: images/erreurURL.png used on input line 425.
+Package pdftex.def Info: images/erreurURL.png used on input line 436.
 (pdftex.def)             Requested size: 445.54044pt x 139.02812pt.
 
 * Missing: images/erreurURL.pax
@@ -3196,14 +3181,14 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \caption with sig. 'om' on line 448.
+. Redefining command \caption with sig. 'om' on line 459.
 .................................................
 
-<images/creerJDD.png, id=376, 516.12825pt x 129.48375pt>
+<images/creerJDD.png, id=393, 516.12825pt x 129.48375pt>
 File: images/creerJDD.png Graphic file (type png)
 
 <use images/creerJDD.png>
-Package pdftex.def Info: images/creerJDD.png used on input line 449.
+Package pdftex.def Info: images/creerJDD.png used on input line 460.
 (pdftex.def)             Requested size: 387.09523pt x 97.11255pt.
 
 * Missing: images/creerJDD.pax
@@ -3217,9 +3202,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  [][][][]\T1/jkpf/b/sc/12 Chapitre 4.  Ana-lyse et concep-tion
  []
 
-[25 <./images/creerJDD.png>]
-Chapitre 5.
-[26
+[25 <./images/creerJDD.png>] [26
 
 ] [27
 
@@ -3235,41 +3218,34 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [29]
 Annexe B.
 
-Underfull \hbox (badness 3281) in paragraph at lines 538--538
+Underfull \hbox (badness 3281) in paragraph at lines 558--558
 [][][][]\T1/jkpf/b/n/24.88 Modèle concep-tuel de don-
- []
-
-.................................................
-. LaTeX info: "xparse/redefine-command"
-. 
-. Redefining command \caption with sig. 'om' on line 541.
-.................................................
-<images/tablesBD.jpg, id=405, 1276.77pt x 880.28876pt>
-File: images/tablesBD.jpg Graphic file (type jpg)
-
-<use images/tablesBD.jpg>
-Package pdftex.def Info: images/tablesBD.jpg used on input line 542.
-(pdftex.def)             Requested size: 638.38344pt x 440.1433pt.
-
-* Missing: images/tablesBD.pax
-
-Overfull \hbox (183.13933pt too wide) in paragraph at lines 542--545
- [][] |
  []
 
 [30
 
-]
+] <images/tablesBD.jpg, id=428, 1276.77pt x 880.28876pt>
+File: images/tablesBD.jpg Graphic file (type jpg)
+
+<use images/tablesBD.jpg>
+Package pdftex.def Info: images/tablesBD.jpg used on input line 562.
+(pdftex.def)             Requested size: 638.38344pt x 440.1433pt.
+
+* Missing: images/tablesBD.pax
+
 Underfull \hbox (badness 10000) has occurred while \output is active
  [][][][]\T1/jkpf/b/sc/12 Annexe B.  Mo-dèle concep-tuel de don-nées
  []
 
-[31 <./images/tablesBD.jpg>]
+[31
+
+ <./images/tablesBD.jpg>]
 Annexe C.
 
 Underfull \vbox (badness 4582) has occurred while \output is active []
 
  [32
+
 
 ]
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -3278,17 +3254,52 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [33]
 Annexe D.
+
+Underfull \vbox (badness 10000) detected at line 619
+ []
+
 [34
 
 ]
 Annexe E.
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \caption with sig. 'om' on line 633.
+.................................................
+<images/trello.png, id=447, 837.1275pt x 524.55975pt>
+File: images/trello.png Graphic file (type png)
+ <use images/trello.png>
+Package pdftex.def Info: images/trello.png used on input line 634.
+(pdftex.def)             Requested size: 292.99901pt x 183.59865pt.
 
-Package biblatex Warning: Type 'online' not found on input line 602.
+* Missing: images/trello.pax
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \caption with sig. 'om' on line 643.
+.................................................
+<images/gestion_projet.png, id=448, 3141.7375pt x 442.65375pt>
+File: images/gestion_projet.png Graphic file (type png)
 
+<use images/gestion_projet.png>
+Package pdftex.def Info: images/gestion_projet.png used on input line 644.
+(pdftex.def)             Requested size: 439.84026pt x 61.9711pt.
+
+* Missing: images/gestion_projet.pax
 [35
 
-]
-Overfull \hbox (5.63431pt too wide) in paragraph at lines 602--602
+ <./images/trello.png>]
+
+Package biblatex Warning: Type 'online' not found on input line 656.
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][][][]\T1/jkpf/b/sc/12 Annexe E.  Ges-tion de pro-jet
+ []
+
+[36 <./images/gestion_projet.png (PNG copy)>]
+Overfull \hbox (5.63431pt too wide) in paragraph at lines 656--656
 []\T1/jkpf/m/n/10.95 (-20) Joren \T1/jkpf/m/sc/10.95 (-20) Ma-ry-nis-sen \T1/jk
 pf/m/n/10.95 (-20) et Erik \T1/jkpf/m/sc/10.95 (-20) De-meu-le-mees-ter\T1/jkpf
 /m/n/10.95 (-20) . ^^S   Li-te-ra-ture re-view on multi-appointment|
@@ -3297,7 +3308,7 @@ pf/m/n/10.95 (-20) et Erik \T1/jkpf/m/sc/10.95 (-20) De-meu-le-mees-ter\T1/jkpf
 No file Rapport_PR&D_ROUSSEAU.gls.
 No file Rapport_PR&D_ROUSSEAU.acr.
 No file Rapport_PR&D_ROUSSEAU.ind.
-[36
+[37
 
 ]
 *geometry* verbose mode - [ newgeometry ] result:
@@ -3333,93 +3344,101 @@ No file Rapport_PR&D_ROUSSEAU.ind.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 602--602
+Underfull \hbox (badness 10000) in paragraph at lines 656--656
  []\T1/jkpf/b/n/10 Département In-for-ma-tique
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 602--602
+Underfull \hbox (badness 10000) in paragraph at lines 656--656
  []\T1/jkpf/b/n/10 64 ave-nue Jean Por-ta-lis, 37200 Tours, France
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 602--602
+Underfull \hbox (badness 10000) in paragraph at lines 656--656
  [][][][][]$\T1/jkptt/b/n/10 p o l y t e c h \OML/jkp/m/it/10 : \T1/jkptt/b/n/1
 0 u n i v -[] t o u r s\OML/jkp/m/it/10 : \T1/jkptt/b/n/10 f r$[][][][]
  []
 
 File: polytech/polytech.pdf Graphic file (type pdf)
 <use polytech/polytech.pdf>
-Package pdftex.def Info: polytech/polytech.pdf used on input line 602.
+Package pdftex.def Info: polytech/polytech.pdf used on input line 656.
 (pdftex.def)             Requested size: 306.2564pt x 95.25526pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 602--602
+Underfull \hbox (badness 10000) in paragraph at lines 656--656
  [][][][]\T1/jkpf/b/n/12 Informatique
  []
 
-<images/LOGO_APHP.png, id=442, 404.2302pt x 89.6148pt>
+<images/LOGO_APHP.png, id=471, 404.2302pt x 89.6148pt>
 File: images/LOGO_APHP.png Graphic file (type png)
 
 <use images/LOGO_APHP.png>
-Package pdftex.def Info: images/LOGO_APHP.png used on input line 602.
+Package pdftex.def Info: images/LOGO_APHP.png used on input line 656.
 (pdftex.def)             Requested size: 404.2292pt x 89.61458pt.
-File: images/LOGO_APHP.png Graphic file (type png)
- <use images/LOGO_APHP.png>
-Package pdftex.def Info: images/LOGO_APHP.png used on input line 602.
-(pdftex.def)             Requested size: 404.2292pt x 89.61458pt.
-File: images/LOGO_APHP.png Graphic file (type png)
+File: images/planningPatient.png Graphic file (type png)
+ <use images/planningPatient.png>
+Package pdftex.def Info: images/planningPatient.png used on input line 656.
+(pdftex.def)             Requested size: 977.44937pt x 248.72864pt.
 
-<use images/LOGO_APHP.png>
-Package pdftex.def Info: images/LOGO_APHP.png used on input line 602.
-(pdftex.def)             Requested size: 404.2292pt x 89.61458pt.
- [37
+Underfull \hbox (badness 1418) in paragraph at lines 656--656
+[]\T1/jkpf/m/n/14.4 Mes ob-jec-tifs se-ront de cor-ri-ger les er-
+ []
+
+File: images/bouton_plan_auto.png Graphic file (type png)
+<use images/bouton_plan_auto.png>
+Package pdftex.def Info: images/bouton_plan_auto.png used on input line 656.
+(pdftex.def)             Requested size: 1059.95741pt x 426.39195pt.
+ [38
 
 
  <./images/LOGO_APHP.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 602--602
+Underfull \hbox (badness 10000) in paragraph at lines 656--656
  [][][][]\T1/jkpf/b/sc/10.95 Ecole Po-ly-tech-nique de l'Uni-ver-sité Fran-çois
  Ra-be-lais de Tours
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 602--602
+Underfull \hbox (badness 10000) in paragraph at lines 656--656
  []\T1/jkpf/b/n/10 Département In-for-ma-tique
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 602--602
+Underfull \hbox (badness 10000) in paragraph at lines 656--656
  []\T1/jkpf/b/n/10 64 ave-nue Jean Por-ta-lis, 37200 Tours, France
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 602--602
+Underfull \hbox (badness 10000) in paragraph at lines 656--656
  [][][][][]$\T1/jkptt/b/n/10 p o l y t e c h \OML/jkp/m/it/10 : \T1/jkptt/b/n/1
 0 u n i v -[] t o u r s\OML/jkp/m/it/10 : \T1/jkptt/b/n/10 f r$[][][][]
  []
 
 File: polytech/polytech.pdf Graphic file (type pdf)
 <use polytech/polytech.pdf>
-Package pdftex.def Info: polytech/polytech.pdf used on input line 602.
+Package pdftex.def Info: polytech/polytech.pdf used on input line 656.
 (pdftex.def)             Requested size: 306.2564pt x 95.25526pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 602--602
+Underfull \hbox (badness 10000) in paragraph at lines 656--656
  [][][][]\T1/jkpf/b/n/12 Informatique
  []
 
 File: images/LOGO_APHP.png Graphic file (type png)
 <use images/LOGO_APHP.png>
-Package pdftex.def Info: images/LOGO_APHP.png used on input line 602.
+Package pdftex.def Info: images/LOGO_APHP.png used on input line 656.
 (pdftex.def)             Requested size: 404.2292pt x 89.61458pt.
-File: images/LOGO_APHP.png Graphic file (type png)
- <use images/LOGO_APHP.png>
-Package pdftex.def Info: images/LOGO_APHP.png used on input line 602.
-(pdftex.def)             Requested size: 404.2292pt x 89.61458pt.
-File: images/LOGO_APHP.png Graphic file (type png)
+File: images/planningPatient.png Graphic file (type png)
+ <use images/planningPatient.png>
+Package pdftex.def Info: images/planningPatient.png used on input line 656.
+(pdftex.def)             Requested size: 977.44937pt x 248.72864pt.
 
-<use images/LOGO_APHP.png>
-Package pdftex.def Info: images/LOGO_APHP.png used on input line 602.
-(pdftex.def)             Requested size: 404.2292pt x 89.61458pt.
- [38
+Underfull \hbox (badness 1490) in paragraph at lines 656--656
+\T1/jkpf/m/n/14.4 tam-ment des er-reurs d'af-fi-chage, des
+ []
+
+File: images/bouton_plan_auto.png Graphic file (type png)
+<use images/bouton_plan_auto.png>
+Package pdftex.def Info: images/bouton_plan_auto.png used on input line 656.
+(pdftex.def)             Requested size: 1059.95741pt x 426.39195pt.
+ [39
 
 
 ]
@@ -3455,7 +3474,7 @@ Package pdftex.def Info: images/LOGO_APHP.png used on input line 602.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [39
+ [40
 
 
 
@@ -3464,51 +3483,55 @@ Package pdftex.def Info: images/LOGO_APHP.png used on input line 602.
 ] 
 AED: pageslts setting LastPage 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:modeleBDD on input lin
-e 602.
+LaTeX Warning: Polytech : Label defined but unused : fig:gantt on input line 65
+6.
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:modeleBDD on input lin
-e 602.
+LaTeX Warning: Polytech : Label defined but unused : fig:gantt on input line 65
+6.
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:modeleBDD on input lin
-e 602.
+LaTeX Warning: Polytech : Label defined but unused : fig:gantt on input line 65
+6.
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:modeleBDD on input lin
-e 602.
+LaTeX Warning: Polytech : Label defined but unused : fig:gantt on input line 65
+6.
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:modeleBDD on input lin
-e 602.
+LaTeX Warning: Polytech : Label defined but unused : fig:gantt on input line 65
+6.
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:modeleBDD on input lin
-e 602.
+LaTeX Warning: Polytech : Label defined but unused : fig:gantt on input line 65
+6.
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:modeleBDD on input lin
-e 602.
+LaTeX Warning: Polytech : Label defined but unused : fig:gantt on input line 65
+6.
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:modeleBDD on input lin
-e 602.
+LaTeX Warning: Polytech : Label defined but unused : fig:gantt on input line 65
+6.
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:modeleBDD on input lin
-e 602.
+LaTeX Warning: Polytech : Label defined but unused : fig:gantt on input line 65
+6.
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:modeleBDD on input lin
-e 602.
+LaTeX Warning: Polytech : Label defined but unused : fig:gantt on input line 65
+6.
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:modeleBDD on input lin
-e 602.
+LaTeX Warning: Polytech : Label defined but unused : fig:gantt on input line 65
+6.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 602.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 602.
+
+LaTeX Warning: Polytech : Label defined but unused : fig:gantt on input line 65
+6.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 656.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 656.
 \c@pagesLTS.arabic.1.local.count=\count489
 
 AED: pageslts setting VeryLastPage via AfterLastShipout 
@@ -3520,29 +3543,25 @@ Package pageslts Info: Total number of pages is odd.
 
 
 (./Rapport_PR&D_ROUSSEAU.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 602.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 602.
-
-
-LaTeX Warning: There were undefined references.
-
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 656.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 656.
 Package logreq Info: Writing requests to 'Rapport_PR&D_ROUSSEAU.run.xml'.
 \openout1 = `Rapport_PR&D_ROUSSEAU.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 602.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 656.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 54701 strings out of 493013
- 979665 string characters out of 6136993
- 1587093 words of memory out of 5000000
- 56841 multiletter control sequences out of 15000+600000
- 173479 words of font info for 342 fonts, out of 8000000 for 9000
+ 54762 strings out of 493013
+ 980584 string characters out of 6136993
+ 1591071 words of memory out of 5000000
+ 56873 multiletter control sequences out of 15000+600000
+ 180849 words of font info for 356 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,17n,94p,10399b,23315s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,17n,94p,10456b,23337s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}{c:/tex
 live/2016/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}<c:/texlive/201
 6/texmf-dist/fonts/type1/public/kpfonts/jkpbit8a.pfb><c:/texlive/2016/texmf-dis
@@ -3556,10 +3575,10 @@ s/type1/public/kpfonts/jkpmne.pfb><c:/texlive/2016/texmf-dist/fonts/type1/publi
 c/kpfonts/jkpmsc8a.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/kpfonts/j
 kpttbn8a.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/kpfonts/jkpttmn8a.p
 fb>
-Output written on Rapport_PR&D_ROUSSEAU.pdf (47 pages, 679748 bytes).
+Output written on Rapport_PR&D_ROUSSEAU.pdf (49 pages, 1649459 bytes).
 PDF statistics:
- 744 PDF objects out of 1000 (max. 8388607)
- 642 compressed objects within 7 object streams
- 134 named destinations out of 1000 (max. 500000)
- 53355 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 787 PDF objects out of 1000 (max. 8388607)
+ 680 compressed objects within 7 object streams
+ 142 named destinations out of 1000 (max. 500000)
+ 53909 words of extra memory for PDF output out of 61914 (max. 10000000)
 

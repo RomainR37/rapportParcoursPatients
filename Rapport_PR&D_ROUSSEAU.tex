@@ -1,4 +1,5 @@
 \documentclass{polytech/polytech}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
 
 \typereport{prddi5}
 
@@ -7,19 +8,24 @@
 \student[di5]{Romain}{ROUSSEAU}{romain.rousseau@etu.univ-tours.fr}
 \academicsupervisor{Yannick}{KERGOSIEN}{yannick.kergosien@univ-tours.fr}
 
-\resume{}
+\resume{Les hôpitaux sont l'objet de nombreux débats dans l'actualité, et l'un des points de discussion principal est la gestion des patients au sein des établissements. Un projet de développement d'une plateforme permettant de planifier les rendez-vous des patients au sein d'un hôpital de jour a été réalisé lors des années précédentes par des étudiants de l'école. La plateforme permet de gérer les patients, de leur assigner ce qu'on appelle un parcours patient, et d'agencer leur planning selon les ressources disponibles. Je vais reprendre ce projet pour corriger les divers problèmes présents et pour implémenter la planification automatique des activités des patients. Ajouter une planification automatique implique de nombreuses questions qui seront évoquées dans ce rapport.}
 
-\motcle{}
+\motcle{plateforme, web, gestion, patients, planification automatique}
 
-\abstract{}
+\abstract{Hospitals are subject to numerous talks in the news, and one of the main point is about the scheduling of patients. The creation of a platform allowing users to schedule patients activities in the hospital was made by student of the school in the years before. The application allows to add patients and resources, to assign them a course to follow, and to schedule with the resources available. I will continue this project by first, correct some bugs in the platform and to add automatic scheduling. The automatic scheduling implies lots of questions which will be answered in this report.}
 
-\keyword{}
+\keyword{platform, web, management, patients, automatic scheduling}
 
-\posterblock{}{}{images/LOGO_APHP}{}
+\posterblock{Contexte}{Les hôpitaux cherchent de nouvelles solutions pour aider la gestion des patients. Une plateforme a déjà été réalisée par les élèves de l'école lors des années précédentes et permet d'attribuer des parcours aux patients afin d'agencer leur rendez-vous sur un calendrier de façon manuel.}{images/LOGO_APHP}{Logo de l'Assistance Publique Hôpitaux de Paris}
 
-\posterblock{}{}{images/LOGO_APHP}{}
+\posterblock{Objectifs}{Mes objectifs seront de corriger les erreurs présentes sur la plateforme, notamment des erreurs d'affichage, des fautes d'orthographe, des problèmes de modélisation. Une fois corrigé, l'objectif sera d'implémenter une planification automatique des patients permettant, en un clic, d'avoir les rendez-vous programmés pour le jour donné.}{images/planningPatient}{Affichage d'un planning patient vide}
 
-\posterblock{}{}{images/LOGO_APHP}{}
+\posterblock{Fonctionnalités}{
+	\begin{itemize}
+		\item Amélioration générale apportée à la plateforme
+		\item Implémentation de la planification automatique
+	\end{itemize}
+}{images/bouton_plan_auto}{Aperçu de la page de planification}
 
 
 \addbibresource{PRD2.bib}
@@ -31,21 +37,24 @@
 
 \chapter*{Introduction}
 
-Ce rapport traite du projet Recherche et Développement réalisé au sein de l'école Polytech. Il se déroule lors la cinquième année d'étude et représente une forme de synthèse des connaissances acquises lors des années d’études précédentes. Il permet de développer et d’approfondir son savoir sur un ou plusieurs champs de compétences spécifiques, afin de devenir un spécialiste du domaine choisi dans le cadre du projet. Ce travail est mené seul, sous la supervision d'un tuteur académique et, pour certains projets, avec l’aide d’un intervenant extérieur qui fait partie des initiateurs du sujet. Il permet ainsi de développer son autonomie en menant à bien un travail des prémices jusque, dans le meilleur des cas, à la production.
+Ce rapport traite du projet Recherche et Développement réalisé au sein de l'école Polytech. Il se déroule lors la cinquième année d'étude et représente une forme de synthèse des connaissances acquises lors des années d’études précédentes. Il permet de développer et d'approfondir son savoir sur un ou plusieurs champs de compétences spécifiques, afin de devenir un spécialiste du domaine choisi dans le cadre du projet. Ce travail est mené seul, sous la supervision d'un tuteur académique et, pour certains projets, avec l'aide d'un intervenant extérieur qui fait partie des initiateurs du sujet. Il permet ainsi de développer son autonomie en menant à bien un travail des prémices jusque, dans le meilleur des cas, à la production.
 
-J'ai décidé de me consacrer à un projet lié à un enjeu important de notre société: la gestion des patients dans un hôpital. Aujourd'hui, les hôpitaux sont l'objet de nombreux débats dans l'actualité, et l'un des points de discorde majeurs concerne la gestion des patients au sein des hôpitaux. Plusieurs problèmes peuvent être cités: un temps d'attente bien trop long pour les patients (que ce soit une fois à l'hôpital ou pour avoir un rendez-vous avec un spécialiste), des problèmes de ressource (concernant le personnel ou bien les salles à disposition) ou encore des problèmes d'ordre financier en général. Certaines de ses problématiques peuvent être étudiées selon le point de vue de l'optimisation, et la recherche opérationnelle peut permettre d'améliorer certains aspects de la gestion actuelle. Pour ma part, me pencher sur les problèmes de recherche opérationnelle en général m'intéressait, et avoir l'opportunité de réaliser un projet dans ce domaine, d'autant plus dans un secteur qui en a besoin, était une bonne occasion pour améliorer mes compétences.
+J'ai décidé de me consacrer à un projet lié à un enjeu important de notre société: la gestion des patients dans un hôpital. Aujourd'hui, les hôpitaux sont l'objet de nombreux débats dans l'actualité, et l'un des points de discussion majeurs concerne la gestion des patients au sein des hôpitaux. Plusieurs problèmes peuvent être cités: un temps d'attente bien trop long pour les patients (que ce soit une fois à l'hôpital ou pour avoir un rendez-vous avec un spécialiste), des problèmes de ressource (concernant le personnel ou bien les salles à disposition) ou encore des problèmes d'ordre financier en général. Certaines de ses problématiques peuvent être étudiées selon le point de vue de l'optimisation, et la recherche opérationnelle peut permettre d'améliorer certains aspects de la gestion actuelle. Pour ma part, me pencher sur les problèmes de recherche opérationnelle en général m'intéressait, et avoir l'opportunité de réaliser un projet dans ce domaine, d'autant plus dans un secteur qui en a besoin, était une bonne occasion pour améliorer mes compétences.
 
-Le sujet de ce travail rentre dans le cadre d’un projet visant à développer un outil de gestion temps réel de parcours de patients pour l’AP-HP (Assistance publique - Hôpitaux de Paris). L'objectif de cet outil est de gérer un ensemble de patients nécessitant plusieurs activités de soins planifiées sur une journée dans un hôpital de jour. Chaque patient doit suivre un « parcours de soins » défini par un ensemble d’activités de soins. Certaines doivent être réalisées avant d'autres (contraintes de précédences) alors que pour d'autres, l’ordre n’a pas d’importance. Il peut exister des délais d'attente à respecter entre les activités. Chaque activité de soin est caractérisée par une durée et un ensemble de ressources nécessaires pour la réaliser. Ces ressources peuvent représenter le personnel, la salle où s'effectue l'activité ou encore le matériel utilisé. Elles sont caractérisées par une quantité et un horaire où elles sont disponibles. L'idée de l'outil est de pouvoir proposer un calendrier adaptatif dans lequel les horaires des activités de soins des patients peuvent être ajustés en fonction des aléas potentiels (retard, patient absent, etc.) afin de diminuer du mieux possible le temps d'attente des patients.
+Le sujet de ce travail rentre dans le cadre d’un projet visant à développer un outil de gestion temps réel de parcours de patients pour l’AP-HP (Assistance publique - Hôpitaux de Paris). L'objectif de cet outil est de gérer un ensemble de patients nécessitant plusieurs activités de soins planifiées sur une journée dans un hôpital de jour. Chaque patient doit suivre un « parcours de soins » défini par un ensemble d’activités de soins. Certaines doivent être réalisées avant d'autres (contraintes de précédences) alors que pour d'autres, l’ordre n’a pas d’importance. Il peut exister des délais d'attente à respecter entre les activités. Chaque activité de soin est caractérisée par une durée et un ensemble de ressources nécessaires pour la réaliser. Ces ressources peuvent représenter le personnel, la salle où s'effectue l'activité ou encore le matériel utilisé. Elles sont caractérisées par une quantité et un horaire où elles sont disponibles. L'idée de l'outil est de pouvoir proposer un calendrier adaptatif dans lequel les horaires des activités de soins des patients peuvent être ajustés en fonction des aléas potentiels (retard, patient absent, etc.) afin de diminuer au mieux possible le temps d'attente des patients.
 
-Ce projet est la suite de plusieurs travaux effectués à l'école ces dernières années et qui ont abouti à une première version simple d'un outil sous forme de plateforme web. L'objectif est d'améliorer l'outil actuel en corrigeant certains problèmes et en ajoutant des fonctionnalités afin de se rapprocher d'une version finale exploitable à l'avenir. Parmi les fonctionnalités qui devront être ajoutées, on peut notamment penser à la planification automatique des activités de soin sur le calendrier ou encore l'ajout de notions de temps réel sur les éléments du calendrier.
+Ce projet est la suite de plusieurs travaux effectués à l'école Polytech ces dernières années et qui ont abouti à une première version simple d'un outil sous forme de plateforme web. L'objectif est d'améliorer l'outil actuel en corrigeant certains problèmes et en ajoutant des fonctionnalités afin de se rapprocher d'une version finale exploitable à l'avenir. Parmi les fonctionnalités qui devront être ajoutées, on peut notamment penser à la planification automatique des activités de soin sur le calendrier ou encore l'ajout de notions de temps réel sur les éléments du calendrier.
 
-La première partie de ce rapport sera consacrée à l'analyse préliminaire de la plateforme et à la détermination des tâches à réaliser. Elle comprend des éléments sur le contexte de la réalisation, la description de la plateforme telle qu'elle se trouvait au début du projet, un état de l'art sur les outils existants et sur la gestion de la planification des activités, et la présentation des tâches qui seront effectuées durant les semaines de projet. La seconde partie sera dédiée aux détails des développements de la plateforme. Des documents complémentaires sont disponibles en annexe de ce rapport comme les diagrammes de Gantt, les diagrammes UML, des éléments de gestion de projet, etc. Un guide développeur destiné aux personnes qui désireront reprendre le projet à l'avenir est également présent en complément.
+La première partie de ce rapport sera consacrée à l'analyse préliminaire de la plateforme et à la détermination des tâches à réaliser. Elle comprend des éléments sur le contexte de la réalisation, la description de la plateforme telle qu'elle se trouvait au début du projet, un état de l'art sur les modélisation de la planification automatique des activités, et la présentation des tâches qui seront effectuées durant les semaines de projet. La seconde partie sera dédiée aux détails des développements de la plateforme. Des documents complémentaires sont disponibles en annexe de ce rapport comme les diagrammes de Gantt, les diagrammes UML, des éléments de gestion de projet, etc. 
+
+%TODO PARTIE 2
+%Un guide développeur destiné aux personnes qui désireront reprendre le projet à l'avenir est également présent en complément.
 
 
 \part{Analyse préliminaire et détermination des objectifs}
 
 
-Cette partie correspond à la première phase du Projet Recherche et Développement, la partie Recherche. Dans le cadre de ce projet, cette partie sera une analyse générale de la plateforme existante afin de déterminer quels objectifs nous devrons atteindre à l'issue de ce projet. Le premier chapitre sera consacré au contexte de la réalisation, la raison de l'initiation du projet ainsi que les acteurs concernés. Le chapitre suivant décrira la plateforme telle qu'elle se trouvait à la reprise du sujet, en détaillant la structure et les fonctionnalités qu'elle contient. Enfin le dernier chapitre évoquera des éléments de recherche opérationnelle dans le domaine de la gestion des patients dans un hôpital. 
+Cette partie correspond à la première phase du Projet Recherche et Développement, la partie Recherche. Dans le cadre de ce projet, cette partie sera une analyse générale de la plateforme existante afin de déterminer quels objectifs nous devrons atteindre à l'issue de ce projet. Le premier chapitre sera consacré au contexte de la réalisation, la raison de l'initiation du projet ainsi que les acteurs concernés. Le chapitre suivant décrira la plateforme telle qu'elle se trouvait à la reprise du sujet, en détaillant la structure et les fonctionnalités qui existent. Enfin le dernier chapitre évoquera des éléments de recherche opérationnelle dans le domaine de la gestion des patients dans un hôpital. 
 
 
 \chapter{Contexte de la réalisation et objectifs}
@@ -102,7 +111,7 @@ Se pencher sur la planification en temps réel nécessiterait une refonte de la 
 
 \section{Bases méthodologiques}
 
-À l'issue des premières réunions de lancement du projet, nous avons avec mon encadrant établi un chiffrage du projet avec les objectifs à réaliser et une estimation du temps de travail pour chaque activité. Ce chiffrage est visible en \autoref{ann:chiffrage}. Une fois le chiffrage effectué, j'ai établi un diagramme de Gantt pour planifier les étapes au long du projet. Le découpage des étapes peut s'apparenter à une méthode Agile, avec un sprint représentant une étape à réaliser. Les détails concernant le découpage et le cheminement du projet sont disponibles en \autoref{ann:gantt}.
+À l'issue des premières réunions de lancement du projet, nous avons avec mon encadrant établi un chiffrage du projet avec les objectifs à réaliser et une estimation du temps de travail pour chaque activité. Ce chiffrage est visible en \autoref{ann:chiffrage}. Une fois le chiffrage effectué, j'ai établi un diagramme de Gantt pour planifier les étapes au long du projet. Le découpage des étapes peut s'apparenter à une méthode Agile, avec un sprint représentant une étape à réaliser. Les détails concernant le découpage et le cheminement du projet sont disponibles en \autoref{ann:gestion}.
 
 En ce qui concerne l'organisation des tâches, j'utilise l'outil de gestion de projet \textit{Trello}. Les détails concernant l'outil et l'utilisation que j'en ai fait sont disponibles en \autoref{ann:gestion}.
 
@@ -345,6 +354,7 @@ Voici les phases d'analyse que nous allons voir par la suite :
 
 
 \section{Révision de la suppression des ressources}
+\label{sec:suppr}
 
 Les fonctionnalités de suppression des ressources ont été ajoutées lors du projet R\&D précédent sur le sujet réalisé par Yang JING. Celles-ci sont implémentées dans les onglets de gestion de la plateforme (réunis sous l'onglet "Gérer") et permettent de supprimer de la base de données les ressources qui ne sont plus nécessaires ou qui sont devenues obsolètes au fil du temps. 
 
@@ -396,6 +406,7 @@ Les champs du formulaire ne disposent pas de formatage pré-disposé pour le cha
 
 
 \section{Affichage du planning patient}
+\label{sec:planPatient}
 
 L'affichage du planning d'un patient est une fonctionnalité qui a été présentée dans les projets précédents. Cependant, lors du test initial de la plateforme, cette fonctionnalité ne fonctionnait pas. L'affichage de planning d'un patient consiste à afficher les activités prévues pour la journée d'un patient, avec quatre informations pour chaque activité : le nom, le personnel qui s'occupera de l'activité, l'heure de début et de fin prévue. La présentation du planning est visible par la suite sur la \autoref{fig:planPatient}.
 
@@ -461,7 +472,13 @@ La création de jeu de données va permettre de générer des patients avec des 
 %Pour afficher un message de confirmation, il suffit d'ajouter \javacode{onclick="return confirm('Etes vous sur ?');"} sur le lien de l'action ...
 
 
-\chapter{Bilan et conclusion}
+\chapter*{Bilan et conclusion}
+
+À l'issue de cette première partie, nous avons pu observer les tenants et les aboutissants du projet. La plateforme comporte déjà de nombreuses fonctionnalités et l'objectif principal qui était de réaliser un outil de gestion de parcours patients a été atteint lors des précédents projets. Ici, le sujet concerne les nombreuses améliorations possibles sur la plateforme. Bien que la planification fonctionne, l'application n'est pas utilisable en production à cause d'une part, des problèmes d'ergonomie généraux, et d'autre part, de la planification qui devient vite impossible lorsque les données sont trop conséquentes.
+
+Parmi les améliorations à effectuer, il y a dans un premier temps des améliorations générales sur la plateforme (sur l'affichage, l'ergonomie, l'expérience utilisateur en général) et dans un second temps, la planification automatique des activités. Celle-ci nécessitera la majorité du temps de développement dans la seconde partie du projet.
+
+La suite du projet sera principalement consacrée aux développements des solutions évoquées dans les chapitres précédents. Certaines corrections ont déjà été réalisées à l'issue de cette partie, affectant l'affichage en général (corrections des fautes d'orthographe, révision de la suppression des ressources comme évoqué dans la \autoref{sec:suppr}, affichage du planning patient comme présenté dans la \autoref{sec:planPatient}). Les développements principaux, la planification automatique notamment, seront réalisées par la suite. 
 
 
 \appendix
@@ -469,12 +486,12 @@ La création de jeu de données va permettre de générer des patients avec des 
 \chapter{Fonctionnalités existantes}
 \label{ann:foncExist}
 
-L'application web a été produite par les étudiants au cours de l'année 2015-2016 de leur projet collectif et deux étudiants de son PRD. Ils ont développé une plate-forme permettant les fonctionnalités suivantes : gérer les personnels, gérer les ressources matérielles, gérer les activités, gérer les parcours et gérer le plan de parcours. Hors cela, la plate-forme peut aussi créer et rechercher des patients, puis leur affecter des parcours et planifier les activités.
+L'application a été réalisée par des étudiants au cours de l'année scolaire 2015-2016 puis sur les années suivantes lors d'un projet collectif et trois projets Recherche et Développement. La plateforme comporte les fonctionnalités suivantes : la gestion du personnel, des ressources matérielles, des activités, des parcours et des plans de parcours. Autre les fonctionnalités de gestion, la plateforme peut aussi créer et rechercher les patients, leur affecter des parcours et planifier les activités.
 
 
 \section{Gérer les personnels}
 
-Chaque personnel a une fonctionnalité dans l'hôpital, l'administrateur peut les modifier, supprimer et les mettre en indisponibilité.
+Chaque personnel a une fonctionnalité dans l'hôpital, l'administrateur peut les modifier, supprimer et les rendre indisponible pour une période convenue.
 
 \begin{itemize}
 	\item Modifier un personnel
@@ -484,28 +501,28 @@ Chaque personnel a une fonctionnalité dans l'hôpital, l'administrateur peut le
 
 \section{Gérer les ressources matérielles}
 
-Chaque ressource matérielle a un nom et une spécialité.
+Chaque ressource matérielle a un nom et une spécialité. Ces ressources correspondent aux salles de l'hôpital (les bureaux de consultation, les salles de prélèvements, etc.).
 
 \begin{itemize}
-	\item Modifier une ressource matérielle Cette fonctionnalité est implémentée mais elle ne fonctionne pas bien car elle pose le problème de la base de données, il faut une amélioration.
-	\item Supprimer une ressource matérielle Cette fonctionnalité a été implémentée mais elle ne fonctionne pas donc on a besoin de la faire fonctionner.
-	\item Mettre un personnel en indisponibilité
+	\item Modifier une ressource matérielle
+	\item Supprimer une ressource matérielle 
 \end{itemize}
+
 
 \section{Gérer les activités}
 
-Chaque activité doit avoir un nom et une durée, elle sera faite dans une certaine salle et par un type de personnel.
+Chaque activité doit avoir un nom et une durée, elle sera faite dans une certaine salle et par un ou plusieurs types de personnel.
 
 \begin{itemize}
 	\item Ajouter une nouvelle activité
 	\item Modifier les activités existantes
-	\item Supprimer les activités qui n’existent plus
+	\item Supprimer les activités qui n'existent plus
 \end{itemize}
 
 
 \section{Gérer les parcours}
 
-Un parcours se compose par plusieurs activités dont il y a un ordre entre tous les activités, donc il faut faire attention aux activités qui doivent être en précédentes des autres.
+Un parcours se compose par plusieurs activités. Certaines activités peuvent avoir des contraintes de précedence avec d'autres. Lors de la création d'un parcours, l'agencement des activités a donc un impact important sur la planification. Pour créer un parcours, il est nécessaire de créer au préalable les activités de ce parcours si celles-ci n'ont pas encore été créées.
 
 \begin{itemize}
 	\item Ajouter un nouveau parcours
@@ -516,47 +533,47 @@ Un parcours se compose par plusieurs activités dont il y a un ordre entre tous 
 
 \section{Gérer les plans de parcours}
 
-Dans un hôpital de jour, la capacité de recueillir les patients est limite, donc dans une journée il peut affecter un certain nombre de patients au même parcours.
+Dans un hôpital de jour, la capacité d'accueil les patients est limitée. Cette donnée est renseignée dans l'onglet "Plan de parcours" et peut être ajustée selon les parcours et les jours de la semaine. 
+
 
 \section{Visualiser du planning}
 
-Une fonctionnalité « afficher planning du patient » est disponible et permet de visualiser l’heure de début et de fin de la prochaine activité du patient dans son parcours. Cette visualisation est visible par l’administrateur, le personnel de soins et également par le patient.
+Une fonctionnalité "Afficher planning du patient" est disponible et permet de visualiser l'heure de début et de fin de la prochaine activité du patient dans son parcours. L'affichage est restreint au jour de consultation de la plateforme (exemple: si on est le 5 du mois, on ne peut pas voir les rendez-vous planifiés pour le lendemain). Cette visualisation est accessible auprès de l'administrateur, du personnel de soins et également du patient.
+
 
 \section{Affecter un patient à un parcours}
 
+Un patient peut être affecté à un parcours en précisant les disponibilités de ce dernier. Celles-ci seront renseignées sous formes d'horaires (exemple : 8h-17h). Cette fonctionnalité est accessible à l'administrateur et aux personnels de soins. 
 
-Le patient peut être affecté à un parcours en précisant les disponibilités de ce dernier. Les disponibilités du patient seront demandées sous formes d’horaires (exemple : 8h-17h). Cette fonctionnalité est disponible à l'administrateur et aux personnels de soins. 
+L'administrateur ou l'infirmière de coordination peut affecter un patient à un parcours pour une journée donnée et a la possibilité de visualiser également le nombre de patients déjà affectés sur la journée.
 
-L'administrateur ou infirmière de coordination peuvent affecter un patient à un parcours pour une journée donnée et pouvoir visualiser également le nombre de patients déjà affecté sur cette dernière.
+Lors d'un clic sur le bouton "Affecter", l'administrateur sera redirigé vers une page où il pourra choisir le patient à affecter pour la date choisie précédemment.
 
-Lors d'un clic sur le bouton affecter, l'administrateur sera redirigé vers une page où il pourra choisir le patient à affecter pour la date choisie précédemment.
 
 \section{Visualiser et modifier le planning de toutes les ressources}
 
-L'administrateur peut visualiser et modifier en temps réel le planning de toutes les ressources et également d'une ressource en particulier. La modification peut s'effectuer de façon manuelle (en déplaçant les activités). L'administrateur doit pouvoir planifier automatiquement le planning de ses ressources pour une journée donnée. La planification automatique ne sera pas incluse dans le cadre de mon projet de recherche et développement. Ces fonctionnalités ne sont disponibles qu’à l’administrateur. Les différentes interfaces ont été étudié dans la partie veille technologique sur \textit{fullCalendar}.
+L'administrateur peut visualiser et modifier en temps réel le planning de toutes les ressources et également d'une ressource en particulier. La modification peut s'effectuer de façon manuelle (en déplaçant les activités). L'administrateur doit pouvoir planifier automatiquement le planning de ses ressources pour une journée donnée. La planification automatique est l'un des sujets de ce projet et est évoquée dans les chapitres précédents. Ces fonctionnalités ne sont accessibles que pour l'administrateur. Les différentes interfaces ont été étudiées dans les projets précédents et la gestion du calendrier utilise le framework \textit{fullCalendar}.
+
 
 \chapter{Modèle conceptuel de données}
 \label{ann:modeleBDD}
 
-\begin{figure}
+\begin{landscape}
 	\includegraphics[scale=0.5]{images/tablesBD}
-	\caption{Diagramme de classe}
-	\label{fig:modeleBDD}
-\end{figure}
+\end{landscape}
 
 \chapter{Explications des tables du modèle}
 \label{ann:expModele}
 
-%%PRD Jing
 
-Voici l'explication sur les tables créées dans l'ancien projet que je vais continuer à utiliser.
+La section suivante détaille les éléments présents dans le modèle de la base de données. Les tables et la modélisation en général ont été réalisées lors des projets précédents et seront réutilisées pour le projet actuel. 
 
 \begin{description}
-	\item[Activité] : Table regroupant l'ensemble des informations concernant une activité. C'est cet élément qui constitue les parcours. Une activité peut obliger la réalisation de certaines autres activités avant d'être réalisable. Cette notion de dépendance dépend du parcours en cours. Cette notion de précédence est sera vue plus loin via la table composer. En plus de cela, une activité a besoin de ressources. Ce lien se fait par la table nécessiter.
-	\item[Champ] : Table contenant l'ensemble des champs qu'il est possible d'ajouter dans un onglet d'un dossier Parcours. À chaque champ est lié un type de champ, que nous verrons plus loin, avec la table typechamp.
-	\item[Composer] : Table permettant de faire le lien entre un parcours et une activité. Par l'intermédiaire de cette table nous pouvons dire en fonction d'un parcours et d'une activité s'il y a des besoins en termes de précédence. Chaque ligne, dans cette table, a pour signification : « Pour l'activité A dans le parcours P, il faut avoir réalisé l'activité B avant, et ce dans un délai compris entre delaiMin et delaiMax. ». Il est important de noter qu'il est possible de mettre à « null », l'id de l'activité précédente.
+	\item[Activité] : Table regroupant l'ensemble des informations concernant une activité. C'est cet élément qui constitue les parcours. Il est possible qu'une activité puisse se réaliser uniquement dans le cas où d'autres activités ont été effectuées au préalable. Cette notion de dépendance dépend du parcours en cours. Les liens entre les activités et la notion de précédence seront évoqués via la table \textbf{composer}. En plus de cela, une activité a besoin de ressources. Ce lien se fait par la table \textbf{nécessiter}.
+	\item[Champ] : Table contenant l'ensemble des champs qu'il est possible d'ajouter dans un onglet d'un dossier \textit{Parcours}. À chaque champ est lié un type de champ, que nous verrons par ailleurs avec la table \textbf{typechamp}.
+	\item[Composer] : Table permettant de faire le lien entre un parcours et une activité. Par l'intermédiaire de cette table, nous pouvons dire en fonction d'un parcours et d'une activité s'il y a des besoins en termes de précédence. Chaque ligne, dans cette table, a pour signification : « Pour l'activité A dans le parcours P, il faut avoir réalisé l'activité B avant, et ce dans un délai compris entre \textit{delaiMin} et \textit{delaiMax}. ». Il est important de noter qu'il est possible de mettre à « null », l'id de l'activité précédente s'il n'y a aucune contrainte.
 	\item[Compte] : Table regroupant l'ensemble des comptes qu'ils soient des comptes patient ou des comptes de type ressource médicale.
-	\item[Constituerdossier] : Table permettant de faire le lien entre un dossier parcours et les informations qui le constituent. En effet, nous retrouvons pour chaque dossier parcours et pour chaque onglet dans ce dernier, la valeur des champs le composant.
+	\item[Constituerdossier] : Table permettant de faire le lien entre un dossier \textit{parcours} et les informations qui le constituent. En effet, nous retrouvons pour chaque dossier \textit{parcours} et pour chaque onglet dans ce dernier, la valeur des champs le composant.
 	\item[Dossiergenerique] : Table définissant, pour un parcours, les onglets et les champs que tous les dossiers parcours doivent avoir impérativement.
 	\item[Dossierparcours] : Table renseignant les informations génériques d'un dossier parcours. Soit le patient associé, le parcours, dates de création et de dernière modification.
 	\item[Etreindisponible] : Table regroupant l'ensemble des indisponibilités pour une ressource. Cette indisponibilité est caractérisée par une date de début et de fin, acceptant toutes les deux le renseignement de l'heure.
@@ -564,39 +581,76 @@ Voici l'explication sur les tables créées dans l'ancien projet que je vais con
 	\item[Necessiter] : Table permettant de renseigner les types de ressources requises pour une activité, ainsi que la quantité nécessaire.
 	\item[Onglet] : Table des onglets disponibles pour constituer un dossier parcours.
 	\item[Parcours]	 : Table décrivant un parcours de façon générale.
-	\item[Personnel] : Table contenant l'ensemble de personnel médical de l'établissement. Chaque personnel a un compte, et est considéré comme une ressource.
+	\item[Personnel] : Table contenant l'ensemble de personnel médical de l'établissement. Chaque personne de l'hôpital a un compte, et est considéré comme une ressource.
 	\item[Planparcours] : Table regroupant l'ensemble des objectifs concernant le nombre de patients pour un parcours pour un jour donné.
-	\item[Ressource] : Table faisant le lien entre la table typeressource et personnel ou matériel. Ce lien	sera expliqué plus en détail avec la table typeressource.
+	\item[Ressource] : Table faisant le lien entre la table \textbf{typeressource} et \textbf{personnel} ou matériel. Ce lien	sera expliqué plus en détail avec la table \textbf{typeressource}.
 	\item[Typechamp] : Table regroupant les différents type de champs qu'il est possible d'ajouter dans un dossier parcours. Elle contient également le code HTML des composants, permettant ainsi une	mise en page en accord avec les autres éléments des pages.
 	\item[Typecompte] : Table utilisée pour la gestion des droits.
-	\item[Typeressource] : Table contenant les types de ressource d'un point de vue activité. En effet, une activité peut avoir besoin d'un type de ressource bien caractéristique (ex : IDE obésité). C'est pourquoi nous avons un double niveau de type de ressource. Un concernant les activités (typeressource) et un second plus d’un point de vue logique générale (personnel, matériel).
-	\item[Ordonnancer] : Table de fait de notre système. C'est la table la plus importante. Chaque ligne veut dire : « Pour le patient P qui fait le parcours Pa à la date D, il a besoin de la ressource R pour faire l’activité A de start à end. Cette table contient la planification réalisée de manière manuelle ou automatique (pas implémenté pour le moment).
-	\item[Evènement] : Table identique à la table Ordonnancer. Elle a le même but que la table ordonnancer mais cette table contient la planification en cours. Cette table permet de pouvoir sauvegarder ou restaurer la planification en fonction des modifications que l’utilisateur a effectuées.
+	\item[Typeressource] : Table contenant les types de ressource d'un point de vue activité. En effet, une activité peut avoir besoin d'un type de ressource bien caractéristique (ex : IDE obésité). C'est pourquoi nous avons un double niveau de type de ressource. Un concernant les activités (\textbf{typeressource}) et un second plus d'un point de vue logique générale (\textbf{personnel}, \textbf{matériel}).
+	\item[Ordonnancer] : Table de fait de notre système. C'est la table la plus importante. Chaque ligne veut dire : « Pour le patient P qui fait le parcours Pa à la date D, il a besoin de la ressource R pour faire l'activité A de start à end. Cette table contient la planification réalisée de manière manuelle ou automatique.
+	\item[Evènement] : Table identique à la table \textbf{Ordonnancer}. Elle a le même but que la table \textbf{ordonnancer} mais cette table contient la planification en cours. Cette table permet de pouvoir sauvegarder ou restaurer la planification en fonction des modifications que l'utilisateur a effectuées.
 \end{description}
 
 
 \chapter{Chiffrage du projet}
 \label{ann:chiffrage}
 
-Revoir la suppression : 1 j
-Revoir l'onglet "Plan de parcours" : 1,5 j
-Revoir le formulaire de création de patient : 2 j
-Revoir la page d'accueil : 1 j
-Affichage du planning patient : 5 j
-Ajouter des tris dans les onglets d'affichage : 1 j
-Corriger le problème des URL : 2 j
-Affichage des ressources sélectionnées et test planning : 10 j
-Planification automatique : 20 j
-Jeux de données : 3 j
-Rapport : 15 j
-Préparation soutenance : 3 j
+\begin{longtable}{|L{12cm}|r|}
+	\hline 
+	\textbf{Tâches à réaliser}	& \textbf{Nombre de jours} \\ 
+	\hline
+	\hline 
+	Révision de la suppression des ressources & 1 \\
+	Révision de l'onglet "Plan de Parcours" & 1 \\ 
+	Révision du formulaire de création de patient & 2 \\
+	Révision de la page d'accueil & 1 \\
+	Affichage du planning patient & 5 \\ 
+	Ajout des tris dans les onglets d'affichage & 1 \\ 
+	Correction des problèmes d'URL & 2 \\ 
+	Affichage des ressources sélectionnées et test planning & 10 \\ 
+	Implémentation de la planification automatique & 20 \\
+	Génération des jeux de données & 3 \\ 
+	Rédaction du rapport & 15 \\ 
+	Préparation des soutenances & 3 \\
+	\hline 
+	\textbf{Total} & 64 \\
+	\hline
+	\caption{Chiffrage des tâches à réaliser}
+\end{longtable} 
+
 
 \chapter{Gestion de projet}
 \label{ann:gestion}
 
-%TODO Supprimer le chapitre une fois terminé
-%\chapter{TEMPO}
+La bonne gestion d'un projet est un élément crucial dans la réussite d'un travail, d'autant plus pour ce PR\&D car il est réalisé sur un temps plus restreint et se termine en janvier au lieu d'avril. Pour la gestion de projet, j'ai utilisé plusieurs outils divers pour gérer les tâches à réaliser au mieux. Celui qui m'a le plus servi est \textit{Trello}.
 
+\section{Trello}
+
+\textbf{Trello} est un outil de gestion de projet en ligne, lancé en septembre 2011, et inspiré par la méthode \textit{Kanban} de l'entreprise Toyota. Il est basé sur une organisation des projets en planches listant des cartes, chacune représentant des tâches. Les cartes sont assignables à des utilisateurs et sont mobiles d'une planche à l'autre, traduisant leur avancement. La version de base est gratuite, et c'est celle-ci que j'ai utilisé pour ordonner mon projet. J'ai principalement conservé les 3 sections disponibles par défaut : les tâches à effectuer (\textit{To do}), en cours de réalisation (\textit{Doing}) et terminées (\textit{Done}).
+
+La \autoref{fig:trello} présente un aperçu des tâches de mon projet sur \textbf{Trello}. 
+
+\begin{figure}
+	\includegraphics[scale=0.35]{images/trello}
+	\caption{Aperçu de ma page \textbf{Trello}}
+	\label{fig:trello}
+\end{figure}
+
+\section{Diagramme de Gantt}
+
+Pour avoir un aperçu des tâches à réaliser dans le temps, j'ai réalisé un diagramme de Gantt avec l'utilitaire \textit{GanttProject} visible par la suite. 
+
+\begin{figure}
+	\includegraphics[scale=0.14]{images/gestion_projet}
+	\caption{Diagramme de Gantt}
+	\label{fig:gantt}
+\end{figure}
+
+Comme on le voit sur le diagramme, le projet va être séparé en deux parties: une consacrée aux corrections sur la plateforme et aux rédactions, tandis que la deuxième sera dédiée à la programmation de la planification automatique.
+
+\section{Git et GitKraken}
+
+Pour le versionning de la plateforme et du rapport, j'utilise le logiciel de gestion de versions \textbf{git}. L'application est disponible au téléchargement à l'adresse \url{https://github.com/RomainR37/ParcoursPatient}.
 
 
 \end{document}

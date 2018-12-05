@@ -12,7 +12,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Table des figures}{iv}{chapter*.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Introduction}{1}{chapter*.6}
+\contentsline {chapter}{Liste des tableaux}{v}{chapter*.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Introduction}{1}{chapter*.7}
 \defcounter {refsection}{0}\relax 
 \contentsline {part}{I\hspace {1em}Analyse pr\IeC {\'e}liminaire et d\IeC {\'e}termination des objectifs}{3}{part.1}
 \defcounter {refsection}{0}\relax 
@@ -194,6 +196,10 @@
 \defcounter {refsection}{0}\relax 
 \select@language {french}
 \defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2}R\IeC {\'e}vision de l'onglet \textit {Plan de parcours}}{21}{section.4.2}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
@@ -219,6 +225,10 @@
 \select@language {french}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Affichage du planning patient}{22}{section.4.4}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
@@ -264,9 +274,17 @@
 \defcounter {refsection}{0}\relax 
 \select@language {french}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Bilan et conclusion}{26}{chapter.5}
+\contentsline {chapter}{Bilan et conclusion}{26}{chapter*.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{Annexes}{27}{part*.7}
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{Annexes}{27}{part*.9}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {A}Fonctionnalit\IeC {\'e}s existantes}{28}{appendix.A}
 \defcounter {refsection}{0}\relax 
@@ -296,10 +314,6 @@
 \defcounter {refsection}{0}\relax 
 \select@language {french}
 \defcounter {refsection}{0}\relax 
-\select@language {english}
-\defcounter {refsection}{0}\relax 
-\select@language {french}
-\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {C}Explications des tables du mod\IeC {\`e}le}{32}{appendix.C}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
@@ -318,7 +332,25 @@
 \defcounter {refsection}{0}\relax 
 \select@language {french}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliographie}{36}{appendix*.8}
+\contentsline {section}{\numberline {1}Trello}{35}{section.E.1}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Diagramme de Gantt}{36}{section.E.2}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Git et GitKraken}{36}{section.E.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliographie}{37}{appendix*.10}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
