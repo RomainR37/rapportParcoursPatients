@@ -1,0 +1,7 @@
+\select@language {french}
+\beamer@sectionintoc {1}{Contexte et objectifs}{4}{0}{1}
+\beamer@sectionintoc {2}{Description du projet}{7}{0}{2}
+\beamer@sectionintoc {3}{Mod\IeC {\'e}lisation de la planification automatique}{9}{0}{3}
+\beamer@sectionintoc {4}{Gestion de projet et Chiffrage}{10}{0}{4}
+\beamer@sectionintoc {5}{Les d\IeC {\'e}veloppements r\IeC {\'e}alis\IeC {\'e}s}{11}{0}{5}
+\beamer@sectionintoc {6}{Les objectifs pour la suite}{12}{0}{6}
