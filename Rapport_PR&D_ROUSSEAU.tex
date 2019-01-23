@@ -463,23 +463,79 @@ Sur la plateforme, on retrouve un onglet nommé \textit{Créer jeu de données}.
 	\label{fig:creerJDD}
 \end{figure}
 
-La création de jeu de données va permettre de générer des patients avec des activités prévues pour la journée sélectionnée sur l'onglet. Sans ces jeux de données, le test de la planification est fastidieux puisqu'il faut créer manuellement plusieurs patients, puis leur attribuer des parcours à chacun, ce qui peut prendre plusieurs minutes. Ainsi, ce bouton ferait office de macro pour les tests. Rendre ces tâches automatiques ferait gagner ainsi beaucoup de temps lors des tests sur la plateforme. Bien sûr, cet onglet ne doit pas être accessible à tous les utilisateurs d'une part, mais aussi ne doit pas être fonctionnel en cas de mise en production.  
+La création de jeu de données va permettre de générer des patients avec des activités prévues pour la journée sélectionnée sur l'onglet. Sans ces jeux de données, le test de la planification est fastidieux puisqu'il faut créer manuellement plusieurs patients, puis leur attribuer des parcours à chacun, ce qui peut prendre plusieurs minutes. Ainsi, ce bouton ferait office de macro pour les tests. Rendre ces tâches automatiques ferait gagner ainsi beaucoup de temps lors des tests sur la plateforme. Bien sûr, cet onglet ne doit pas être accessible à tous les utilisateurs d'une part, mais aussi ne doit pas être fonctionnel en cas de mise en production. 
 
 
-% PRD 2
-%\chapter{Mise en œuvre}
+\chapter{Mise en œuvre}
+
+
+Le chapitre suivant est consacré aux mises en place réalisées lors des phases de développement conformément aux analyses effectuées dans les parties précédentes. Seuls les éléments de mise en œuvre les plus pertinents pour le rapport seront évoqués par la suite.
+
+
+\section{Ajout d'un message lors de la suppression}
+
 
 % Pour la partie Suppression
 %Pour afficher un message de confirmation, il suffit d'ajouter \javacode{onclick="return confirm('Etes vous sur ?');"} sur le lien de l'action ...
 
 
+\section{Révision du plan de parcours}
+
+
+\section{Correction sur le formulaire}
+
+
+\section{Fonction de tri sur les onglets de Gestion}
+
+
+\section{Planification automatique}
+
+
+
+\chapter{Validation et Tests}
+
+
+\section{Le framework Codeception}
+
+
+\section{Validation }
+
+
+\chapter{Qualité de code}
+
+
+\section{Documentation}
+
+
+\section{SonarQube}
+
+
+
+\chapter{Avancement du projet et suite à donner}
+
+
+\section{Fonctionnalités mises en place}
+
+
+\section{Fonctionnalités à ajouter ou à améliorer pour la suite du projet}
+
+
+
 \chapter*{Bilan et conclusion}
+
+\section*{Bilan de la première partie}
 
 À l'issue de cette première partie, nous avons pu observer les tenants et les aboutissants du projet. La plateforme comporte déjà de nombreuses fonctionnalités et l'objectif principal qui était de réaliser un outil de gestion de parcours patients a été atteint lors des précédents projets. Ici, le sujet concerne les nombreuses améliorations possibles sur la plateforme. Bien que la planification fonctionne, l'application n'est pas utilisable en production à cause d'une part, des problèmes d'ergonomie généraux, et d'autre part, de la planification qui devient vite impossible lorsque les données sont trop conséquentes.
 
 Parmi les améliorations à effectuer, il y a dans un premier temps des améliorations générales sur la plateforme (sur l'affichage, l'ergonomie, l'expérience utilisateur en général) et dans un second temps, la planification automatique des activités. Celle-ci nécessitera la majorité du temps de développement dans la seconde partie du projet.
 
 La suite du projet sera principalement consacrée aux développements des solutions évoquées dans les chapitres précédents. Certaines corrections ont déjà été réalisées à l'issue de cette partie, affectant l'affichage en général (corrections des fautes d'orthographe, révision de la suppression des ressources comme évoqué dans la \autoref{sec:suppr}, affichage du planning patient comme présenté dans la \autoref{sec:planPatient}). Les développements principaux, la planification automatique notamment, seront réalisées par la suite. 
+
+\section*{Bilan de la seconde partie}
+
+
+\section*{Conclusions}
+
 
 
 \appendix
@@ -660,5 +716,36 @@ Pour aider au versionning, j'utilise \textbf{GitKraken} qui propose une interfac
 	\caption{Diagramme de Gantt}
 	\label{fig:gitkraken}
 \end{figure}
+
+\chapter{Notice des livrables}
+
+Cette partie regroupe les notices des deux livrables réalisés lors du projet: le premier le 9 janvier 2019 et le second à la fin du projet, c'est-à-dire le 25 janvier 2019.
+
+
+\section{Livrable du 9/01/2019}
+
+- Ajout d'un message d'avertissement lors de la suppression d'une ressource. Concerne les pages de l'onglet Gérer (Personnels, Ressources Matérielles, Activités, Parcours)
+
+- Corrections sur l'onglet Plan de Parcours: affichage des jours de la semaine sous forme de texte (lundi, mardi, etc.) plutôt que par des chiffres, correction de la limite du nombre de patients affecté (limité à 10 auparavant, jusqu'à 99 maintenant)
+
+- Ajout de règles supplémentaires sur le formulaire de création de patients: Aucune restriction sur les numéros de rue -> Numéro de rue limité à 5 chiffres, caractère numérique obligatoire, Aucune restriction sur les numéros de téléphone -> l'entrée doit contenir 10 chiffres exactement, Numéro de sécurité sociale maximum 15 chiffres -> Numéro de sécurité sociale exactement 15 chiffres.
+
+- Fonction de tri dans les onglets Gérer: en cliquant sur les en-têtes des colonnes, la colonne correspondante est triée par ordre alphabétique. En cliquant à nouveau, la colonne est dans l'ordre alphabétique inversé. Les colonnes affectées sont 
+
+- Correction de fautes d'orthographe diverses
+
+\section{Livrable du 25/01/2019}
+
+
+\chapter{Guide développeur}
+
+
+\section{Installation du projet}
+
+
+\section{Structure du projet}
+
+
+
 
 \end{document}

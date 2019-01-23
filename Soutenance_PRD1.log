@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.1.12)  11 DEC 2018 13:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.1.12)  12 DEC 2018 08:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1194,97 +1194,133 @@ Package frenchb.ldf Warning: OT1 encoding should not be used for French.
 (frenchb.ldf)                Add \usepackage[T1]{fontenc} to the preamble
 (frenchb.ldf)                of your document, on input line 19.
 
-(./Soutenance_PRD1.nav)
-Overfull \hbox (147.638pt too wide) detected at line 19
-  [] [] [] [] [] [] [] []  
- []
+(./Soutenance_PRD1.nav) [1
 
-[1
+{c:/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] <images/LOGO_AP
+HP.png, id=79, 404.2302pt x 89.6148pt>
+File: images/LOGO_APHP.png Graphic file (type png)
 
-{c:/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
+<use images/LOGO_APHP.png>
+Package pdftex.def Info: images/LOGO_APHP.png used on input line 43.
+(pdftex.def)             Requested size: 282.9592pt x 62.72992pt.
+ [2
 
-]
-(./Soutenance_PRD1.toc)
+ <./images/LOGO_APHP.png>] (./Soutenance_PRD1.toc)
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 (Font)              size <5> substituted on input line 52.
 
-
-Overfull \hbox (147.638pt too wide) has occurred while \output is active
-  [] [] [] [] [] [] [] []  
- []
-
 [3
 
-] (./Soutenance_PRD1.toc)
-Overfull \hbox (147.638pt too wide) has occurred while \output is active
-  [] [] [] [] [] [] [] []  
- []
+] (./Soutenance_PRD1.toc) [4
 
-[4
+] [5
 
-]
-Overfull \hbox (147.638pt too wide) has occurred while \output is active
-  [] [] [] [] [] [] [] []  
- []
+] [6
 
-[5
+] [7
 
-]
-Overfull \hbox (147.638pt too wide) has occurred while \output is active
-  [] [] [] [] [] [] [] []  
- []
-
-[6
+] [8
 
 ] (./Soutenance_PRD1.toc)
-Overfull \hbox (147.638pt too wide) has occurred while \output is active
-  [] [] [] [] [] [] [] []  
- []
-
-[7
-
-]
-Overfull \hbox (147.638pt too wide) has occurred while \output is active
-  [] [] [] [] [] [] [] []  
- []
-
-[8
-
-] (./Soutenance_PRD1.toc)
-Overfull \hbox (147.638pt too wide) has occurred while \output is active
-  [] [] [] [] [] [] [] []  
- []
-
 [9
 
-] (./Soutenance_PRD1.toc)
-Overfull \hbox (147.638pt too wide) has occurred while \output is active
-  [] [] [] [] [] [] [] []  
- []
+] <images/deploiement.png, id=342, 533.5935pt x 403.5075pt>
+File: images/deploiement.png Graphic file (type png)
 
-[10
+<use images/deploiement.png>
+Package pdftex.def Info: images/deploiement.png used on input line 127.
+(pdftex.def)             Requested size: 240.11485pt x 181.57669pt.
+ [10
 
-] (./Soutenance_PRD1.toc)
-Overfull \hbox (147.638pt too wide) has occurred while \output is active
-  [] [] [] [] [] [] [] []  
+ <./images/deploiement.png>]
+<images/accueil.png, id=375, 1153.911pt x 433.62pt>
+File: images/accueil.png Graphic file (type png)
+ <use images/accueil.png>
+Package pdftex.def Info: images/accueil.png used on input line 136.
+(pdftex.def)             Requested size: 323.09288pt x 121.41277pt.
+
+Overfull \hbox (15.80301pt too wide) in paragraph at lines 136--136
+ [] 
  []
 
 [11
 
-] (./Soutenance_PRD1.toc)
-Overfull \hbox (147.638pt too wide) has occurred while \output is active
-  [] [] [] [] [] [] [] []  
+ <./images/accueil.png>]
+<images/affichage_personnel.png, id=407, 948.54375pt x 495.0495pt>
+File: images/affichage_personnel.png Graphic file (type png)
+
+<use images/affichage_personnel.png>
+Package pdftex.def Info: images/affichage_personnel.png used on input line 145.
+
+(pdftex.def)             Requested size: 331.99529pt x 173.26991pt.
+
+Overfull \hbox (24.70541pt too wide) in paragraph at lines 145--145
+ [] 
  []
 
 [12
 
-]
-Overfull \hbox (147.638pt too wide) has occurred while \output is active
-  [] [] [] [] [] [] [] []  
+ <./images/affichage_personnel.png>]
+<images/recherchePatient.png, id=439, 1134.03674pt x 495.0495pt>
+File: images/recherchePatient.png Graphic file (type png)
+
+<use images/recherchePatient.png>
+Package pdftex.def Info: images/recherchePatient.png used on input line 154.
+(pdftex.def)             Requested size: 317.52812pt x 138.6129pt.
+
+Overfull \hbox (10.23825pt too wide) in paragraph at lines 154--154
+ [] 
  []
 
 [13
+
+ <./images/recherchePatient.png>]
+<images/bouton_plan_auto.png, id=472, 1059.96pt x 426.393pt>
+File: images/bouton_plan_auto.png Graphic file (type png)
+
+<use images/bouton_plan_auto.png>
+Package pdftex.def Info: images/bouton_plan_auto.png used on input line 163.
+(pdftex.def)             Requested size: 317.99045pt x 127.91888pt.
+
+Overfull \hbox (10.70058pt too wide) in paragraph at lines 163--163
+ [] 
+ []
+
+[14
+
+ <./images/bouton_plan_auto.png>] (./Soutenance_PRD1.toc) [15
+
+] [16
+
+] [17
+
+]
+[18
+
+] (./Soutenance_PRD1.toc) [19
+
+]
+LaTeX Font Info:    Try loading font information for U+msa on input line 213.
+
+(c:/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 213.
+
+(c:/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
+line 213.
+
+(c:/texlive/2016/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
+File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
+thkerncmss.
+)
+[20
+
+] [21
 
 ]
 \tf@nav=\write6
@@ -1296,13 +1332,13 @@ Overfull \hbox (147.638pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `Soutenance_PRD1.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 106.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 106.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 229.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 229.
  (./Soutenance_PRD1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 106.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 106.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 229.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 229.
 Package rerunfilecheck Info: File `Soutenance_PRD1.out' has not changed.
-(rerunfilecheck)             Checksum: EEE3849927301E07A7E05CF916D6CDC1;392.
+(rerunfilecheck)             Checksum: B1523AFAAB3D997CDB2F2F8D0C478A45;231.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1310,20 +1346,22 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 18384 strings out of 493013
- 341918 string characters out of 6136993
- 430321 words of memory out of 5000000
- 21474 multiletter control sequences out of 15000+600000
- 5452 words of font info for 20 fonts, out of 8000000 for 9000
+ 18575 strings out of 493013
+ 346333 string characters out of 6136993
+ 432321 words of memory out of 5000000
+ 21625 multiletter control sequences out of 15000+600000
+ 10684 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,17n,64p,783b,783s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/tex
 live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2016
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb>
-Output written on Soutenance_PRD1.pdf (13 pages, 67979 bytes).
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2016/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2016/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on Soutenance_PRD1.pdf (21 pages, 454699 bytes).
 PDF statistics:
- 536 PDF objects out of 1000 (max. 8388607)
- 492 compressed objects within 5 object streams
- 34 named destinations out of 1000 (max. 500000)
- 139 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 754 PDF objects out of 1000 (max. 8388607)
+ 686 compressed objects within 7 object streams
+ 48 named destinations out of 1000 (max. 500000)
+ 165 words of extra memory for PDF output out of 10000 (max. 10000000)
 
