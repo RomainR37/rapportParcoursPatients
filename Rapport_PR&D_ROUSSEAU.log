@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.1.12)  23 JAN 2019 18:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.1.12)  23 JAN 2019 19:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3337,12 +3337,12 @@ Annexe F.
 ]
 Annexe G.
 
-Package biblatex Warning: Type 'online' not found on input line 751.
+Package biblatex Warning: Type 'online' not found on input line 754.
 
 [42
 
 ]
-Overfull \hbox (5.63431pt too wide) in paragraph at lines 751--751
+Overfull \hbox (5.63431pt too wide) in paragraph at lines 754--754
 []\T1/jkpf/m/n/10.95 (-20) Joren \T1/jkpf/m/sc/10.95 (-20) Ma-ry-nis-sen \T1/jk
 pf/m/n/10.95 (-20) et Erik \T1/jkpf/m/sc/10.95 (-20) De-meu-le-mees-ter\T1/jkpf
 /m/n/10.95 (-20) . ^^S   Li-te-ra-ture re-view on multi-appointment|
@@ -3391,8 +3391,8 @@ No file Rapport_PR&D_ROUSSEAU.ind.
 
 ] 
 AED: pageslts setting LastPage 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 751.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 751.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 754.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 754.
 \c@pagesLTS.arabic.1.local.count=\count489
 
 AED: pageslts setting VeryLastPage via AfterLastShipout 
@@ -3404,12 +3404,12 @@ Package pageslts Info: Total number of pages is even.
 
 
 (./Rapport_PR&D_ROUSSEAU.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 751.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 751.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 754.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 754.
 Package logreq Info: Writing requests to 'Rapport_PR&D_ROUSSEAU.run.xml'.
 \openout1 = `Rapport_PR&D_ROUSSEAU.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 751.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 754.
  )
 (\end occurred inside a group at level 1)
 
@@ -3435,7 +3435,7 @@ mf-dist/fonts/type1/public/kpfonts/jkpmn8a.pfb><c:/texlive/2016/texmf-dist/font
 s/type1/public/kpfonts/jkpmne.pfb><c:/texlive/2016/texmf-dist/fonts/type1/publi
 c/kpfonts/jkpmsc8a.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/kpfonts/j
 kpttmn8a.pfb>
-Output written on Rapport_PR&D_ROUSSEAU.pdf (54 pages, 1711685 bytes).
+Output written on Rapport_PR&D_ROUSSEAU.pdf (54 pages, 1716802 bytes).
 PDF statistics:
  902 PDF objects out of 1000 (max. 8388607)
  790 compressed objects within 8 object streams

@@ -638,10 +638,10 @@ La section suivante détaille les éléments présents dans le modèle de la bas
 	\item[Necessiter] : Table permettant de renseigner les types de ressources requises pour une activité, ainsi que la quantité nécessaire.
 	\item[Onglet] : Table des onglets disponibles pour constituer un dossier parcours.
 	\item[Parcours]	 : Table décrivant un parcours de façon générale.
-	\item[Personnel] : Table contenant l'ensemble de personnel médical de l'établissement. Chaque personne de l'hôpital a un compte, et est considéré comme une ressource.
+	\item[Personnel] : Table contenant l'ensemble de personnel médical de l'établissement. Chaque personne de l'hôpital a un compte, et est considérée comme une ressource.
 	\item[Planparcours] : Table regroupant l'ensemble des objectifs concernant le nombre de patients pour un parcours pour un jour donné.
-	\item[Ressource] : Table faisant le lien entre la table \textbf{typeressource} et \textbf{personnel} ou matériel. Ce lien	sera expliqué plus en détail avec la table \textbf{typeressource}.
-	\item[Typechamp] : Table regroupant les différents type de champs qu'il est possible d'ajouter dans un dossier parcours. Elle contient également le code HTML des composants, permettant ainsi une	mise en page en accord avec les autres éléments des pages.
+	\item[Ressource] : Table faisant le lien entre la table \textbf{typeressource} et \textbf{personnel} ou matériel. Ce lien sera expliqué plus en détail avec la table \textbf{typeressource}.
+	\item[Typechamp] : Table regroupant les différents types de champs qu'il est possible d'ajouter dans un dossier parcours. Elle contient également le code HTML des composants, permettant ainsi une mise en page en accord avec les autres éléments des pages.
 	\item[Typecompte] : Table utilisée pour la gestion des droits.
 	\item[Typeressource] : Table contenant les types de ressource d'un point de vue activité. En effet, une activité peut avoir besoin d'un type de ressource bien caractéristique (ex : IDE obésité). C'est pourquoi nous avons un double niveau de type de ressource. Un concernant les activités (\textbf{typeressource}) et un second plus d'un point de vue logique générale (\textbf{personnel}, \textbf{matériel}).
 	\item[Ordonnancer] : Table de fait de notre système. C'est la table la plus importante. Chaque ligne veut dire : « Pour le patient P qui fait le parcours Pa à la date D, il a besoin de la ressource R pour faire l'activité A de start à end. Cette table contient la planification réalisée de manière manuelle ou automatique.
@@ -738,6 +738,9 @@ Cette partie regroupe les notices des deux livrables réalisés lors du projet: 
 
 
 \chapter{Guide développeur}
+
+
+Cette annexe est destinée aux développeurs souhaitant prendre en main la suite du projet. Ce guide va regrouper les instructions permettant d'installer le projet avec l'environnement requis. 
 
 
 \section{Installation du projet}

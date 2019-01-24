@@ -1,0 +1,129 @@
+\documentclass{beamer}
+
+\usepackage[frenchb]{babel}
+\usepackage[utf8]{inputenc}
+
+\usetheme{Frankfurt}
+
+\addtobeamertemplate{navigation symbols}{\usebeamerfont{footline}%
+	\usebeamercolor[fg]{footline}
+	\hspace{1em}
+	\insertframenumber/\inserttotalframenumber}
+
+\title[Outil de gestion de parcours-patient]{Outil de gestion de parcours-patient dans un hôpital de jour}
+\subtitle{Soutenance de Projet R\&D}
+\author{Romain ROUSSEAU}
+\date{\today}
+
+
+\begin{document}
+	
+\begin{frame}[plain]
+	\titlepage
+\end{frame}
+
+\AtBeginSection[]
+{
+\begin{frame}
+	
+	\tableofcontents[currentsection, hideallsubsections]
+	
+\end{frame} 
+}
+
+\begin{frame}[plain]
+\frametitle{Introduction}
+
+Projet Recherche \& Développement sur l'amélioration d'un outil de gestion de parcours-patient pour l'AP-HP (Assistance publique - Hôpitaux de Paris).
+
+\begin{figure}
+	\includegraphics[scale=0.7]{images/LOGO_APHP}
+\end{figure}
+
+\end{frame}
+
+
+\begin{frame}
+
+\frametitle{Sommaire}
+
+\tableofcontents
+
+\end{frame}
+
+\section[Contexte]{Contexte}
+
+\begin{frame}
+\frametitle{Contexte}
+
+La gestion des patients dans les hôpitaux fait l'objet de nombreux débats.
+
+\bigbreak
+
+\begin{itemize}
+	\item Temps d'attente trop longs pour les patients
+	\item Problèmes liés aux ressources disponibles (salles, personnel, ...) 
+	\item Problèmes budgétaires
+\end{itemize}
+
+Développement des cliniques ambulatoires (aussi appelées Hôpitaux de jour)
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Contexte}
+
+L'outil va permettre de gérer un ensemble de patients nécessitant plusieurs activités de soin planifiées sur une journée.
+
+\bigbreak
+
+Un patient suit un "\textbf{parcours de soins}" défini par un ensemble d'activités au sein de l'hôpital.
+
+\bigbreak
+
+Une activité de soin est caractérisée par une durée et un ensemble de ressources. Certaines peuvent avoir des \textbf{contraintes de précédence}. 
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Contexte du projet}
+
+\begin{block}{Suite de plusieurs projets consécutifs}
+	\begin{description}
+		\item[Projet SI et R\&D 2015-2016]: par 6 étudiants et Jean Coquelet, modélisation et développement des fonctionnalités de base
+		\item[Projet R\&D 2016-2017]: par Guillaume Pochet, planification manuelle des activités
+		\item[Projet R\&D 2017-2018]: par Yang Jing, ajout de fonctionnalités de gestion
+	\end{description}
+\end{block}
+
+\end{frame}
+
+\section[Description]{Description du projet}
+
+
+\section[Gestion de projet]{Gestion de projet}
+
+
+
+\section{Mise en œuvre}
+
+
+\section{Qualité de code}
+
+
+
+
+\section{Tests}
+
+
+
+\section*{Conclusion}
+
+\begin{frame}
+\frametitle{Conclusion}
+
+
+\end{frame}
+
+\end{document}
