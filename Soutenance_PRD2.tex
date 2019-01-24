@@ -66,23 +66,32 @@ La gestion des patients dans les hôpitaux fait l'objet de nombreux débats.
 	\item Problèmes budgétaires
 \end{itemize}
 
-Développement des cliniques ambulatoires (aussi appelées Hôpitaux de jour)
-
 \end{frame}
 
 \begin{frame}
 \frametitle{Contexte}
 
-L'outil va permettre de gérer un ensemble de patients nécessitant plusieurs activités de soin planifiées sur une journée.
+Gestion d'un ensemble de patients réalisant des activités planifiées sur une journée.
 
 \bigbreak
 
-Un patient suit un "\textbf{parcours de soins}" défini par un ensemble d'activités au sein de l'hôpital.
+Un patient suit un "\textbf{parcours de soins}" constitué d'activités.
 
 \bigbreak
 
-Une activité de soin est caractérisée par une durée et un ensemble de ressources. Certaines peuvent avoir des \textbf{contraintes de précédence}. 
+Une activité est caractérisée par une durée et un ensemble de ressources (matérielle et personnelle). Certaines peuvent avoir des \textbf{contraintes de précédence}. 
 
+\end{frame}
+
+\begin{frame}
+\frametitle{Exemple de parcours}
+	
+Exemple de parcours: Diagnostic d'obésité sévère
+	
+\begin{figure}
+	\includegraphics[scale=0.425]{images/exemple_parcours}
+\end{figure}
+	
 \end{frame}
 
 
@@ -99,23 +108,108 @@ Une activité de soin est caractérisée par une durée et un ensemble de ressou
 
 \end{frame}
 
-\section[Description]{Description du projet}
+\begin{frame}
+\frametitle{Objectifs}
 
+Améliorations générales de la plateforme (corrections de bugs, d'erreurs de conception, de fautes d'orthographe, etc.).
+
+\bigbreak
+
+Implémentation de la planification automatique des activités de soin.
+
+\end{frame}
+
+
+\section[Description]{Description du projet}
+%Présentation de l'outil les pages les plus intéressantes.
+
+\begin{frame}
+\frametitle{Description du projet}
+
+Plateforme web développée en PHP, HTML, Javascript à l'aide du framework CodeIgniter.
+
+
+\begin{figure}
+	\includegraphics[scale=0.5]{images/deploiement_wamp}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Aperçu de la page d'accueil}
+
+\begin{center}
+	\includegraphics[scale=0.28]{images/accueil}
+\end{center}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Aperçu de la page de planification}
+
+\begin{center}
+	\includegraphics[scale=0.3]{images/bouton_plan_auto}
+\end{center}
+
+\end{frame}
 
 \section[Gestion de projet]{Gestion de projet}
 
+\begin{frame}
+\frametitle{Chiffrage du projet}
+
+\begin{center}
+	\includegraphics[scale=0.375]{images/chiffrage}
+\end{center}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Gestion de projet}
+
+Deux livrables pour le projet:
+
+\bigbreak
+
+\begin{block}{Livrable à l'issue de la première partie}
+	Comprend les corrections de bugs et les améliorations sur les onglets de Gestion.
+\end{block}
+
+\begin{block}{Livrable finale}
+	Comprend les implémentations concernant la planification automatique.
+\end{block}
+
+\end{frame}
 
 
 \section{Mise en œuvre}
 
+\begin{frame}
+\frametitle{Avant-propos sur la planification}
+
+L'outil doit traiter des \textbf{problèmes multi-ressources} (\textit{Multi-Appointment Scheduling Problems in hospitals}) en anglais).
+
+C'est un domaine récent de la recherche (aucune étude avant 1995).
+
+
+
+\end{frame}
+
+
+Mise en place de l'algo
+
 
 \section{Qualité de code}
 
-
+SonarQube
 
 
 \section{Tests}
 
+Codeception
+
+
+Tests manuels "Planification avec un patient, planification pour chaque parcours, planification avec plusieurs patients, ..."
 
 
 \section*{Conclusion}
