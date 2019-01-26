@@ -3,6 +3,7 @@
 \usepackage[frenchb]{babel}
 \usepackage[utf8]{inputenc}
 
+
 \usetheme{Frankfurt}
 
 \addtobeamertemplate{navigation symbols}{\usebeamerfont{footline}%
@@ -153,6 +154,16 @@ Plateforme web développée en PHP, HTML, Javascript à l'aide du framework Code
 
 \end{frame}
 
+\begin{frame}
+\frametitle{Aperçu de la page de planification}
+
+\begin{center}
+	\includegraphics[scale=0.175]{images/exemple_calendrier}
+\end{center}
+
+\end{frame}
+
+
 \section[Gestion de projet]{Gestion de projet}
 
 \begin{frame}
@@ -187,36 +198,133 @@ Deux livrables pour le projet:
 \begin{frame}
 \frametitle{Avant-propos sur la planification}
 
-L'outil doit traiter des \textbf{problèmes multi-ressources} (\textit{Multi-Appointment Scheduling Problems in hospitals}) en anglais).
+L'outil doit traiter des \textbf{problèmes multi-ressources} (\textit{Multi-Appointment Scheduling Problems in hospitals} en anglais).
 
-C'est un domaine récent de la recherche (aucune étude avant 1995).
+\bigbreak
 
+Un domaine récent de la recherche (pas avant 1995) lié aux domaines suivants: 
+
+\begin{itemize}
+	\item la prise de rendez-vous (\textit{appointment scheduling}) 
+	\item le domaine de la médecine intégrée (\textit{integrated healthcare}) 
+	\item les flux de patients (\textit{patient flow}) 
+	\item la planification de ressources (\textit{resource scheduling}) 
+	\item la gestion des infirmiers (\textit{nurse rostering})
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Avant-propos sur la planification}
+
+Dans notre cas, 
+
+\begin{itemize}
+	\item Les patients sont planifiés jour après jour
+	\item Les ressources sont le personnel, les salles et le matériel
+\end{itemize}
+
+Il est important de choisir quoi optimiser (minimiser les temps d'attente, minimiser les coûts...).
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Algorithme}
+
+Dans un premier temps, l'objectif est de placer les activités sur le calendrier patient par patient.
+
+\begin{center}
+	\includegraphics[scale=0.4]{images/algoPlanAuto}
+\end{center}
+
+\end{frame}
+
+\begin{frame}
+
+\begin{center}
+	\includegraphics[scale=0.27]{images/exemple_calendrier2}
+\end{center}
+
+\end{frame}
+
+
+\section{Qualité de code}
+
+\begin{frame}
+\frametitle{SonarQube}
+
+\begin{figure}
+	\includegraphics[scale=0.2]{images/sonar_scanner1}
+\end{figure}
+
+\end{frame}
+
+\section{Tests}
+
+\begin{frame}
+\frametitle{Codeception}
+
+Les tests ont été réalisés avec le framework \textit{Codeception}.
+
+\bigbreak
+
+Framework de tests de PHP:
+
+\begin{itemize}
+	\item Tests d'acceptances
+	\item Tests fonctionnels
+	\item Tests unitaires (basé sur PHPUnit)
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Tests pour la planification}
+
+Tests des différents cas possibles de planification
+
+\bigbreak
+
+\begin{itemize}
+	\item Planification avec un patient
+	\item Tests de planification pour chaque parcours
+	\item Planification avec plusieurs patients
+\end{itemize}
+
+\bigbreak
+
+Certains cas restent à corriger (par exemple, planification avec une activité déjà placée sur le calendrier)
 
 
 \end{frame}
 
 
-Mise en place de l'algo
-
-
-\section{Qualité de code}
-
-SonarQube
-
-
-\section{Tests}
-
-Codeception
-
-
-Tests manuels "Planification avec un patient, planification pour chaque parcours, planification avec plusieurs patients, ..."
-
-
 \section*{Conclusion}
 
 \begin{frame}
-\frametitle{Conclusion}
+\frametitle{Améliorations à faire}
 
+Ils restent de nombreuses améliorations possibles sur l'outil:
+
+\bigbreak
+
+\begin{itemize}
+	\item Étoffer la planification pour ajouter des options (démarrer au plus tôt, minimiser le temps d'attente, ...)
+	\item Ajouter la création de jeux de données automatisée pour les tests
+	\item Implémentation de la planification en temps réel
+	\item et d'autres encore...
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Bilan personnel}
+
+Ce projet m'a apporté des compétences techniques (nouveaux langages et framework) mais aussi en terme d'analyse et d'évolutivité.
+
+\bigbreak
+
+Disponible sur \textbf{GitHub} à l'adresse \url{https://github.com/RomainR37/ParcoursPatient}
 
 \end{frame}
 

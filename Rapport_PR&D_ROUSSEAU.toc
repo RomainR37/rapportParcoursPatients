@@ -290,7 +290,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1}Le framework Codeception}{27}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Validation }{27}{section.6.2}
+\contentsline {section}{\numberline {2}Validation}{27}{section.6.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {7}Qualit\IeC {\'e} de code}{28}{chapter.7}
 \defcounter {refsection}{0}\relax 
