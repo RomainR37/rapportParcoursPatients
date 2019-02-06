@@ -375,6 +375,7 @@ Une autre solution plus coûteuse à mettre en place serait de cacher davantage 
 
 
 \section{Révision de l'onglet \textit{Plan de parcours}}
+\label{sec:planparcours}
 
 L'onglet "Plan de parcours" permet d'ajuster la nombre de patients qu'un parcours-patient peut accueillir par jour. La \autoref{fig:planParcours} représente l'affichage tel qu'il était à la reprise du sujet. La première remarque que l'on peut faire est que la notion de "Plan de parcours" semble floue. On ne comprend pas vraiment quel est l'utilité de l'onglet. Ajouter un texte permettant de comprendre la notion de "Plan de parcours" serait intéressant pour commencer.
 
@@ -392,6 +393,7 @@ Le nombre de patients par jour et par parcours est disposé à droite de la list
 
 
 \section{Révision du formulaire de création de patient}
+\label{sec:formPatient}
 
 L'ajout d'un patient dans la base de données se fait à partir de l'onglet "Création" dans le menu "Patient". À partir de l'onglet, on arrive sur un formulaire à remplir pour renseigner les données du patient. L'aspect du formulaire se trouve sur la \autoref{fig:formPatient}. 
 
@@ -472,20 +474,77 @@ La création de jeu de données va permettre de générer des patients avec des 
 Le chapitre suivant est consacré aux mises en place réalisées lors des phases de développement conformément aux analyses effectuées dans les parties précédentes. Seuls les éléments de mise en œuvre les plus pertinents pour le rapport seront évoqués par la suite.
 
 
-\section{Ajout d'un message lors de la suppression}
+\section{Ajout d'un avertissement lors de la suppression d'un élément}
 
 
-% Pour la partie Suppression
-%Pour afficher un message de confirmation, il suffit d'ajouter \javacode{onclick="return confirm('Etes vous sur ?');"} sur le lien de l'action ...
+Conformément à ce qui était évoqué dans la \autoref{sec:suppr} de l'analyse, l'ajout d'une fenêtre d'avertissement lors de la suppression d'une ressource a pour but d'ajouter une sécurité en cas d'erreur de manipulation. En effet, supprimer un élément peut avoir des conséquences importantes pour l'intégrité des données et la cohérence générale de l'outil. 
+
+Ajouter un message d'avertissement peut être implémenté facilement sur les différentes vues de l'application. Pour afficher un message de confirmation, il suffit d'ajouter le code suivant: \javacode{onclick="return confirm();"} avec le message désiré sur le lien de l'action que l'on souhaite dans une balise HTML \javacode{<a>}, en l'occurence la suppression dans notre cas. L'ajout du message va concerner les onglets de gestion de ressource (Personnel, Ressources Matérielles, Activités et Parcours) ainsi que l'onglet d'affichage des patients. 
+
+Le message d'avertissement est similaire à celui de la \autoref{fig:mesSuppr}.
+
+\begin{figure}
+	\includegraphics[scale=1]{images/messSuppr}
+	\caption{Message d'avertissement en cas de suppression}
+	\label{fig:mesSuppr}
+\end{figure}
 
 
 \section{Révision du plan de parcours}
 
 
-\section{Correction sur le formulaire}
+Les opérations sur l'onglet \textit{Plan de parcours}, comme évoquées précédemment dans la \autoref{sec:planparcours}, consistent à afficher les jours de la semaine en toute lettre et augmenter la limite du nombre de patient par parcours. La récupération de ces informations se fait via une requête sur la base de données. 
+
+Pour les noms de jour, la requête SQL d'origine récupère seulement l'identifiant du jour de la semaine dans la table \textit{planparcours}. Afin d'afficher les noms en toute lettre, la requête a été modifiée en ajoutant une jointure avec la table \textit{jour} qui comprend les noms des jours de la semaine. Les deux requêtes sont affichées sur la \autoref{fig:diffPlanParcours}, avec en rouge la requête d'origine et en vert la requête modifiée. 
+
+\begin{figure}
+	\includegraphics[scale=1]{images/diffPlanParcours}
+	\caption{Requêtes SQL pour récupérer les informations du plan de parcours}
+	\label{fig:diffPlanParcours}
+\end{figure}
+
+Après modification des vues dans le code, le nouvel affichage est le suivant (\autoref{fig:planParcours2} en comparaison avec l'ancien affichage sur la \autoref{fig:planParcours}.
+
+\begin{figure}
+	\includegraphics[scale=0.5]{images/planParcours2}
+	\caption{Nouvel affichage de l'onglet \textit{Plan de Parcours}}
+	\label{fig:planParcours2}
+\end{figure}
+
+En ce qui concerne la limitation sur le nombre de patients par parcours, la modification se fait au niveau de la classe \textit{V\_planparcours} correspondant à la vue sur notre modèle MVC. La correction à apporter se fait au niveau de la balise HTML \javacode{<td>} représentant les lignes du tableau qui s'affiche. Il est possible d'ajouter un minimum et un maximum sur le compteur, et ce dernier était situé à 10. Bien que pour dans la majorité des cas, le nombre de patients par jour et par parcours sera inférieur à 10, augmenter cette limite permet ainsi de prendre en compte toutes les exceptions.
+
+
+\section{Corrections sur le formulaire de création de patient}
+
+Les règles des champs du formulaire de création de patient comportaient certaines erreurs pouvant engendrer des données erronées. Comme évoqué dans la \autoref{sec:formPatient}, les champs posant problème dans notre cas sont le numéro de rue, le numéro de téléphone fixe, le numéro de téléphone portable et le numéro de sécurité social du patient. 
+
+La définition des règles du formulaire se fait au sein du contrôleur du patient, \javacode{Patient.php}. Elle se fait simplement en utilisant la méthode \javacode{set\_rules()} prédisposée du framework \textit{CodeIgniter}. Les règles sont ensuite définies en précisant la colonne concernée en premier paramètre telles qu'afficher dans la \autoref{fig:rulesForm}.
+
+\begin{figure}
+	\includegraphics[scale=0.55]{images/rulesForm}
+	\caption{Syntaxe des règles du formulaire de création de patient}
+	\label{fig:rulesForm}
+\end{figure}
+
+Les champs numériques sont précisés par le mot-clé \javacode{numeric}, tandis les champs obligatoires sont annotés comme \javacode{required} dans les règles. Pour la gestion de la taille de l'entrée, il est possible d'utiliser \javacode{exact\_length[]} pour donner une taille exacte ou encore \javacode{max\_length[]} pour préciser le nombre maximal de chiffre qui peut figurer pour le champ.
 
 
 \section{Fonction de tri sur les onglets de Gestion}
+
+La mise en place des fonctions de tri sur les onglets de gestion se fait par le biais d'un script qui se déclenche lorsque l'utilisateur clique sur la colonne qu'il souhaite trier. Ce script est implémenté sur chacune des vues ayant besoin d'une fonction de tri, c'est-à-dire concernant les onglets \textit{Activités}, \textit{Personnels}, \textit{Ressources Matérielles} et \textit{Parcours}. 
+
+Le script de tri utilise les capacités de Javascript pour comparer les chaînes de caractère, notamment par l'utilisation des opérateurs < et > qui permettent d'indiquer si une chaîne se situe avant ou après une autre dans le dictionnaire, rendant l'implémentation dans le projet beaucoup plus simple. La \autoref{fig:tri} représente un exemple d'affichage des activités triées par nom d'activité. 
+
+\begin{figure}
+	\includegraphics[scale=0.5]{images/tri}
+	\caption{Affichage des activités triées par nom}
+	\label{fig:tri}
+\end{figure}
+
+
+\section{Correction sur la planification initiale}
+
+%placement sur la première ressource au lieu de la vraie + erreur affichage contrainte
 
 
 \section{Planification automatique}
@@ -634,7 +693,7 @@ La section suivante détaille les éléments présents dans le modèle de la bas
 	\item[Dossiergenerique] : Table définissant, pour un parcours, les onglets et les champs que tous les dossiers parcours doivent avoir impérativement.
 	\item[Dossierparcours] : Table renseignant les informations génériques d'un dossier parcours. Soit le patient associé, le parcours, dates de création et de dernière modification.
 	\item[Etreindisponible] : Table regroupant l'ensemble des indisponibilités pour une ressource. Cette indisponibilité est caractérisée par une date de début et de fin, acceptant toutes les deux le renseignement de l'heure.
-	\item[Jour] : Table qui contient les jours de semaine, ainsi que leurs index sous MySQL. Cette table a un enjeu au niveau des prévisions du nombre de patient par jour pour un parcours.
+	\item[Jour] : Table représentant les jours de la semaine, ainsi que leurs index sous MySQL. Cette table va nous servir à établir les plans de parcours, c'est-à-dire le nombre de patients pouvant être acceptés par jour et par parcours.
 	\item[Necessiter] : Table permettant de renseigner les types de ressources requises pour une activité, ainsi que la quantité nécessaire.
 	\item[Onglet] : Table des onglets disponibles pour constituer un dossier parcours.
 	\item[Parcours]	 : Table décrivant un parcours de façon générale.

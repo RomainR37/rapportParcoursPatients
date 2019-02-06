@@ -12,7 +12,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Table des figures}{v}{chapter*.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Liste des tableaux}{vi}{chapter*.6}
+\contentsline {chapter}{Liste des tableaux}{vii}{chapter*.6}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Introduction}{1}{chapter*.7}
 \defcounter {refsection}{0}\relax 
@@ -214,7 +214,15 @@
 \defcounter {refsection}{0}\relax 
 \select@language {french}
 \defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3}R\IeC {\'e}vision du formulaire de cr\IeC {\'e}ation de patient}{22}{section.4.3}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
@@ -276,35 +284,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Mise en \IeC {\oe }uvre}{26}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Ajout d'un message lors de la suppression}{26}{section.5.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}R\IeC {\'e}vision du plan de parcours}{26}{section.5.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Correction sur le formulaire}{26}{section.5.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Fonction de tri sur les onglets de Gestion}{26}{section.5.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Planification automatique}{26}{section.5.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Validation et Tests}{27}{chapter.6}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Le framework Codeception}{27}{section.6.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Validation}{27}{section.6.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Qualit\IeC {\'e} de code}{28}{chapter.7}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Documentation}{28}{section.7.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}SonarQube}{28}{section.7.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Avancement du projet et suite \IeC {\`a} donner}{29}{chapter.8}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Fonctionnalit\IeC {\'e}s mises en place}{29}{section.8.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Fonctionnalit\IeC {\'e}s \IeC {\`a} ajouter ou \IeC {\`a} am\IeC {\'e}liorer pour la suite du projet}{29}{section.8.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bilan et conclusion}{30}{chapter*.8}
+\contentsline {section}{\numberline {1}Ajout d'un avertissement lors de la suppression d'un \IeC {\'e}l\IeC {\'e}ment}{26}{section.5.1}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
@@ -314,55 +294,11 @@
 \defcounter {refsection}{0}\relax 
 \select@language {french}
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{Annexes}{31}{part*.9}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Fonctionnalit\IeC {\'e}s existantes}{32}{appendix.A}
-\defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
 \select@language {french}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}G\IeC {\'e}rer les personnels}{32}{section.A.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}G\IeC {\'e}rer les ressources mat\IeC {\'e}rielles}{32}{section.A.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}G\IeC {\'e}rer les activit\IeC {\'e}s}{32}{section.A.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}G\IeC {\'e}rer les parcours}{33}{section.A.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}G\IeC {\'e}rer les plans de parcours}{33}{section.A.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Visualiser du planning}{33}{section.A.6}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Affecter un patient \IeC {\`a} un parcours}{33}{section.A.7}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Visualiser et modifier le planning de toutes les ressources}{33}{section.A.8}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Mod\IeC {\`e}le conceptuel de donn\IeC {\'e}es}{34}{appendix.B}
-\defcounter {refsection}{0}\relax 
-\select@language {english}
-\defcounter {refsection}{0}\relax 
-\select@language {french}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {C}Explications des tables du mod\IeC {\`e}le}{36}{appendix.C}
-\defcounter {refsection}{0}\relax 
-\select@language {english}
-\defcounter {refsection}{0}\relax 
-\select@language {french}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {D}Chiffrage du projet}{38}{appendix.D}
-\defcounter {refsection}{0}\relax 
-\select@language {english}
-\defcounter {refsection}{0}\relax 
-\select@language {french}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {E}Gestion de projet}{39}{appendix.E}
-\defcounter {refsection}{0}\relax 
-\select@language {english}
-\defcounter {refsection}{0}\relax 
-\select@language {french}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Trello}{39}{section.E.1}
+\contentsline {section}{\numberline {2}R\IeC {\'e}vision du plan de parcours}{27}{section.5.2}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
@@ -372,14 +308,6 @@
 \defcounter {refsection}{0}\relax 
 \select@language {french}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Diagramme de Gantt}{40}{section.E.2}
-\defcounter {refsection}{0}\relax 
-\select@language {english}
-\defcounter {refsection}{0}\relax 
-\select@language {french}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Git et GitKraken}{40}{section.E.3}
-\defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
 \select@language {french}
@@ -388,19 +316,157 @@
 \defcounter {refsection}{0}\relax 
 \select@language {french}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {F}Notice des livrables}{41}{appendix.F}
+\select@language {english}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Livrable du 9/01/2019}{41}{section.F.1}
+\select@language {french}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Livrable du 25/01/2019}{41}{section.F.2}
+\select@language {english}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {G}Guide d\IeC {\'e}veloppeur}{42}{appendix.G}
+\select@language {french}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Installation du projet}{42}{section.G.1}
+\contentsline {section}{\numberline {3}Corrections sur le formulaire de cr\IeC {\'e}ation de patient}{27}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Structure du projet}{42}{section.G.2}
+\select@language {english}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliographie}{43}{appendix*.10}
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Fonction de tri sur les onglets de Gestion}{28}{section.5.4}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Correction sur la planification initiale}{29}{section.5.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Planification automatique}{29}{section.5.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Validation et Tests}{30}{chapter.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Le framework Codeception}{30}{section.6.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Validation}{30}{section.6.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Qualit\IeC {\'e} de code}{31}{chapter.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Documentation}{31}{section.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}SonarQube}{31}{section.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}Avancement du projet et suite \IeC {\`a} donner}{32}{chapter.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Fonctionnalit\IeC {\'e}s mises en place}{32}{section.8.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Fonctionnalit\IeC {\'e}s \IeC {\`a} ajouter ou \IeC {\`a} am\IeC {\'e}liorer pour la suite du projet}{32}{section.8.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bilan et conclusion}{33}{chapter*.8}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{Annexes}{34}{part*.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Fonctionnalit\IeC {\'e}s existantes}{35}{appendix.A}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}G\IeC {\'e}rer les personnels}{35}{section.A.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}G\IeC {\'e}rer les ressources mat\IeC {\'e}rielles}{35}{section.A.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}G\IeC {\'e}rer les activit\IeC {\'e}s}{35}{section.A.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}G\IeC {\'e}rer les parcours}{36}{section.A.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}G\IeC {\'e}rer les plans de parcours}{36}{section.A.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Visualiser du planning}{36}{section.A.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7}Affecter un patient \IeC {\`a} un parcours}{36}{section.A.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8}Visualiser et modifier le planning de toutes les ressources}{36}{section.A.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {B}Mod\IeC {\`e}le conceptuel de donn\IeC {\'e}es}{37}{appendix.B}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {C}Explications des tables du mod\IeC {\`e}le}{39}{appendix.C}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {D}Chiffrage du projet}{41}{appendix.D}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {E}Gestion de projet}{42}{appendix.E}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Trello}{42}{section.E.1}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Diagramme de Gantt}{43}{section.E.2}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Git et GitKraken}{43}{section.E.3}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {F}Notice des livrables}{44}{appendix.F}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Livrable du 9/01/2019}{44}{section.F.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Livrable du 25/01/2019}{44}{section.F.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {G}Guide d\IeC {\'e}veloppeur}{45}{appendix.G}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Installation du projet}{45}{section.G.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Structure du projet}{45}{section.G.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliographie}{46}{appendix*.10}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
