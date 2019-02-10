@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.1.12)  7 FEB 2019 00:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.1.12)  10 FEB 2019 02:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2928,13 +2928,13 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  [][][][]\T1/jkpf/b/sc/12 Table des ma-tières
  []
 
-[4] (./Rapport_PR&D_ROUSSEAU.lof)
+[4] (./Rapport_PR&D_ROUSSEAU.lof [5
+
+])
 \tf@lof=\write14
 \openout14 = `Rapport_PR&D_ROUSSEAU.lof'.
 
- [5
 
-]
 Underfull \hbox (badness 10000) has occurred while \output is active
  [][][][]\T1/jkpf/b/sc/12 Table des fi-gures
  []
@@ -2989,7 +2989,7 @@ Chapitre 2.
 . 
 . Redefining command \caption with sig. 'om' on line 142.
 .................................................
-<images/deploiement.png, id=343, 533.5935pt x 403.5075pt>
+<images/deploiement.png, id=358, 533.5935pt x 403.5075pt>
 File: images/deploiement.png Graphic file (type png)
 
 <use images/deploiement.png>
@@ -3015,7 +3015,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 . 
 . Redefining command \caption with sig. 'om' on line 204.
 .................................................
- <images/affichage_personnel.png, id=366, 948.54375pt x 495.0495pt>
+ <images/affichage_personnel.png, id=380, 948.54375pt x 495.0495pt>
 File: images/affichage_personnel.png Graphic file (type png)
 
 <use images/affichage_personnel.png>
@@ -3036,7 +3036,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 . Redefining command \caption with sig. 'om' on line 230.
 .................................................
 
-<images/bouton_plan_auto.png, id=374, 1059.96pt x 426.393pt>
+<images/bouton_plan_auto.png, id=388, 1059.96pt x 426.393pt>
 File: images/bouton_plan_auto.png Graphic file (type png)
 
 <use images/bouton_plan_auto.png>
@@ -3056,7 +3056,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 . Redefining command \caption with sig. 'om' on line 248.
 .................................................
 
-<images/arboMVC.png, id=382, 75.8835pt x 64.44075pt>
+<images/arboMVC.png, id=396, 75.8835pt x 64.44075pt>
 File: images/arboMVC.png Graphic file (type png)
  <use images/arboMVC.png>
 Package pdftex.def Info: images/arboMVC.png used on input line 249.
@@ -3107,7 +3107,7 @@ Chapitre 4.
 . 
 . Redefining command \caption with sig. 'om' on line 368.
 .................................................
- <images/messSuppr.png, id=426, 422.7795pt x 110.814pt>
+ <images/messSuppr.png, id=440, 422.7795pt x 110.814pt>
 File: images/messSuppr.png Graphic file (type png)
 
 <use images/messSuppr.png>
@@ -3120,7 +3120,7 @@ Package pdftex.def Info: images/messSuppr.png used on input line 369.
 . 
 . Redefining command \caption with sig. 'om' on line 382.
 .................................................
-<images/PlanParcours.png, id=428, 941.31676pt x 349.90726pt>
+<images/PlanParcours.png, id=442, 941.31676pt x 349.90726pt>
 File: images/PlanParcours.png Graphic file (type png)
 
 <use images/PlanParcours.png>
@@ -3140,7 +3140,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 . Redefining command \caption with sig. 'om' on line 400.
 .................................................
 
-<images/formulairePatient.png, id=438, 1028.643pt x 352.9185pt>
+<images/formulairePatient.png, id=452, 1028.643pt x 352.9185pt>
 File: images/formulairePatient.png Graphic file (type png)
 
 <use images/formulairePatient.png>
@@ -3153,7 +3153,7 @@ Package pdftex.def Info: images/formulairePatient.png used on input line 401.
 . 
 . Redefining command \caption with sig. 'om' on line 416.
 .................................................
-<images/planningPatient.png, id=440, 977.45175pt x 248.72925pt>
+<images/planningPatient.png, id=454, 977.45175pt x 248.72925pt>
 File: images/planningPatient.png Graphic file (type png)
 
 <use images/planningPatient.png>
@@ -3173,7 +3173,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 . Redefining command \caption with sig. 'om' on line 438.
 .................................................
 
-<images/erreurURL.png, id=449, 990.099pt x 308.95425pt>
+<images/erreurURL.png, id=463, 990.099pt x 308.95425pt>
 File: images/erreurURL.png Graphic file (type png)
 
 <use images/erreurURL.png>
@@ -3193,7 +3193,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 . Redefining command \caption with sig. 'om' on line 462.
 .................................................
 
-<images/creerJDD.png, id=458, 516.12825pt x 129.48375pt>
+<images/creerJDD.png, id=472, 516.12825pt x 129.48375pt>
 File: images/creerJDD.png Graphic file (type png)
 
 <use images/creerJDD.png>
@@ -3236,7 +3236,7 @@ Underfull \vbox (badness 2698) has occurred while \output is active []
 . Redefining command \caption with sig. 'om' on line 500.
 .................................................
 
-<images/diffPlanParcours.png, id=478, 346.896pt x 84.91725pt>
+<images/diffPlanParcours.png, id=492, 346.896pt x 84.91725pt>
 File: images/diffPlanParcours.png Graphic file (type png)
 
 <use images/diffPlanParcours.png>
@@ -3249,7 +3249,7 @@ Package pdftex.def Info: images/diffPlanParcours.png used on input line 501.
 . 
 . Redefining command \caption with sig. 'om' on line 508.
 .................................................
-<images/planParcours2.png, id=481, 851.18pt x 262.9825pt>
+<images/planParcours2.png, id=495, 851.18pt x 262.9825pt>
 File: images/planParcours2.png Graphic file (type png)
 
 <use images/planParcours2.png>
@@ -3269,7 +3269,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 . Redefining command \caption with sig. 'om' on line 523.
 .................................................
 
-<images/rulesForm.png, id=490, 766.062pt x 162.6075pt>
+<images/rulesForm.png, id=504, 766.062pt x 162.6075pt>
 File: images/rulesForm.png Graphic file (type png)
 
 <use images/rulesForm.png>
@@ -3282,7 +3282,7 @@ Package pdftex.def Info: images/rulesForm.png used on input line 524.
 . 
 . Redefining command \caption with sig. 'om' on line 538.
 .................................................
-<images/tri.png, id=492, 848.16875pt x 379.4175pt>
+<images/tri.png, id=506, 848.16875pt x 379.4175pt>
 File: images/tri.png Graphic file (type png)
  <use images/tri.png>
 Package pdftex.def Info: images/tri.png used on input line 539.
@@ -3298,49 +3298,141 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [28 <./images/rulesForm.png> <./images/tri.png>]
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \caption with sig. 'om' on line 561.
+.................................................
+
+<images/erreurRessource.png, id=514, 873.2625pt x 171.64125pt>
+File: images/erreurRessource.png Graphic file (type png)
+
+<use images/erreurRessource.png>
+Package pdftex.def Info: images/erreurRessource.png used on input line 562.
+(pdftex.def)             Requested size: 436.63017pt x 85.8204pt.
+
+* Missing: images/erreurRessource.pax
+
 Underfull \hbox (badness 10000) has occurred while \output is active
  [][][][]\T1/jkpf/b/sc/12 Chapitre 5.  Mise en ÷uvre
  []
 
-[29]
+[29 <./images/erreurRessource.png>]
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \caption with sig. 'om' on line 571.
+.................................................
+
+<images/erreurContrainte.png, id=520, 587.796pt x 191.5155pt>
+File: images/erreurContrainte.png Graphic file (type png)
+
+<use images/erreurContrainte.png>
+Package pdftex.def Info: images/erreurContrainte.png used on input line 572.
+(pdftex.def)             Requested size: 440.84592pt x 143.63626pt.
+
+* Missing: images/erreurContrainte.pax
+
+Overfull \hbox (12.27931pt too wide) in paragraph at lines 577--578
+\T1/jkpf/m/n/10.95 (-20) dans la mé-thode ré-cu-pé-rant les contraintes de pré-
+cé-dences, c'est-à-dire [][]|
+ []
+
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \caption with sig. 'om' on line 583.
+.................................................
+<images/autresRessources.png, id=521, 593.21625pt x 111.41624pt>
+File: images/autresRessources.png Graphic file (type png)
+
+<use images/autresRessources.png>
+Package pdftex.def Info: images/autresRessources.png used on input line 584.
+(pdftex.def)             Requested size: 444.91109pt x 83.56197pt.
+
+* Missing: images/autresRessources.pax
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][][][]\T1/jkpf/b/sc/12 Chapitre 5.  Mise en ÷uvre
+ []
+
+[30 <./images/erreurContrainte.png> <./images/autresRessources.png>]
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \caption with sig. 'om' on line 598.
+.................................................
+
+<images/algoPlanAutoTex.png, id=529, 453.49425pt x 426.393pt>
+File: images/algoPlanAutoTex.png Graphic file (type png)
+
+<use images/algoPlanAutoTex.png>
+Package pdftex.def Info: images/algoPlanAutoTex.png used on input line 599.
+(pdftex.def)             Requested size: 340.11984pt x 319.79396pt.
+
+* Missing: images/algoPlanAutoTex.pax
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \caption with sig. 'om' on line 608.
+.................................................
+<images/algoGestionDispo.png, id=532, 418.56375pt x 466.74374pt>
+File: images/algoGestionDispo.png Graphic file (type png)
+
+<use images/algoGestionDispo.png>
+Package pdftex.def Info: images/algoGestionDispo.png used on input line 609.
+(pdftex.def)             Requested size: 355.78085pt x 396.73405pt.
+
+* Missing: images/algoGestionDispo.pax
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][][][]\T1/jkpf/b/sc/12 Chapitre 5.  Mise en ÷uvre
+ []
+
+[31 <./images/algoPlanAutoTex.png>]
+Underfull \hbox (badness 10000) has occurred while \output is active
+ [][][][]\T1/jkpf/b/sc/12 Chapitre 5.  Mise en ÷uvre
+ []
+
+[32 <./images/algoGestionDispo.png>]
 Chapitre 6.
-[30
+[33
 
 ]
 Chapitre 7.
-[31
+[34
 
 ]
 Chapitre 8.
-[32
+[35
 
-] [33
+] [36
 
-] [34
+] [37
 
 ]
 Annexe A.
-[35
+[38
 
 ]
 Underfull \hbox (badness 10000) has occurred while \output is active
  [][][][]\T1/jkpf/b/sc/12 Annexe A.  Fonc-tion-na-li-tés exis-tantes
  []
 
-[36]
+[39]
 Annexe B.
 
-Underfull \hbox (badness 3281) in paragraph at lines 674--674
+Underfull \hbox (badness 3281) in paragraph at lines 741--741
 [][][][]\T1/jkpf/b/n/24.88 Modèle concep-tuel de don-
  []
 
-[37
+[40
 
-] <images/tablesBD.jpg, id=539, 1276.77pt x 880.28876pt>
+] <images/tablesBD.jpg, id=581, 1276.77pt x 880.28876pt>
 File: images/tablesBD.jpg Graphic file (type jpg)
 
 <use images/tablesBD.jpg>
-Package pdftex.def Info: images/tablesBD.jpg used on input line 678.
+Package pdftex.def Info: images/tablesBD.jpg used on input line 745.
 (pdftex.def)             Requested size: 638.38344pt x 440.1433pt.
 
 * Missing: images/tablesBD.pax
@@ -3349,14 +3441,14 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  [][][][]\T1/jkpf/b/sc/12 Annexe B.  Mo-dèle concep-tuel de don-nées
  []
 
-[38
+[41
 
  <./images/tablesBD.jpg>]
 Annexe C.
 
 Underfull \vbox (badness 4582) has occurred while \output is active []
 
- [39
+ [42
 
 
 ]
@@ -3364,55 +3456,55 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  [][][][]\T1/jkpf/b/sc/12 Annexe C.  Ex-pli-ca-tions des tables du mo-dèle
  []
 
-[40]
+[43]
 Annexe D.
 
-Underfull \vbox (badness 10000) detected at line 735
+Underfull \vbox (badness 10000) detected at line 802
  []
 
-[41
+[44
 
 ]
 Annexe E.
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \caption with sig. 'om' on line 749.
+. Redefining command \caption with sig. 'om' on line 816.
 .................................................
-<images/trello.png, id=558, 837.1275pt x 524.55975pt>
+<images/trello.png, id=600, 837.1275pt x 524.55975pt>
 File: images/trello.png Graphic file (type png)
  <use images/trello.png>
-Package pdftex.def Info: images/trello.png used on input line 750.
+Package pdftex.def Info: images/trello.png used on input line 817.
 (pdftex.def)             Requested size: 292.99901pt x 183.59865pt.
 
 * Missing: images/trello.pax
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \caption with sig. 'om' on line 759.
+. Redefining command \caption with sig. 'om' on line 826.
 .................................................
-<images/gestion_projet.png, id=559, 3141.7375pt x 442.65375pt>
+<images/gestion_projet.png, id=601, 3141.7375pt x 442.65375pt>
 File: images/gestion_projet.png Graphic file (type png)
 
 <use images/gestion_projet.png>
-Package pdftex.def Info: images/gestion_projet.png used on input line 760.
+Package pdftex.def Info: images/gestion_projet.png used on input line 827.
 (pdftex.def)             Requested size: 439.84026pt x 61.9711pt.
 
 * Missing: images/gestion_projet.pax
-[42
+[45
 
  <./images/trello.png>]
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \caption with sig. 'om' on line 773.
+. Redefining command \caption with sig. 'om' on line 840.
 .................................................
 
-<images/gitkraken.png, id=567, 1155.1155pt x 560.0925pt>
+<images/gitkraken.png, id=609, 1155.1155pt x 560.0925pt>
 File: images/gitkraken.png Graphic file (type png)
 
 <use images/gitkraken.png>
-Package pdftex.def Info: images/gitkraken.png used on input line 774.
+Package pdftex.def Info: images/gitkraken.png used on input line 841.
 (pdftex.def)             Requested size: 427.38605pt x 207.23097pt.
 
 * Missing: images/gitkraken.pax
@@ -3421,19 +3513,19 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  [][][][]\T1/jkpf/b/sc/12 Annexe E.  Ges-tion de pro-jet
  []
 
-[43 <./images/gestion_projet.png (PNG copy)> <./images/gitkraken.png>]
+[46 <./images/gestion_projet.png (PNG copy)> <./images/gitkraken.png>]
 Annexe F.
-[44
+[47
 
 ]
 Annexe G.
 
-Package biblatex Warning: Type 'online' not found on input line 813.
+Package biblatex Warning: Type 'online' not found on input line 880.
 
-[45
+[48
 
 ]
-Overfull \hbox (5.63431pt too wide) in paragraph at lines 813--813
+Overfull \hbox (5.63431pt too wide) in paragraph at lines 880--880
 []\T1/jkpf/m/n/10.95 (-20) Joren \T1/jkpf/m/sc/10.95 (-20) Ma-ry-nis-sen \T1/jk
 pf/m/n/10.95 (-20) et Erik \T1/jkpf/m/sc/10.95 (-20) De-meu-le-mees-ter\T1/jkpf
 /m/n/10.95 (-20) . ^^S   Li-te-ra-ture re-view on multi-appointment|
@@ -3442,7 +3534,7 @@ pf/m/n/10.95 (-20) et Erik \T1/jkpf/m/sc/10.95 (-20) De-meu-le-mees-ter\T1/jkpf
 No file Rapport_PR&D_ROUSSEAU.gls.
 No file Rapport_PR&D_ROUSSEAU.acr.
 No file Rapport_PR&D_ROUSSEAU.ind.
-[46
+[49
 
 ]
 *geometry* verbose mode - [ newgeometry ] result:
@@ -3477,13 +3569,13 @@ No file Rapport_PR&D_ROUSSEAU.ind.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
- [47
+ [50
 
 
 ] 
 AED: pageslts setting LastPage 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 813.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 813.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 880.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 880.
 \c@pagesLTS.arabic.1.local.count=\count489
 
 AED: pageslts setting VeryLastPage via AfterLastShipout 
@@ -3491,29 +3583,29 @@ AED: pageslts setting VeryLastPage via AfterLastShipout
 AED: pageslts setting LastPages via AfterLastShipout 
 
 
-Package pageslts Info: Total number of pages is even.
+Package pageslts Info: Total number of pages is odd.
 
 
 (./Rapport_PR&D_ROUSSEAU.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 813.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 813.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 880.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 880.
 Package logreq Info: Writing requests to 'Rapport_PR&D_ROUSSEAU.run.xml'.
 \openout1 = `Rapport_PR&D_ROUSSEAU.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 813.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 880.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 54818 strings out of 493013
- 980570 string characters out of 6136993
- 1591781 words of memory out of 5000000
- 56892 multiletter control sequences out of 15000+600000
- 174579 words of font info for 353 fonts, out of 8000000 for 9000
+ 54887 strings out of 493013
+ 982184 string characters out of 6136993
+ 1592220 words of memory out of 5000000
+ 56942 multiletter control sequences out of 15000+600000
+ 175032 words of font info for 356 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,17n,94p,10399b,23442s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,17n,94p,10399b,23486s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}{c:/tex
 live/2016/texmf-dist/fonts/enc/dvips/kpfonts/kpfonts-expert.enc}<c:/texlive/201
 6/texmf-dist/fonts/type1/public/kpfonts/jkpbit8a.pfb><c:/texlive/2016/texmf-dis
@@ -3526,10 +3618,10 @@ mf-dist/fonts/type1/public/kpfonts/jkpmn8a.pfb><c:/texlive/2016/texmf-dist/font
 s/type1/public/kpfonts/jkpmne.pfb><c:/texlive/2016/texmf-dist/fonts/type1/publi
 c/kpfonts/jkpmsc8a.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/kpfonts/j
 kpttmn8a.pfb>
-Output written on Rapport_PR&D_ROUSSEAU.pdf (58 pages, 1794551 bytes).
+Output written on Rapport_PR&D_ROUSSEAU.pdf (61 pages, 2082222 bytes).
 PDF statistics:
- 954 PDF objects out of 1000 (max. 8388607)
- 829 compressed objects within 9 object streams
- 175 named destinations out of 1000 (max. 500000)
- 53065 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 1004 PDF objects out of 1200 (max. 8388607)
+ 867 compressed objects within 9 object streams
+ 185 named destinations out of 1000 (max. 500000)
+ 53106 words of extra memory for PDF output out of 61914 (max. 10000000)
 

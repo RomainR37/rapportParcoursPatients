@@ -38,7 +38,7 @@
 
 \chapter*{Introduction}
 
-Ce rapport traite du projet Recherche et Développement réalisé au sein de l'école Polytech. Il se déroule lors la cinquième année d'étude et représente une forme de synthèse des connaissances acquises lors des années d’études précédentes. Il permet de développer et d'approfondir son savoir sur un ou plusieurs champs de compétences spécifiques, afin de devenir un spécialiste du domaine choisi dans le cadre du projet. Ce travail est mené seul, sous la supervision d'un tuteur académique et, pour certains projets, avec l'aide d'un intervenant extérieur qui fait partie des initiateurs du sujet. Il permet ainsi de développer son autonomie en menant à bien un travail des prémices jusque, dans le meilleur des cas, à la production.
+Ce rapport traite du projet Recherche et Développement réalisé au sein de l'école Polytech. Il se déroule lors la cinquième année d'étude et représente une forme de synthèse des connaissances acquises lors des années d'études précédentes. Il permet de développer et d'approfondir son savoir sur un ou plusieurs champs de compétences spécifiques, afin de devenir un spécialiste du domaine choisi dans le cadre du projet. Ce travail est mené seul, sous la supervision d'un tuteur académique et, pour certains projets, avec l'aide d'un intervenant extérieur qui fait partie des initiateurs du sujet. Il permet ainsi de développer son autonomie en menant à bien un travail des prémices jusque, dans le meilleur des cas, à la production.
 
 J'ai décidé de me consacrer à un projet lié à un enjeu important de notre société: la gestion des patients dans un hôpital. Aujourd'hui, les hôpitaux sont l'objet de nombreux débats dans l'actualité, et l'un des points de discussion majeurs concerne la gestion des patients au sein des hôpitaux. Plusieurs problèmes peuvent être cités: un temps d'attente bien trop long pour les patients (que ce soit une fois à l'hôpital ou pour avoir un rendez-vous avec un spécialiste), des problèmes de ressource (concernant le personnel ou bien les salles à disposition) ou encore des problèmes d'ordre financier en général. Certaines de ses problématiques peuvent être étudiées selon le point de vue de l'optimisation, et la recherche opérationnelle peut permettre d'améliorer certains aspects de la gestion actuelle. Pour ma part, me pencher sur les problèmes de recherche opérationnelle en général m'intéressait, et avoir l'opportunité de réaliser un projet dans ce domaine, d'autant plus dans un secteur qui en a besoin, était une bonne occasion pour améliorer mes compétences.
 
@@ -541,14 +541,81 @@ Le script de tri utilise les capacités de Javascript pour comparer les chaînes
 	\label{fig:tri}
 \end{figure}
 
+\section{Planification automatique}
 
-\section{Correction sur la planification initiale}
+La planification automatique des évènements représente la partie la plus importante des implémentations sur ce projet. Pour cette occasion, nous allons voir dans un premier temps le fonctionnement de l'affichage graphique de l'onglet \textit{Planification}, avant de voir les différentes corrections nécessaires et de voir l'ordonnancement automatique des activités.
+
+\subsection{Fonctionnement de l'affichage graphique}
+
+L'affichage du calendrier se fait par le biais de la bibliothèque \textit{fullCalendar}. Celle-ci permet d'obtenir un affichage dynamique des évènements et des possibilités de manipulation manuelle facilitées. Les requêtes permettant d'ajouter, de supprimer ou de déplacer des évènements sur le planning sont effectuées en AJAX, ce qui permet d'obtenir un rendu rapide sans passer par un rafraîchissement de la page à chaque action de l'utilisateur. 
+
+Les scripts de sauvegarde et de restauration du planning, ainsi que la planification automatique par la suite, font également appel à AJAX pour appeler les méthodes définies dans les contrôleurs. Une fois les évènements placés et enregistrés en base, que ce soit via un glisser-déposer ou via un clic sur le bouton de planification automatique, les scripts font appel à une fonction de \textit{fullCalendar} qui permet d'afficher les nouveaux évènements sur le calendrier intitulée \javacode{refetchEvents}.
+
+
+\subsection{Corrections sur la planification d'origine}
 
 %placement sur la première ressource au lieu de la vraie + erreur affichage contrainte
 
+Avant de procéder à l'implémentation de la planification automatique des activités, plusieurs erreurs étaient à corriger. Tout d'abord, l'outil a été pensé pour que lors de l'ajout d'une activité, celle-ci soit placée sur toutes les premières ressources libres disponibles dont elle a besoin. Cependant, ce principe était utilisé pour tous les cas y compris lorsque l'on souhaite sélectionner une ressource en particulier. Cela signifiait que si une personne désirait placer une activité sur la troisième ressource alors que la première est disponible, l'activité était replacée directement sur la première ressource. Cet exemple est illustré dans la \autoref{fig:erreurRessource}.
 
-\section{Planification automatique}
+\begin{figure}
+	\includegraphics[scale=0.5]{images/erreurRessource}
+	\caption{Exemple d'erreur de sélection de ressource}
+	\label{fig:erreurRessource}
+\end{figure}
 
+Pour résoudre cette erreur, j'ai implémenté une méthode intitulée \javacode{getDisponibiliteRessource()} qui permet de vérifier si la ressource sélectionnée est déjà utilisée ou non pour l'intervalle de temps indiqué. Si celle-ci n'est pas affectée à une autre activité sur cet intervalle, alors on y place l'activité. 
+
+La seconde correction concerne l'affichage des contraintes. Une vingtaine de parcours différents seront traités au sein de l'hôpital, et les activités peuvent donc avoir des contraintes de précédence différentes selon la nature du parcours. Ainsi il peut exister des cas particuliers où une activité précède une autre dans un parcours et succède à cette même activité dans un autre parcours. Le problème vient du fait que la méthode qui détecte les erreurs de placement des activités ne prenait pas en compte le parcours pour déterminer si une activité est correctement placée par rapport à une autre. Un exemple avec la \autoref{fig:erreurContrainte} montre que peu importe le placement de l'activité \textit{ECG} par rapport à \textit{Collation}, une erreur va être affichée, car dans le parcours \textit{Diagnostic Obésité}, \textit{ECG} est placé avant la collation tandis que pour un autre parcours, l'électrocardiogramme se fait après la collation. 
+
+\begin{figure}
+	\includegraphics[scale=0.75]{images/erreurContrainte}
+	\caption{Exemple d'erreur d'affichage de contraintes}
+	\label{fig:erreurContrainte}
+\end{figure}
+
+Pour corriger ce type d'erreur d'affichage, il suffit de préciser au préalable le parcours concerné dans la méthode récupérant les contraintes de précédences, c'est-à-dire \javacode{getDependancesActivites()} dans la classe \textit{M\_parcours}. 
+
+Enfin, certaines activités n'ont besoin d'aucune ressource pour être réalisées. C'est le cas pour les collations ou les activités nécessitant du matériel en dehors de l'hôpital comme des échographies ou des scanners par exemple. Auparavant lorsque l'on faisait glisser ces activités sur le calendrier, celle-ci était placée sur la ressource où l'activité est relâchée, ce qui occupait donc une ressource sur le calendrier pour rien. 
+
+Pour pallier à cela, j'ai ajouté un nouveau type de ressource regroupant ces cas particuliers dénommé \textit{Autres ressources}. Celles-ci ne comportent aucune contrainte temporelle, c'est-à-dire que plusieurs activités peuvent s'y trouver dans le même intervalle de temps, et lorsque que l'on place une activité sans ressource, l'évènement vient se placer directement sur ce type de ressource. 
+
+\begin{figure}
+	\includegraphics[scale=0.75]{images/autresRessources}
+	\caption{Affichage du type de ressource \textit{Autres}}
+	\label{fig:autresRessources}
+\end{figure}
+
+Ce nouveau type de ressource était absolument nécessaire à rajouter sans quoi la planification des activités aurait été impossible. 
+
+
+\subsection{Mise en œuvre de l'ordonnancement}
+
+Pour la planification, nous sommes partis sur l'implémentation la plus simple possible, à savoir la planification patient par patient. Le but est d'avoir un ordonnancement fonctionnel avant de pouvoir par la suite, optimiser l'agencement des activités. 
+
+Le principe de cette implémentation se trouve sur l'algorithme de la \autoref{fig:algoPlanAuto}. Il représente la gestion des patients ainsi que des activités et de leurs précédences dans le projet. L'idée est de vider un tableau représentant les activités du patient dans la journée au fur et à mesure du placement des différentes activités en base, tout en gérant les heures de début et de fin des activités. 
+
+\begin{figure}
+	\includegraphics[scale=0.75]{images/algoPlanAutoTex}
+	\label{fig:algoPlanAuto}
+	\caption{Gestion des patients et des activités à ajouter}
+\end{figure}
+
+Les difficultés que j'ai pu rencontrer durant l'implémentation de cet algorithme résidaient dans la gestion des tableaux en PHP qui ont une structure particulière et des nombreuses fonctions de gestion à prendre en main afin récupérer les bonnes informations. La gestion des dates avec les objets \textit{DateTime} a été aussi difficile à prendre en main dans un premier temps.  
+
+Nous pouvons voir à la ligne 12 de la \autoref{fig:algoPlanAuto} que l'instruction indique que l'on ajoute l'activité au calendrier sur l'intervalle de temps indiqué. Le fonctionnement de l'ajout d'un évènement en base se trouve sur l'algorithme de la \autoref{fig:algoGestionDispo}. Le principe de la méthode reprend celui de la fonction déjà implémentée dans un projet précédent, à savoir \javacode{addEvenement()}, qui est de placer les évènements sur les premières ressources disponibles sur le calendrier, et cela pour tous les types de ressource nécessaires à la réalisation d'une activité. 
+
+\begin{figure}
+	\includegraphics[scale=0.85]{images/algoGestionDispo}
+	\caption{Gestion des disponibilités des ressources}
+	\label{fig:algoGestionDispo}
+\end{figure}
+
+Nous pouvons remarquer que la méthode prend en entrée les heures de début et de fin qualifiées "d'idéales" c'est-à-dire au plus tôt pour le patient, et retourne les heures disponibles pour la réalisation de l'activité. Pour retrouver les dates de réalisation de l'évènement, l'algorithme va vérifier dans la base si une ressource de chaque type nécessaire à l'activité est disponible sur l'intervalle de temps précisé. Si un des types a toutes ses ressources occupées, alors on décale l'intervalle de temps de 5 minutes. Le choix d'ajouter 5 minutes vient du fait qu'il s'agit de la plus petite unité de temps pour notre calendrier. Ainsi avec cette méthode, on retrouve les dates de disponibilité les plus tôt possible. 
+
+À la fin de l'exécution, l'algorithme retourne les dates à laquelle l'activité va être réaliser. Ces valeurs vont permettre d'ajuster nos heures de début des activités suivantes, comme on le voit avec la variable \$start à la ligne 13 de l'algo de la \autoref{fig:algoPlanAuto}.
+
+Le point faible de cette méthode vient du fait qu'elle favorise grandement les premiers patients de la journée. En effet ceux-ci n'auront pas de problème de disponibilité vu qu'aucune ressource n'est occupée au début de la journée, tandis que les derniers seront sur la liste risqueront d'avoir des temps d'attente considérables car très peu de ressources seront disponibles. 
 
 
 \chapter{Validation et Tests}
