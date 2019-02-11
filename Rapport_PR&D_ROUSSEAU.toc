@@ -16,6 +16,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Introduction}{1}{chapter*.7}
 \defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
 \contentsline {part}{I\hspace {1em}Analyse pr\IeC {\'e}liminaire et d\IeC {\'e}termination des objectifs}{3}{part.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Contexte de la r\IeC {\'e}alisation et objectifs}{4}{chapter.1}
@@ -412,6 +416,14 @@
 \defcounter {refsection}{0}\relax 
 \select@language {french}
 \defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2}Test de la planification automatique}{34}{section.6.2}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
@@ -440,13 +452,25 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2}SonarQube}{36}{section.7.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Avancement du projet et suite \IeC {\`a} donner}{37}{chapter.8}
+\select@language {english}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Fonctionnalit\IeC {\'e}s mises en place}{37}{section.8.1}
+\select@language {french}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Fonctionnalit\IeC {\'e}s \IeC {\`a} ajouter ou \IeC {\`a} am\IeC {\'e}liorer pour la suite du projet}{37}{section.8.2}
+\select@language {english}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bilan et conclusion}{38}{chapter*.8}
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}Avancement du projet et suite \IeC {\`a} donner}{38}{chapter.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Fonctionnalit\IeC {\'e}s mises en place}{38}{section.8.1}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Fonctionnalit\IeC {\'e}s \IeC {\`a} ajouter ou \IeC {\`a} am\IeC {\'e}liorer pour la suite du projet}{38}{section.8.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bilan et conclusion}{39}{chapter*.8}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
@@ -456,71 +480,55 @@
 \defcounter {refsection}{0}\relax 
 \select@language {french}
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{Annexes}{39}{part*.9}
+\contentsline {part}{Annexes}{41}{part*.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Fonctionnalit\IeC {\'e}s existantes}{40}{appendix.A}
-\defcounter {refsection}{0}\relax 
-\select@language {english}
-\defcounter {refsection}{0}\relax 
-\select@language {french}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}G\IeC {\'e}rer les personnels}{40}{section.A.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}G\IeC {\'e}rer les ressources mat\IeC {\'e}rielles}{40}{section.A.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}G\IeC {\'e}rer les activit\IeC {\'e}s}{40}{section.A.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}G\IeC {\'e}rer les parcours}{41}{section.A.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}G\IeC {\'e}rer les plans de parcours}{41}{section.A.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Visualiser du planning}{41}{section.A.6}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7}Affecter un patient \IeC {\`a} un parcours}{41}{section.A.7}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {8}Visualiser et modifier le planning de toutes les ressources}{41}{section.A.8}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {B}Mod\IeC {\`e}le conceptuel de donn\IeC {\'e}es}{42}{appendix.B}
+\contentsline {chapter}{\numberline {A}Fonctionnalit\IeC {\'e}s existantes}{42}{appendix.A}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
 \select@language {french}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {C}Explications des tables du mod\IeC {\`e}le}{44}{appendix.C}
+\contentsline {section}{\numberline {1}G\IeC {\'e}rer les personnels}{42}{section.A.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}G\IeC {\'e}rer les ressources mat\IeC {\'e}rielles}{42}{section.A.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}G\IeC {\'e}rer les activit\IeC {\'e}s}{42}{section.A.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}G\IeC {\'e}rer les parcours}{43}{section.A.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}G\IeC {\'e}rer les plans de parcours}{43}{section.A.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}Visualiser du planning}{43}{section.A.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7}Affecter un patient \IeC {\`a} un parcours}{43}{section.A.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8}Visualiser et modifier le planning de toutes les ressources}{43}{section.A.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {B}Mod\IeC {\`e}le conceptuel de donn\IeC {\'e}es}{44}{appendix.B}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
 \select@language {french}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {D}Chiffrage du projet}{46}{appendix.D}
+\contentsline {chapter}{\numberline {C}Explications des tables du mod\IeC {\`e}le}{46}{appendix.C}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
 \select@language {french}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {E}Gestion de projet}{47}{appendix.E}
+\contentsline {chapter}{\numberline {D}Chiffrage du projet}{48}{appendix.D}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
 \select@language {french}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Trello}{47}{section.E.1}
+\contentsline {chapter}{\numberline {E}Gestion de projet}{49}{appendix.E}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
 \select@language {french}
 \defcounter {refsection}{0}\relax 
-\select@language {english}
-\defcounter {refsection}{0}\relax 
-\select@language {french}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Diagramme de Gantt}{48}{section.E.2}
-\defcounter {refsection}{0}\relax 
-\select@language {english}
-\defcounter {refsection}{0}\relax 
-\select@language {french}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Git et GitKraken}{48}{section.E.3}
+\contentsline {section}{\numberline {1}Trello}{49}{section.E.1}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
@@ -530,49 +538,113 @@
 \defcounter {refsection}{0}\relax 
 \select@language {french}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {F}Notice des livrables}{49}{appendix.F}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Livrable du 9/01/2019}{49}{section.F.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Livrable du 25/01/2019}{49}{section.F.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {G}D\IeC {\'e}tails des parcours utilis\IeC {\'e}s pour les tests}{50}{appendix.G}
+\contentsline {section}{\numberline {2}Diagramme de Gantt}{50}{section.E.2}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
 \select@language {french}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Parcours P1 : Ob\IeC {\'e}sit\IeC {\'e} s\IeC {\'e}v\IeC {\`e}re - diagnostic}{50}{section.G.1}
+\contentsline {section}{\numberline {3}Git et GitKraken}{50}{section.E.3}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
 \select@language {french}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Activit\IeC {\'e}s du parcours}{51}{paragraph*.10}
+\select@language {english}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Parcours P2 : Ob\IeC {\'e}sit\IeC {\'e} s\IeC {\'e}v\IeC {\`e}re - Post OP}{51}{section.G.2}
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {F}Notice des livrables}{51}{appendix.F}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Livrable du 9/01/2019}{51}{section.F.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Livrable du 11/02/2019}{51}{section.F.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {G}D\IeC {\'e}tails des parcours utilis\IeC {\'e}s pour les tests}{52}{appendix.G}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
 \select@language {french}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Activit\IeC {\'e}s du parcours}{51}{paragraph*.11}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Parcours P3 : Ob\IeC {\'e}sit\IeC {\'e} s\IeC {\'e}v\IeC {\`e}re - J+1an}{52}{section.G.3}
+\contentsline {section}{\numberline {1}Parcours P1 : Ob\IeC {\'e}sit\IeC {\'e} s\IeC {\'e}v\IeC {\`e}re - diagnostic}{52}{section.G.1}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
 \select@language {french}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Activit\IeC {\'e}s du parcours}{52}{paragraph*.12}
+\contentsline {paragraph}{Activit\IeC {\'e}s du parcours}{53}{paragraph*.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {H}Guide d\IeC {\'e}veloppeur}{53}{appendix.H}
+\contentsline {section}{\numberline {2}Parcours P2 : Ob\IeC {\'e}sit\IeC {\'e} s\IeC {\'e}v\IeC {\`e}re - Post OP}{53}{section.G.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1}Installation du projet}{53}{section.H.1}
+\select@language {english}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Structure du projet}{53}{section.H.2}
+\select@language {french}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliographie}{54}{appendix*.13}
+\contentsline {paragraph}{Activit\IeC {\'e}s du parcours}{53}{paragraph*.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Parcours P3 : Ob\IeC {\'e}sit\IeC {\'e} s\IeC {\'e}v\IeC {\`e}re - J+1an}{54}{section.G.3}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Activit\IeC {\'e}s du parcours}{54}{paragraph*.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {H}Guide d\IeC {\'e}veloppeur}{55}{appendix.H}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Installation du projet}{55}{section.H.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Mise en place de l\IeC {\textquoteright }environnement de d\IeC {\'e}veloppement}{55}{paragraph*.13}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Pr\IeC {\'e}requis}{55}{paragraph*.14}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{D\IeC {\'e}ploiement}{55}{paragraph*.15}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Structure du projet}{56}{section.H.2}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Contr\IeC {\^o}leurs}{57}{paragraph*.16}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Mod\IeC {\`e}les}{57}{paragraph*.17}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Vues}{58}{paragraph*.18}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliographie}{60}{appendix*.19}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 

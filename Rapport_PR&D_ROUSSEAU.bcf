@@ -2148,6 +2148,7 @@
     <bcf:citekey order="2">pochet_outil_nodate</bcf:citekey>
     <bcf:citekey order="3">coquelet_gestion_nodate</bcf:citekey>
     <bcf:citekey order="4">marynissen_literature_2019</bcf:citekey>
+    <bcf:citekey order="5">yang_outil_nodate</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nyt/global/WWW" type="entry" sortscheme="nyt" sortnamekeyscheme="global" labelprefix="WWW">
   <bcf:sorting>

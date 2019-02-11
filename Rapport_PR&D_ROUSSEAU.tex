@@ -46,10 +46,9 @@ Le sujet de ce travail rentre dans le cadre d'un projet visant à développer un
 
 Ce projet est la suite de plusieurs travaux effectués à l'école Polytech ces dernières années et qui ont abouti à une première version simple d'un outil sous forme de plateforme web. L'objectif est d'améliorer l'outil actuel en corrigeant certains problèmes et en ajoutant des fonctionnalités afin de se rapprocher d'une version finale exploitable à l'avenir. Parmi les fonctionnalités qui devront être ajoutées, on peut notamment penser à la planification automatique des activités de soin sur le calendrier ou encore l'ajout de notions de temps réel sur les éléments du calendrier.
 
-La première partie de ce rapport sera consacrée à l'analyse préliminaire de la plateforme et à la détermination des tâches à réaliser. Elle comprend des éléments sur le contexte de la réalisation, la description de la plateforme telle qu'elle se trouvait au début du projet, un état de l'art sur les modélisation de la planification automatique des activités, et la présentation des tâches qui seront effectuées durant les semaines de projet. La seconde partie sera dédiée aux détails des développements de la plateforme. Des documents complémentaires sont disponibles en annexe de ce rapport comme les diagrammes de Gantt, les diagrammes UML, des éléments de gestion de projet, etc. 
+La première partie de ce rapport sera consacrée à l'analyse préliminaire de la plateforme et à la détermination des tâches à réaliser. Elle comprend des éléments sur le contexte de la réalisation, la description de la plateforme telle qu'elle se trouvait au début du projet, un état de l'art sur les modélisation de la planification automatique des activités, et la présentation des tâches qui seront effectuées durant les semaines de projet. 
 
-%TODO PARTIE 2
-%Un guide développeur destiné aux personnes qui désireront reprendre le projet à l'avenir est également présent en complément.
+La seconde partie du rapport sera dédiée aux implémentations et aux développements réalisées au cours du projet. Des éléments concernant les phases de tests et la qualité de code seront également présentés. Des documents complémentaires sont disponibles en annexe de ce rapport comme les diagrammes de Gantt, les diagrammes UML, des éléments de gestion de projet, etc. Un guide développeur destiné aux personnes qui désireront reprendre le projet à l'avenir est également présent en \autoref{ann:guide}.
 
 
 \part{Analyse préliminaire et détermination des objectifs}
@@ -635,12 +634,16 @@ Les tests fonctionnels et les tests d'acceptances sont écrits de façon à ce q
 	\label{fig:exempleTest}
 \end{figure}
 
-
-%TODO Afficher le cmd des tests et faire des tests si possible
-
 Les tests se lancent en invite de commande en utilisant le script \javacode{codecept run} en précisant \javacode{--steps} si l'on souhaite voir les étapes de tests. Les détails concernant la mise en place du framework se trouvent sur leur site \url{https://codeception.com/quickstart}.
 
-Les résultats sont affichés comme on peut le voir sur la %TODO AJOUTER L'IMAGE 
+Les résultats sont affichés comme on peut le voir sur la \autoref{fig:codeception}.
+
+\begin{figure}
+	\includegraphics[scale=0.5]{images/codeception}
+	\caption{Affichage des résultats de tests Codepetion}
+	\label{fig:codeception}
+\end{figure}
+
 
 Par manque de temps, peu de tests ont pu être implémentés pour vérifier la viabilité de la plateforme et des corrections qui y ont été réalisées. L'idéal pour les prochains projets serait de faire un ensemble de tests sur chaque fonctionnalité de la plateforme de façon automatisé en utilisant le framework, ce qui permettrait de voir si un développement n'impacte pas les autres fonctionnalités existantes. 
 
@@ -683,22 +686,64 @@ Ainsi, comme convenu au lors des spécifications, cette planification est loin d
 
 \chapter{Qualité de code}
 
+Ce chapitre répertorie les éléments de qualité de code du projet au travers de deux éléments : la documentation et le framework \textit{SonarQube}.
 
 \section{Documentation}
 
+Il existe de nombreux frameworks permettant de générer la documentation de son projet PHP. Pour ma part, j'ai choisi le framework \textit{phpDocumentor}, dont les informations sont disponibles sur le site \url{https://docs.phpdoc.org/}. Ce framework est non seulement facile à installer mais il permet d'avoir un affichage claire du projet en un coup d'œil. La documentation du projet est disponible dans le répertoire \textit{documentation} de l'application.
 
 \section{SonarQube}
 
+Pour le développement de la plate-forme, nous nous sommes servis de 
+l'outil de qualité de code \textit{SonarQube}. C'est un logiciel libre permettant de mesurer la qualité du code produit en se basant sur divers règles mises en place au préalable. Il peut détecter les bugs potentiels, les duplications de code, la couverture de code par les tests unitaires, et bien d'autres. Il est adaptable et personnalisable selon les besoins et les langages que l'on souhaite utiliser avec de nombreux plug-ins à disposition.
+
+L'installation de SonarQube se fait très simplement. Il suffit de télécharger le programme, puis de lancer le script \textit{StartSonar.bat}. Une instance de SonarQube sera lancée, et une fois que le message "\textit{SonarQube is up}" s'incrit sur l'invite de commande, nous pouvons ouvrir la page du programme sur un navigateur. Par défaut, SonarQube utilise le port 9000 sur l'hôte local.
+
+Dès lors que le serveur \textit{SonarQube} est opérationnel, nous pouvons lancer une analyse du projet. Le serveur va donc analyser tous les fichiers sources du projet. Pour que le serveur puisse obtenir des résultats, il est nécessaire d'installer au préalable un scanner \textit{Sonar} correspondant au langage de programmation utilisé.
+
+Les résultats d'une analyse sont présentés dans une fenêtre comme sur la \autoref{fig:sonar}.
+
+\begin{figure}
+	\includegraphics[scale=0.25]{images/sonar_scanner1}
+	\caption{Fenêtre d'affichage de Sonar}
+	\label{fig:sonar}
+\end{figure}
+
+Comme on le voit sur l'image, \textit{SonarQube} a détecté plus de 380 problèmes dans le code. Cependant, la plupart d'entre elles viennent des fichiers de configuration de \textit{CodeIgniter}. On peut voir qu'il y a également 22 blocs de code dupliqués. \textit{SonarQube} apporte ainsi de nombreuses informations sur les erreurs ou les mauvaises pratiques présentes dans le code avec des explications précises pour chacun des cas trouvés.
 
 
 \chapter{Avancement du projet et suite à donner}
 
 
+Ce chapitre constitue la mise au point du projet à la fin de son échéance. Nous allons parcourir les fonctionnalités mises en place et les éléments à ajouter à l'avenir pour améliorer davantage la plateforme.
+
 \section{Fonctionnalités mises en place}
+
+À l'issue de ce projet, la plateforme a été améliorée et la majeure partie des objectifs fixés lors du chiffrage du projet (voir \autoref{ann:chiffrage}) ont été atteints. Parmi les fonctionnalités ajoutées, on peut citer :
+
+\begin{itemize}
+	\item La révision de la suppression des ressources
+	\item La révision de l'onglet "Plan de parcours"
+	\item La révision du formulaire de création de patient
+	\item L'ajout des tris dans les onglets d'affichage
+	\item L'implémentation de la planification automatique patient par patient
+\end{itemize}
+
+Lors du premier chiffrage, l'intention était d'aller plus loin dans les fonctionnalités, et notamment sur la partie Planification. Cependant, des retards dûs à la montée en compétence nécessaire en PHP et sur les frameworks utilisés ont réduit la marge de manœuvre sur les objectifs finaux. 
+
+Néanmoins, le but premier qui était d'implémenter une planification automatique des activités a été réalisé, ce qui permet d'envisager de nouvelles améliorations à l'avenir.
 
 
 \section{Fonctionnalités à ajouter ou à améliorer pour la suite du projet}
 
+
+De nombreux éléments peuvent être apportés à la plateforme afin qu'elle puisse être utilisée à l'avenir. Voici une liste non-exhaustive des ajouts qui pourraient être amenés à la plateforme:
+
+\begin{itemize}
+	\item Implémenter des jeux de données automatisés afin de faciliter les tests sur la plateforme
+	\item Améliorer la planification automatique en passant à des algorithmes d'ordonnancement et en prenant en compte davantage de contraintes
+	\item Ajouter une notion temps-réel à la plateforme, avec ajustement de la planification en direct selon les évènements dans l'hôpital
+\end{itemize}
 
 
 \chapter*{Bilan et conclusion}
@@ -711,11 +756,19 @@ Parmi les améliorations à effectuer, il y a dans un premier temps des amélior
 
 La suite du projet sera principalement consacrée aux développements des solutions évoquées dans les chapitres précédents. Certaines corrections ont déjà été réalisées à l'issue de cette partie, affectant l'affichage en général (corrections des fautes d'orthographe, révision de la suppression des ressources comme évoqué dans la \autoref{sec:suppr}, affichage du planning patient comme présenté dans la \autoref{sec:planPatient}). Les développements principaux, la planification automatique notamment, seront réalisées par la suite. 
 
+
 \section*{Bilan de la seconde partie}
+
+La seconde partie de ce projet aura été orientée développement plus que jamais. L'implémentation de la planification aura pris une majeure partie du temps dédié au projet dû à la complexité de la gestion de tous les facteurs, le code d'une part avec les algorithmes d'ordonnancement à penser, l'aspect graphique avec \textit{fullCalendar} et la base de données avec la gestion des différentes ressources à prendre en compte. 
+
+Néanmoins, l'objectif qui était de proposer une première solution respectant les contraintes principales, en particulier les précédences des activités entre elles, a été atteint. Le temps n'a pas permis d'étoffer davantage l'aspect ordonnancement en tant que tel, mais j'espère toutefois que ce rapport permette d'éclaicir certaines pistes pour le futur de l'outil.
 
 
 \section*{Conclusions}
 
+Ce projet de Recherche et Développement m'aura beaucoup apporté dans de nombreux domaines de compétence. Sur un aspect purement technique dans un premier temps, j'ai pu découvrir ou re-découvrir certaines technologies web que je ne connaissais pas ou très peu. Sur l'aspect de l'évolutivité également, reprendre un projet provenant de plusieurs personnes différentes au fil des années n'est jamais quelque chose d'aisé. Chacun a son style de développement et sa vision de voir les choses, démêler les différents aspects des développements était une expérience très intéressante pour moi et qui m'apportera à coup sûr à l'avenir.
+
+Ce projet peut encore beaucoup évoluer s'il trouve repreneur dans les années à venir. Si une suite est donnée, je souhaite bon courage à mon successeur en espérant que ce projet lui apporte de la réussite.
 
 
 \appendix
@@ -899,7 +952,7 @@ Pour aider au versionning, j'utilise \textbf{GitKraken} qui propose une interfac
 
 \chapter{Notice des livrables}
 
-Cette partie regroupe les notices des deux livrables réalisés lors du projet: le premier le 9 janvier 2019 et le second à la fin du projet, c'est-à-dire le 25 janvier 2019.
+Cette partie regroupe les notices des deux livrables réalisés lors du projet: le premier le 9 janvier 2019 et le second à la fin du projet, c'est-à-dire le 11 février 2019.
 
 
 \section{Livrable du 9/01/2019}
@@ -908,13 +961,15 @@ Cette partie regroupe les notices des deux livrables réalisés lors du projet: 
 
 - Corrections sur l'onglet Plan de Parcours: affichage des jours de la semaine sous forme de texte (lundi, mardi, etc.) plutôt que par des chiffres, correction de la limite du nombre de patients affecté (limité à 10 auparavant, jusqu'à 99 maintenant)
 
-- Ajout de règles supplémentaires sur le formulaire de création de patients: Aucune restriction sur les numéros de rue -> Numéro de rue limité à 5 chiffres, caractère numérique obligatoire, Aucune restriction sur les numéros de téléphone -> l'entrée doit contenir 10 chiffres exactement, Numéro de sécurité sociale maximum 15 chiffres -> Numéro de sécurité sociale exactement 15 chiffres.
+- Ajout de règles supplémentaires sur le formulaire de création de patients: Aucune restriction sur les numéros de rue $\rightarrow$ Numéro de rue limité à 5 chiffres, caractère numérique obligatoire, Aucune restriction sur les numéros de téléphone $\rightarrow$ l'entrée doit contenir 10 chiffres exactement, Numéro de sécurité sociale maximum 15 chiffres $\rightarrow$ Numéro de sécurité sociale exactement 15 chiffres.
 
 - Fonction de tri dans les onglets Gérer: en cliquant sur les en-têtes des colonnes, la colonne correspondante est triée par ordre alphabétique. En cliquant à nouveau, la colonne est dans l'ordre alphabétique inversé. Les colonnes affectées sont 
 
 - Correction de fautes d'orthographe diverses
 
-\section{Livrable du 25/01/2019}
+\section{Livrable du 11/02/2019}
+
+- Ajout de la planification automatique. Les évènements sont ajoutés patient par patient, avec la première ressource disponible. Les contraintes de délais minimum et maximum entre les activités ne sont pas prises en compte.
 
 %TODO Ajouter la notice du dernier livrable
 
@@ -1004,17 +1059,127 @@ Chaque parcours dispose d'un code pour les reconnaître plus facilement: P1, P2 
 \end{description}
 
 \chapter{Guide développeur}
-
+\label{ann:guide}
 
 Cette annexe est destinée aux développeurs souhaitant prendre en main la suite du projet. Ce guide va regrouper les instructions permettant d'installer le projet avec l'environnement requis. 
 
+Ce guide est inspiré de celui de Yang Jing effectué lors du projet précédent \cite{yang_outil_nodate}.
 
 \section{Installation du projet}
 
 
+\paragraph{Mise en place de l’environnement de développement}
+
+L'application web a été implémentée sous l'IDE \textit{netbeans}. La base de données utilisée est MySQL par l'intermédiaire de \textit{WAMP}
+
+\paragraph{Prérequis}
+
+Les différentes sources de l'application sont disponibles sur GitHub à l'adresse suivante :
+\url{https://github.com/RomainR37/ParcoursPatient}
+
+Pour pouvoir utiliser l'application, il faut avoir un serveur web et d'un serveur de base de données sur sa machine de préférence WAMP.
+
+\paragraph{Déploiement}
+
+Pour déployer l'application, il suffit de réaliser ces différentes étapes :
+\begin{itemize}
+	\item Copier toute les sources dans un dossier www (WAMP par exemple)
+	\item Exécuter le script « subway.sql » dans PhpMyAdmin afin de créer et d'ajouter des données à la base de données 
+	\item Aller sur l'adresse suivant : http://localhost/subway/.
+\end{itemize}
+
+Auparavant, pensez à changer le mot de passe d'accès à MySQL dans le fichier \textit{database.php} dans le répertoire \textit{config}.
+
+Pour avoir accès à l'intégralité de la plateforme, le nom d'utilisateur est "admin" avec pour mot de passe "admin".
+
 \section{Structure du projet}
 
+L'application web a été développée en utilisant les technologies suivantes :
+\begin{itemize}
+	\item PHP
+	\item HTML, CSS
+	\item JavaScript
+\end{itemize}
+
+Pour le code PHP, nous avons utilisé un Framework PHP (codeIgniter) basé sur le modèle MVC (Modèle - Vue - Contrôleur). L'utilité de ce Framework est de pouvoir séparer les données des différentes vues permettant l'affichage de ces données. Concernant le CSS, nous avons également utilisé bootstrap afin d'avoir un rendu agréable sans avoir besoin de grandes connaissances dans le domaine.
+ 
+Voici l'architecture générale de notre application web : 
+
+\begin{figure}
+	\includegraphics[scale=1]{images/arboProjet}
+	\caption{Arborescence du projet}
+	\label{fig:arboProjet}
+\end{figure}
+
+Nous nous plaçons dans le répertoire \textit{source files} qui est le répertoire qui nous intéresse le plus. Dans ce répertoire, nous trouvons un dossier BD qui contient le script à exécuter permettant l'ajout de données tests afin d'utiliser l'application sans devoir créer ses propres données soi-même.
+ 
+Le répertoire « assets » contient tous les fichiers images, javascript, css nécessaire à notre application. Le répertoire documentation contient toute la documentation nécessaire à la compréhension du
+code. Les répertoires « sys » et « user\_guide »ne nous intéressent pas forcément. Le premier contient tous les fichiers nécessaires à l'utilisation du Framework \textit{codeIgniter}. Le répertoire qui nous intéresse le plus est le répertoire « app » qui contient l'intégralité du code de notre application. 
+
+\begin{figure}
+	\includegraphics[scale=1]{images/arboMVC}
+	\caption{Arborescence du répertoire source}
+	\label{fig:arboSource}
+\end{figure}
+
+Dans ce répertoire nous trouvons 4 sous répertoires : 
+
+\begin{itemize}
+	\item Config (répertoire de configuration du projet comme la base de données etc.)
+	\item Controllers (tous les contrôleurs de notre application)
+	\item Models (toutes les données de notre application : voir diagramme de classe)
+	\item Views (les vues permettant l’affichage des données) 
+\end{itemize}
+
+\paragraph{Contrôleurs}
+
+Tous les contrôleurs héritent d'une classe CI \textit{Controller} (contrôleur de base du Framework codeIgniter). Les contrôleurs permettant de faire le lien entre les données et les vues. Les contrôleurs permettent dans la majeur partie des cas de faire appel à un modèle qui lui-même exécute une requête à la base de données et le contrôleur envoie ces données à la vue qui se charge de les afficher. 
+Nous allons prendre un exemple pour voir l'utilisation d’un contrôleur. 
+
+\begin{figure}
+	\includegraphics[scale=0.75]{images/controleur}
+	\caption{Aperçu d'un contrôleur}
+	\label{fig:controleur}
+\end{figure}
+
+Dans l'exemple ci-dessus, nous prenons le cas du contrôleur « Activites » et la méthode « index » permettant d'afficher toutes les activités sur une page. La méthode charge le modèle nécessaire à la récupération des différentes activités, nous faisons appel à la méthode « getAllActivites » du modèle « M\_Activite » permettant de récupérer toute la liste des activités. Ensuite, nous créons un tableau data permettant de récupérer le résultat de la méthode « getAllActivites » ainsi que le chemin de la vue correspondante. 
+
+Ensuite, notre contrôleur charge la vue principale (voir dans la partie explication des vues) en lui donnant également le chemin de la vue « V\_activite » ainsi que les données provenant du modèle. Chaque contrôleur et chaque méthode sont basés sur cette structure. 
+
+\paragraph{Modèles}
+
+Les modèles exécutent uniquement des requêtes à la base de données. Un exemple avec la \autoref{fig:modele}.
+
+\begin{figure}
+	\includegraphics[scale=1]{images/modele}
+	\caption{Aperçu d'une fonction d'un modèle}
+	\label{fig:modele}
+\end{figure}
 
 
+\paragraph{Vues}
+
+Les vues de notre application sont dans le dossier « views ». Chaque vue de notre application dépend d'une vue qu'on appelle vue générale (V\_generale). C'est dans la vue générale que l'on ajoute le menu, le pied de page ainsi que tous les fichiers js et css nécessaires au fonctionnement de notre application. 
+
+Le schéma de la structure d'une vue se trouve à la \autoref{fig:schemaVues}.
+
+\begin{figure}
+	\includegraphics[scale=0.7]{images/schemaVue}
+	\caption{Schéma d'une vue}
+	\label{fig:schemaVues}
+\end{figure}
+
+Dans notre application, chaque vue contient la vue générale, c'est uniquement la partie contenue de la page qui est modifiée. 
+
+Voici le code expliquant ce mécanisme : 
+
+\begin{figure}
+	\includegraphics[scale=1]{images/vue}
+	\caption{Mécanisme de la vue}
+	\label{fig:vue}
+\end{figure}
+
+
+La variable « \$chemin » contient le chemin de la vue permettant d’afficher les données en fonction des actions de l'utilisateur. C'est pour cela que nous devons définir une variable chemin dans nos différentes méthodes de nos contrôleurs. 
 
 \end{document}

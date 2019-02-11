@@ -2,6 +2,10 @@
 \defcounter {refsection}{0}\relax 
 \select@language {french}
 \defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \select@language {english}
@@ -360,6 +364,12 @@
 \defcounter {refsection}{0}\relax 
 \select@language {french}
 \defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2}{\ignorespaces Affichage des r\IeC {\'e}sultats de tests Codepetion\relax }}{34}{figure.6.2}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
 \select@language {french}
@@ -368,13 +378,17 @@
 \defcounter {refsection}{0}\relax 
 \select@language {french}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2}{\ignorespaces Planification vue du personnel\relax }}{34}{figure.6.2}
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3}{\ignorespaces Planification vue du personnel\relax }}{35}{figure.6.3}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
 \select@language {french}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3}{\ignorespaces Planification vue des salles\relax }}{35}{figure.6.3}
+\contentsline {figure}{\numberline {4}{\ignorespaces Planification vue des salles\relax }}{35}{figure.6.4}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
@@ -382,7 +396,23 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Qualit\IeC {\'e} de code}{}{chapter.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1}{\ignorespaces Fen\IeC {\^e}tre d'affichage de Sonar\relax }}{37}{figure.7.1}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
@@ -428,13 +458,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {E}Gestion de projet}{}{appendix.E}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces Aper\IeC {\c c}u de ma page \textbf {Trello}\relax }}{47}{figure.E.1}
+\contentsline {figure}{\numberline {1}{\ignorespaces Aper\IeC {\c c}u de ma page \textbf {Trello}\relax }}{49}{figure.E.1}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
 \select@language {french}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2}{\ignorespaces Diagramme de Gantt\relax }}{48}{figure.E.2}
+\contentsline {figure}{\numberline {2}{\ignorespaces Diagramme de Gantt\relax }}{50}{figure.E.2}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
@@ -444,7 +474,7 @@
 \defcounter {refsection}{0}\relax 
 \select@language {french}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3}{\ignorespaces Diagramme de Gantt\relax }}{48}{figure.E.3}
+\contentsline {figure}{\numberline {3}{\ignorespaces Diagramme de Gantt\relax }}{50}{figure.E.3}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
@@ -460,25 +490,75 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {G}D\IeC {\'e}tails des parcours utilis\IeC {\'e}s pour les tests}{}{appendix.G}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces Parcours P1\relax }}{50}{figure.G.1}
+\contentsline {figure}{\numberline {1}{\ignorespaces Parcours P1\relax }}{52}{figure.G.1}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
 \select@language {french}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2}{\ignorespaces Parcours P2\relax }}{51}{figure.G.2}
+\contentsline {figure}{\numberline {2}{\ignorespaces Parcours P2\relax }}{53}{figure.G.2}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
 \select@language {french}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3}{\ignorespaces Parcours P3\relax }}{52}{figure.G.3}
+\contentsline {figure}{\numberline {3}{\ignorespaces Parcours P3\relax }}{54}{figure.G.3}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
 \select@language {french}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {H}Guide d\IeC {\'e}veloppeur}{}{appendix.H}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {1}{\ignorespaces Arborescence du projet\relax }}{56}{figure.H.1}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2}{\ignorespaces Arborescence du r\IeC {\'e}pertoire source\relax }}{57}{figure.H.2}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3}{\ignorespaces Aper\IeC {\c c}u d'un contr\IeC {\^o}leur\relax }}{57}{figure.H.3}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4}{\ignorespaces Aper\IeC {\c c}u d'une fonction d'un mod\IeC {\`e}le\relax }}{58}{figure.H.4}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {5}{\ignorespaces Sch\IeC {\'e}ma d'une vue\relax }}{58}{figure.H.5}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6}{\ignorespaces M\IeC {\'e}canisme de la vue\relax }}{58}{figure.H.6}
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\select@language {french}
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 

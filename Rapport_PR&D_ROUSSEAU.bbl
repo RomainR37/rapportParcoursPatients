@@ -146,6 +146,34 @@
       \verb rapport_prd_pochet_guillaume.pdf:C\:\\Users\\Romain\\Documents\\Projet_R&D_2\\PRD_Livrables_pochet_guillaume\\rapport_prd_pochet_guillaume.pdf:application/pdf
       \endverb
     \endentry
+    \entry{yang_outil_nodate}{report}{}
+      \name{author}{1}{}{%
+        {{hash=590e4e39e560d4f5c33781113cd98b41}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Jing},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {fr}%
+      }
+      \strng{namehash}{590e4e39e560d4f5c33781113cd98b41}
+      \strng{fullhash}{590e4e39e560d4f5c33781113cd98b41}
+      \strng{authornamehash}{590e4e39e560d4f5c33781113cd98b41}
+      \strng{authorfullhash}{590e4e39e560d4f5c33781113cd98b41}
+      \field{sortinit}{Y}
+      \field{sortinithash}{f86c10978eb0c0879609ce6a4f43da7b}
+      \field{labelprefix}{WWW}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Outil de gestion de parcours patient dans un hôpital de jour}
+      \field{type}{techreport}
+      \field{pages}{56}
+      \range{pages}{1}
+      \verb{file}
+      \verb Rapport_PRD_YANG JING.pdf:C\:\\Users\\Romain\\Documents\\Projet_R&D_2\\PRD_2017_18_YANG JING\\Rapport_PRD_YANG JING.pdf:application/pdf
+      \endverb
+    \endentry
   \endsortlist
   \sortlist[entry]{nyt/global/}
     \entry{coquelet_gestion_nodate}{report}{}
@@ -269,6 +297,33 @@
       \range{pages}{1}
       \verb{file}
       \verb rapport_prd_pochet_guillaume.pdf:C\:\\Users\\Romain\\Documents\\Projet_R&D_2\\PRD_Livrables_pochet_guillaume\\rapport_prd_pochet_guillaume.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{yang_outil_nodate}{report}{}
+      \name{author}{1}{}{%
+        {{hash=590e4e39e560d4f5c33781113cd98b41}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Jing},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {fr}%
+      }
+      \strng{namehash}{590e4e39e560d4f5c33781113cd98b41}
+      \strng{fullhash}{590e4e39e560d4f5c33781113cd98b41}
+      \strng{authornamehash}{590e4e39e560d4f5c33781113cd98b41}
+      \strng{authorfullhash}{590e4e39e560d4f5c33781113cd98b41}
+      \field{sortinit}{Y}
+      \field{sortinithash}{f86c10978eb0c0879609ce6a4f43da7b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Outil de gestion de parcours patient dans un hôpital de jour}
+      \field{type}{techreport}
+      \field{pages}{56}
+      \range{pages}{1}
+      \verb{file}
+      \verb Rapport_PRD_YANG JING.pdf:C\:\\Users\\Romain\\Documents\\Projet_R&D_2\\PRD_2017_18_YANG JING\\Rapport_PRD_YANG JING.pdf:application/pdf
       \endverb
     \endentry
   \endsortlist
