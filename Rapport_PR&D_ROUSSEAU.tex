@@ -615,16 +615,70 @@ Nous pouvons remarquer que la méthode prend en entrée les heures de début et 
 
 À la fin de l'exécution, l'algorithme retourne les dates à laquelle l'activité va être réaliser. Ces valeurs vont permettre d'ajuster nos heures de début des activités suivantes, comme on le voit avec la variable \$start à la ligne 13 de l'algo de la \autoref{fig:algoPlanAuto}.
 
-Le point faible de cette méthode vient du fait qu'elle favorise grandement les premiers patients de la journée. En effet ceux-ci n'auront pas de problème de disponibilité vu qu'aucune ressource n'est occupée au début de la journée, tandis que les derniers seront sur la liste risqueront d'avoir des temps d'attente considérables car très peu de ressources seront disponibles. 
+Le point faible de cette méthode vient du fait qu'elle favorise grandement les premiers patients de la journée. En effet ceux-ci n'auront pas de problème de disponibilité vu qu'aucune ressource n'est occupée au début de la journée, tandis que les derniers seront sur la liste risqueront d'avoir des temps d'attente considérables car très peu de ressources seront disponibles. Un autre problème avec cette implémentation est que les contraintes de délais entre les activités ne sont pas pris en compte. L'ajout de ces contraintes nécessite un soin particulier car elles peuvent impliquer des planifications impossibles. Or notre but ici est non pas de proposer une solution parfaite et optimale mais d'avoir une solution viable que l'utilisateur peut modifier par la suite s'il le souhaite. 
 
 
 \chapter{Validation et Tests}
 
 
+Ce chapitre est consacré à la validation des développements réalisés. Les tests de la plateforme sont séparés en deux parties : d'un côté les tests pour vérifier les corrections de bugs avec le framework Codeception, de l'autre des tests de charge sur la planification automatique pour voir les limites de la solution implémentée. 
+
 \section{Le framework Codeception}
 
+Il existe de nombreux moyens pour réaliser des tests sur une plateforme web. Pour ma part, j'ai utilisé le framework \textit{Codeception}. Il s'agit d'un framework permettant de couvrir une application entièrement car il intègre tout type de tests: les tests unitaires en se basant sur \textit{PHPUnit}, les tests fonctionnels et les tests d'acceptances qui simulent des actions d'utilisateur lambda sur le site. 
 
-\section{Validation}
+Les tests fonctionnels et les tests d'acceptances sont écrits de façon à ce qu'ils soient compréhensibles par tous. La \autoref{fig:exempleTest} montre un exemple de tests pour vérifier si on peut se connecter sur la page de connexion.
+
+\begin{figure}
+	\includegraphics[scale=1]{images/exempleTest}
+	\caption{Exemple de test d'acceptance pour se connecter}
+	\label{fig:exempleTest}
+\end{figure}
+
+
+%TODO Afficher le cmd des tests et faire des tests si possible
+
+Les tests se lancent en invite de commande en utilisant le script \javacode{codecept run} en précisant \javacode{--steps} si l'on souhaite voir les étapes de tests. Les détails concernant la mise en place du framework se trouvent sur leur site \url{https://codeception.com/quickstart}.
+
+Les résultats sont affichés comme on peut le voir sur la %TODO AJOUTER L'IMAGE 
+
+Par manque de temps, peu de tests ont pu être implémentés pour vérifier la viabilité de la plateforme et des corrections qui y ont été réalisées. L'idéal pour les prochains projets serait de faire un ensemble de tests sur chaque fonctionnalité de la plateforme de façon automatisé en utilisant le framework, ce qui permettrait de voir si un développement n'impacte pas les autres fonctionnalités existantes. 
+
+\section{Test de la planification automatique}
+
+Pour la planification automatique, des tests de charge ont été mis en place afin de voir si elle supporte un nombre conséquent de patient. Pour tester la planification, nous nous sommes basés sur les données fournis par l'AP-HP qui nous permettent d'avoir des informations sur les ressources matérielles à disposition et sur le nombre de patients qui peuvent être pris en charge sur une journée. Aussi, pour ses tests, un secteur précis de l'hôpital, à savoir les traitements de l'obésité, afin d'avoir un aperçu sur les partages de ressources communes à plusieurs patients. 
+
+Les parcours sont distingués par des codes : P1, P2 et P3, et certaines abréviations sur les ressources peuvent apparaître. Ceux-ci sont détaillés en \autoref{ann:parcours}.
+
+Par conséquent, voici les données d'entrée du test:
+
+\begin{itemize}
+	\item 9 patients disponibles de 8h à 20h: 4 sur le parcours P1, 2 sur le parcours P2 et 3 sur le parcours P3
+	\item Le personnel est composé de : 3 IDE obésité, 4 IDE, 2 psychologues, 3 diététiciens, 3 nutritionnistes, 2 internes obésité et 1 médecin hépato.
+	\item L'hôpital dispose des salles suivantes : 2 box prélèvement, 4 HDJ obésité et 5 bureaux CS
+\end{itemize}
+
+Avec ses données, la planification obtenue est celle présente sur les \autoref{fig:planAuto1}, avec une vue sur le personnel, et \autoref{fig:planAuto2}, avec un focus sur les salles cette fois.
+
+\begin{figure}
+	\includegraphics[scale=0.25]{images/planAuto1}
+	\caption{Planification vue du personnel}
+	\label{fig:planAuto1}
+\end{figure}
+
+\begin{figure}
+	\includegraphics[scale=0.25]{images/planAuto2}
+	\caption{Planification vue des salles}
+	\label{fig:planAuto2}
+\end{figure}
+
+Plusieurs constats peuvent être faits à partir de ces deux images. Tout d'abord, toutes les activités ont été correctement réparties sur le calendrier. Ensuite, la répartition des tâches entre certains membres du personnel semble assez disparate. D'un côté, nous avons les IDE obésité qui ont un calendrier assez similaire dans la matinée, et de l'autre nous avons deux IDE qui n'ont aucune tâche d'attribuer. Ceci s'explique par le fait que l'on sélectionne les premières ressources disponibles, ainsi la première infirmière aura vraisemblablement le plus de tâches à réaliser. 
+
+Au niveau des problèmes de planification, nous avons les trois derniers patients qui débordent sur la fin du calendrier, ce qui signifie que dans cette configuration, 6 patients peuvent rentrer dans les délais. Cela ne laisse que très peu de marges de manœuvre pour l'hôpital puisque, d'après leurs données fournies, ils prévoient d'accueillir 6 patients sur les parcours Obésité. Un autre aspect à prendre en compte est le temps d'attente des patients qui décuple au fil de la journée. Un exemple avec le sixième patient qui commence son parcours à 8h25 le matin pour repartir à 18h05 le soir.
+
+Enfin, parmi les problèmes de la planification, nous avons l'agencement des salles qui peut sembler assez chaotique, ou tout du moins difficilement possible dans la vie réelle. Un exemple avec le patient cinq qui passe du bureau CS 4, avant d'aller au 3 puis au 2 au final. Cela provient de la sélection des ressources pour les activités qui ne dépend pas des activités précédentes. La logique voudrait que si l'on doit effectuer deux activités dans le même type de salle consécutivement, on reste dans la même salle ce qui n'est pas le cas ici. 
+
+Ainsi, comme convenu au lors des spécifications, cette planification est loin d'être parfaite et nécessiterait d'avoir de nombreux ajustements pour améliorer le rendu final. Néanmoins, l'objectif qui est de proposer une solution directe qui peut être ajustée ensuite par l'utilisateur est atteint.
 
 
 \chapter{Qualité de code}
@@ -862,6 +916,92 @@ Cette partie regroupe les notices des deux livrables réalisés lors du projet: 
 
 \section{Livrable du 25/01/2019}
 
+%TODO Ajouter la notice du dernier livrable
+
+\chapter{Détails des parcours utilisés pour les tests}
+\label{ann:parcours}
+
+3 parcours-patients ont été utilisées lors des tests de la planification automatique. Les voici présentés dans cette annexe. 
+
+Chaque parcours dispose d'un code pour les reconnaître plus facilement: P1, P2 et P3. Plusieurs abréviations sont utilisées, parmi lesquelles:
+
+\begin{description}
+	\item[IDE] : infirmier diplômé d'état
+	\item[ECG] : électrocardiogramme
+	\item[Bureau CS] : bureau consultation
+\end{description}
+
+
+\section{Parcours P1 : Obésité sévère - diagnostic}
+
+\begin{figure}
+	\includegraphics[scale=0.35]{images/parcoursP1}
+	\caption{Parcours P1}
+	\label{fig:P1}
+\end{figure}
+
+\paragraph{Activités du parcours}
+
+\begin{description}
+	\item[RDV Paramédical Obésité]: 20 minutes, nécessite 1 IDE Obésité et 1 Bureau CS
+	\item[ECG]: 15 minutes, nécessite 1 IDE et 1 Box Prélèvement
+	\item[Bilan biologique]: 20 minutes, nécessite 1 IDE et 1 Box Prélèvement
+	\item[Echo hépatique]: 15 minutes
+	\item[Calorimétrie]: 30 minutes, nécessite 1 IDE Obésité et 1 HDJ obésité
+	\item[Collation]: 15 minutes
+	\item[Bilan anthropométrique]: 1 heure, nécessite 1 interne obésité et 1 Bureau CS
+	\item[Entretien psy]: 40 minutes, nécessite 1 psychologue et 1 Bureau CS
+	\item[Entretien infirmier]: 30 minutes, nécessite 1 IDE obésité et 1 Bureau CS
+	\item[Entretien diet]: 1 heure, nécessite 1 diététicien et 1 Bureau CS
+	\item[Synthèse]: 30 minutes, nécessite 1 nutritionniste et 1 Bureau CS 
+\end{description}
+
+
+\section{Parcours P2 : Obésité sévère - Post OP}
+
+\begin{figure}
+	\includegraphics[scale=0.35]{images/parcoursP2}
+	\caption{Parcours P2}
+	\label{fig:P2}
+\end{figure}
+
+\paragraph{Activités du parcours}
+
+\begin{description}
+	\item[RDV Paramédical Obésité]: 20 minutes, nécessite 1 IDE Obésité et 1 Bureau CS
+	\item[Bilan biologique]: 20 minutes, nécessite 1 IDE et 1 Box Prélèvement
+	\item[TOGD]: 20 minutes
+	\item[Collation]: 15 minutes
+	\item[Bilan anthropométrique]: 1 heure, nécessite 1 interne obésité et 1 Bureau CS
+	\item[Entretien psy]: 40 minutes, nécessite 1 psychologue et 1 Bureau CS
+	\item[Entretien infirmier]: 30 minutes, nécessite 1 IDE obésité et 1 Bureau CS
+	\item[Entretien diet]: 1 heure, nécessite 1 diététicien et 1 Bureau CS
+	\item[Synthèse]: 30 minutes, nécessite 1 nutritionniste et 1 Bureau CS 
+\end{description}
+
+\section{Parcours P3 : Obésité sévère - J+1an}
+
+\begin{figure}
+	\includegraphics[scale=0.35]{images/parcoursP3}
+	\caption{Parcours P3}
+	\label{fig:P3}
+\end{figure}
+
+\paragraph{Activités du parcours}
+
+\begin{description}
+	\item[RDV Paramédical Obésité]: 20 minutes, nécessite 1 IDE Obésité et 1 Bureau CS
+	\item[Bilan biologique]: 20 minutes, nécessite 1 IDE et 1 Box Prélèvement
+	\item[Echo hépatique]: 15 minutes
+	\item[Calorimétrie]: 30 minutes, nécessite 1 IDE Obésité et 1 HDJ obésité
+	\item[Collation]: 15 minutes
+	\item[Bilan anthropométrique]: 1 heure, nécessite 1 interne obésité et 1 Bureau CS
+	\item[Fibroscan]: 10 minutes, nécessite 1 médecin Hépato et 1 HDJ obésité	
+	\item[Entretien psy]: 40 minutes, nécessite 1 psychologue et 1 Bureau CS
+	\item[Entretien infirmier]: 30 minutes, nécessite 1 IDE obésité et 1 Bureau CS
+	\item[Entretien diet]: 1 heure, nécessite 1 diététicien et 1 Bureau CS
+	\item[Synthèse]: 30 minutes, nécessite 1 nutritionniste et 1 Bureau CS 
+\end{description}
 
 \chapter{Guide développeur}
 
