@@ -681,7 +681,7 @@ Au niveau des problèmes de planification, nous avons les trois derniers patient
 
 Enfin, parmi les problèmes de la planification, nous avons l'agencement des salles qui peut sembler assez chaotique, ou tout du moins difficilement possible dans la vie réelle. Un exemple avec le patient cinq qui passe du bureau CS 4, avant d'aller au 3 puis au 2 au final. Cela provient de la sélection des ressources pour les activités qui ne dépend pas des activités précédentes. La logique voudrait que si l'on doit effectuer deux activités dans le même type de salle consécutivement, on reste dans la même salle ce qui n'est pas le cas ici. 
 
-Ainsi, comme convenu au lors des spécifications, cette planification est loin d'être parfaite et nécessiterait d'avoir de nombreux ajustements pour améliorer le rendu final. Néanmoins, l'objectif qui est de proposer une solution directe qui peut être ajustée ensuite par l'utilisateur est atteint.
+Ainsi, comme convenu lors des spécifications, cette planification est loin d'être parfaite et nécessiterait d'avoir de nombreux ajustements pour améliorer le rendu final. Néanmoins, l'objectif qui est de proposer une solution directe qui peut être ajustée ensuite par l'utilisateur est atteint.
 
 
 \chapter{Qualité de code}
@@ -754,7 +754,7 @@ De nombreux éléments peuvent être apportés à la plateforme afin qu'elle pui
 
 Parmi les améliorations à effectuer, il y a dans un premier temps des améliorations générales sur la plateforme (sur l'affichage, l'ergonomie, l'expérience utilisateur en général) et dans un second temps, la planification automatique des activités. Celle-ci nécessitera la majorité du temps de développement dans la seconde partie du projet.
 
-La suite du projet sera principalement consacrée aux développements des solutions évoquées dans les chapitres précédents. Certaines corrections ont déjà été réalisées à l'issue de cette partie, affectant l'affichage en général (corrections des fautes d'orthographe, révision de la suppression des ressources comme évoqué dans la \autoref{sec:suppr}, affichage du planning patient comme présenté dans la \autoref{sec:planPatient}). Les développements principaux, la planification automatique notamment, seront réalisées par la suite. 
+La suite du projet sera principalement consacrée aux développements des solutions évoquées dans les chapitres précédents. Certaines corrections ont déjà été réalisées à l'issue de cette partie, affectant l'affichage en général (corrections des fautes d'orthographe, révision de la suppression des ressources comme évoquée dans la \autoref{sec:suppr}, affichage du planning patient comme présenté dans la \autoref{sec:planPatient}). Les développements principaux, la planification automatique notamment, seront réalisées par la suite. 
 
 
 \section*{Bilan de la seconde partie}
@@ -963,7 +963,7 @@ Cette partie regroupe les notices des deux livrables réalisés lors du projet: 
 
 - Ajout de règles supplémentaires sur le formulaire de création de patients: Aucune restriction sur les numéros de rue $\rightarrow$ Numéro de rue limité à 5 chiffres, caractère numérique obligatoire, Aucune restriction sur les numéros de téléphone $\rightarrow$ l'entrée doit contenir 10 chiffres exactement, Numéro de sécurité sociale maximum 15 chiffres $\rightarrow$ Numéro de sécurité sociale exactement 15 chiffres.
 
-- Fonction de tri dans les onglets Gérer: en cliquant sur les en-têtes des colonnes, la colonne correspondante est triée par ordre alphabétique. En cliquant à nouveau, la colonne est dans l'ordre alphabétique inversé. Les colonnes affectées sont 
+- Fonction de tri dans les onglets Gérer: en cliquant sur les en-têtes des colonnes, la colonne correspondante est triée par ordre alphabétique. En cliquant à nouveau, la colonne est dans l'ordre alphabétique inversé. Les colonnes affectées sont les plus pertinentes (Nom, prénom, fonction, etc.)
 
 - Correction de fautes d'orthographe diverses
 
@@ -971,7 +971,8 @@ Cette partie regroupe les notices des deux livrables réalisés lors du projet: 
 
 - Ajout de la planification automatique. Les évènements sont ajoutés patient par patient, avec la première ressource disponible. Les contraintes de délais minimum et maximum entre les activités ne sont pas prises en compte.
 
-%TODO Ajouter la notice du dernier livrable
+-Nettoyage du code et génération d'une nouvelle documentation
+
 
 \chapter{Détails des parcours utilisés pour les tests}
 \label{ann:parcours}
@@ -1083,7 +1084,7 @@ Pour pouvoir utiliser l'application, il faut avoir un serveur web et d'un serveu
 
 Pour déployer l'application, il suffit de réaliser ces différentes étapes :
 \begin{itemize}
-	\item Copier toute les sources dans un dossier www (WAMP par exemple)
+	\item Copier toutes les sources dans un dossier www (WAMP par exemple)
 	\item Exécuter le script « subway.sql » dans PhpMyAdmin afin de créer et d'ajouter des données à la base de données 
 	\item Aller sur l'adresse suivant : http://localhost/subway/.
 \end{itemize}

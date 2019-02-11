@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.1.12)  11 FEB 2019 05:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.1.12)  11 FEB 2019 06:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3609,13 +3609,13 @@ Annexe G.
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \caption with sig. 'om' on line 992.
+. Redefining command \caption with sig. 'om' on line 993.
 .................................................
 <images/parcoursP1.png, id=694, 1254.6875pt x 752.8125pt>
 File: images/parcoursP1.png Graphic file (type png)
 
 <use images/parcoursP1.png>
-Package pdftex.def Info: images/parcoursP1.png used on input line 993.
+Package pdftex.def Info: images/parcoursP1.png used on input line 994.
 (pdftex.def)             Requested size: 439.1472pt x 263.48831pt.
 
 * Missing: images/parcoursP1.pax
@@ -3625,27 +3625,27 @@ Package pdftex.def Info: images/parcoursP1.png used on input line 993.
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \caption with sig. 'om' on line 1017.
+. Redefining command \caption with sig. 'om' on line 1018.
 .................................................
 
 <images/parcoursP2.png, id=700, 1254.6875pt x 752.8125pt>
 File: images/parcoursP2.png Graphic file (type png)
 
 <use images/parcoursP2.png>
-Package pdftex.def Info: images/parcoursP2.png used on input line 1018.
+Package pdftex.def Info: images/parcoursP2.png used on input line 1019.
 (pdftex.def)             Requested size: 439.1472pt x 263.48831pt.
 
 * Missing: images/parcoursP2.pax
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \caption with sig. 'om' on line 1039.
+. Redefining command \caption with sig. 'om' on line 1040.
 .................................................
 <images/parcoursP3.png, id=701, 1254.6875pt x 752.8125pt>
 File: images/parcoursP3.png Graphic file (type png)
 
 <use images/parcoursP3.png>
-Package pdftex.def Info: images/parcoursP3.png used on input line 1040.
+Package pdftex.def Info: images/parcoursP3.png used on input line 1041.
 (pdftex.def)             Requested size: 439.1472pt x 263.48831pt.
 
 * Missing: images/parcoursP3.pax
@@ -3669,24 +3669,24 @@ Annexe H.
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \caption with sig. 'om' on line 1108.
+. Redefining command \caption with sig. 'om' on line 1109.
 .................................................
  <images/arboProjet.png, id=725, 151.16475pt x 265.59225pt>
 File: images/arboProjet.png Graphic file (type png)
 
 <use images/arboProjet.png>
-Package pdftex.def Info: images/arboProjet.png used on input line 1109.
+Package pdftex.def Info: images/arboProjet.png used on input line 1110.
 (pdftex.def)             Requested size: 151.16437pt x 265.59158pt.
 
 * Missing: images/arboProjet.pax
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \caption with sig. 'om' on line 1119.
+. Redefining command \caption with sig. 'om' on line 1120.
 .................................................
 File: images/arboMVC.png Graphic file (type png)
 <use images/arboMVC.png>
-Package pdftex.def Info: images/arboMVC.png used on input line 1120.
+Package pdftex.def Info: images/arboMVC.png used on input line 1121.
 (pdftex.def)             Requested size: 75.8833pt x 64.44058pt.
 
 * Missing: images/arboMVC.pax
@@ -3699,26 +3699,26 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \caption with sig. 'om' on line 1139.
+. Redefining command \caption with sig. 'om' on line 1140.
 .................................................
 
 <images/controleur.png, id=732, 478.1865pt x 329.43076pt>
 File: images/controleur.png Graphic file (type png)
 
 <use images/controleur.png>
-Package pdftex.def Info: images/controleur.png used on input line 1140.
+Package pdftex.def Info: images/controleur.png used on input line 1141.
 (pdftex.def)             Requested size: 358.63898pt x 247.07245pt.
 
 * Missing: images/controleur.pax
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \caption with sig. 'om' on line 1153.
+. Redefining command \caption with sig. 'om' on line 1154.
 .................................................
 <images/modele.png, id=734, 297.5115pt x 106.59825pt>
 File: images/modele.png Graphic file (type png)
  <use images/modele.png>
-Package pdftex.def Info: images/modele.png used on input line 1154.
+Package pdftex.def Info: images/modele.png used on input line 1155.
 (pdftex.def)             Requested size: 297.51077pt x 106.59798pt.
 
 * Missing: images/modele.pax
@@ -3731,26 +3731,26 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \caption with sig. 'om' on line 1166.
+. Redefining command \caption with sig. 'om' on line 1167.
 .................................................
 
 <images/schemaVue.png, id=743, 453.49425pt x 395.076pt>
 File: images/schemaVue.png Graphic file (type png)
 
 <use images/schemaVue.png>
-Package pdftex.def Info: images/schemaVue.png used on input line 1167.
+Package pdftex.def Info: images/schemaVue.png used on input line 1168.
 (pdftex.def)             Requested size: 317.4438pt x 276.5513pt.
 
 * Missing: images/schemaVue.pax
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \caption with sig. 'om' on line 1176.
+. Redefining command \caption with sig. 'om' on line 1177.
 .................................................
 <images/vue.png, id=744, 180.07275pt x 53.60025pt>
 File: images/vue.png Graphic file (type png)
  <use images/vue.png>
-Package pdftex.def Info: images/vue.png used on input line 1177.
+Package pdftex.def Info: images/vue.png used on input line 1178.
 (pdftex.def)             Requested size: 180.07231pt x 53.6001pt.
 
 * Missing: images/vue.pax
@@ -3761,7 +3761,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 [58 <./images/modele.png> <./images/schemaVue.png> <./images/vue.png>]
 
-Package biblatex Warning: Type 'online' not found on input line 1185.
+Package biblatex Warning: Type 'online' not found on input line 1186.
 
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -3769,7 +3769,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [59]
-Overfull \hbox (5.63431pt too wide) in paragraph at lines 1185--1185
+Overfull \hbox (5.63431pt too wide) in paragraph at lines 1186--1186
 []\T1/jkpf/m/n/10.95 (-20) Joren \T1/jkpf/m/sc/10.95 (-20) Ma-ry-nis-sen \T1/jk
 pf/m/n/10.95 (-20) et Erik \T1/jkpf/m/sc/10.95 (-20) De-meu-le-mees-ter\T1/jkpf
 /m/n/10.95 (-20) . ^^S   Li-te-ra-ture re-view on multi-appointment|
@@ -3819,155 +3819,155 @@ No file Rapport_PR&D_ROUSSEAU.ind.
 ] 
 AED: pageslts setting LastPage 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1185
+LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1186
 .
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1185
+LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1186
 .
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1185
+LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1186
 .
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1185
+LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1186
 .
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1185
+LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1186
 .
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1185
+LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1186
 .
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1185
+LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1186
 .
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1185
+LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1186
 .
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1185
+LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1186
 .
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1185
+LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1186
 .
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1185
+LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1186
 .
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1185
+LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1186
 .
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1185
+LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1186
 .
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1185
+LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1186
 .
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1185
+LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1186
 .
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1185
+LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1186
 .
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1185
+LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1186
 .
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1185
+LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1186
 .
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1185
+LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1186
 .
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1185
+LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1186
 .
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1185
+LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1186
 .
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1185
+LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1186
 .
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1185
+LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1186
 .
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1185
+LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1186
 .
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1185
+LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1186
 .
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1185
+LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1186
 .
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1185
+LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1186
 .
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1185
+LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1186
 .
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1185
+LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1186
 .
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1185
+LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1186
 .
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1185
+LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1186
 .
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1185
+LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1186
 .
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1185
+LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1186
 .
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1185
+LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1186
 .
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1185
+LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1186
 .
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1185
+LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1186
 .
 
 
-LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1185
+LaTeX Warning: Polytech : Label defined but unused : fig:vue on input line 1186
 .
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1185.
-Package atveryend Info: Executing hook `AfterLastShipout' on input line 1185.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1186.
+Package atveryend Info: Executing hook `AfterLastShipout' on input line 1186.
 \c@pagesLTS.arabic.1.local.count=\count489
 
 AED: pageslts setting VeryLastPage via AfterLastShipout 
@@ -3979,13 +3979,13 @@ Package pageslts Info: Total number of pages is even.
 
 
 (./Rapport_PR&D_ROUSSEAU.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1185.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1185.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1186.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1186.
 
 Package logreq Info: Writing requests to 'Rapport_PR&D_ROUSSEAU.run.xml'.
 \openout1 = `Rapport_PR&D_ROUSSEAU.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1185.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1186.
  )
 (\end occurred inside a group at level 1)
 
@@ -4011,7 +4011,7 @@ mf-dist/fonts/type1/public/kpfonts/jkpmn8a.pfb><c:/texlive/2016/texmf-dist/font
 s/type1/public/kpfonts/jkpmne.pfb><c:/texlive/2016/texmf-dist/fonts/type1/publi
 c/kpfonts/jkpmsc8a.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/kpfonts/j
 kpsy.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/kpfonts/jkpttmn8a.pfb>
-Output written on Rapport_PR&D_ROUSSEAU.pdf (72 pages, 2488657 bytes).
+Output written on Rapport_PR&D_ROUSSEAU.pdf (72 pages, 2482631 bytes).
 PDF statistics:
  1162 PDF objects out of 1200 (max. 8388607)
  986 compressed objects within 10 object streams
